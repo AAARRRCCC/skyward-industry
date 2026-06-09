@@ -1,0 +1,162 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_crossing"
+	group: ""
+	icon: "kubejs:aetherium"
+	id: "0F00000000000000"
+	order_index: 5
+	quests: [
+		{
+			description: [
+				"You can read this on day one. Good. You should know what the pack is FOR."
+				""
+				"Twenty-five thousand blocks out there is a place the trade maps mark with one word: DON'T. A survey crew went anyway, years back. One ship. They found an island where the stone glows teal, and they did not all come home."
+				""
+				"The material is called aetherium. It gates the creative motor — infinite rotation, the end of fuel logistics, the factory's diploma. It cannot be bought, mined locally, or faked."
+				""
+				"Everything else in this book is the runway for this trip."
+			]
+			icon: "kubejs:ships_log_4"
+			id: "0F00000000000001"
+			rewards: [{
+				count: 1
+				id: "1F00000000000001"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Hazard pay, in advance: one spur."
+			tasks: [{
+				id: "2F00000000000001"
+				title: "Read the survey brief"
+				type: "checkmark"
+			}]
+			title: "The Crossing"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0F00000000000001"
+				"0D00000000000009"
+			]
+			description: [
+				"25k blocks, no friendly ports past Highmoor. You want: redundant engines, levitite reserves, spare envelopes, food, and a bed bolted down."
+				""
+				"Pack like the return trip is twice as long. It will feel like it."
+			]
+			id: "0F00000000000002"
+			rewards: [{
+				count: 16
+				id: "1F00000000000002"
+				item: "minecraft:golden_carrot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2F00000000000002"
+				title: "Fit out an expedition ship"
+				type: "checkmark"
+			}]
+			title: "Fit for the long water"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0F00000000000002"]
+			description: [
+				"Fly the bearing the admin posted at Highmoor Terminus. When your coordinates pass 20,000 from spawn, check this off and keep going."
+				""
+				"(Admin note: this can be converted to an automatic location task once the site is placed — see CROSSING_RUNBOOK.)"
+			]
+			id: "0F00000000000003"
+			rewards: [{
+				count: 1
+				id: "1F00000000000003"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2F00000000000003"
+				title: "Pass the 20,000 mark"
+				type: "checkmark"
+			}]
+			title: "Past the maps"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0F00000000000003"]
+			description: [
+				"The survey crew kept logs. The first one is in a chest near where they made landfall. Reading it is not optional. It's the only story this pack has."
+			]
+			icon: "kubejs:ships_log_1"
+			id: "0F00000000000004"
+			rewards: [{
+				count: 8
+				id: "1F00000000000004"
+				item: "minecraft:firework_rocket"
+				type: "item"
+			}]
+			tasks: [{
+				count: 1L
+				id: "2F00000000000004"
+				item: "kubejs:ships_log_1"
+				type: "item"
+			}]
+			title: "Landfall"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0F00000000000004"]
+			description: [
+				"There it is. Teal, humming, faintly wrong. Fill your hold."
+			]
+			icon: "kubejs:aetherium"
+			id: "0F00000000000005"
+			rewards: [{
+				id: "1F00000000000005"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				count: 1L
+				id: "2F00000000000005"
+				item: "kubejs:aetherium"
+				type: "item"
+			}]
+			title: "Aetherium"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0F00000000000005"]
+			description: [
+				"The trip back, with cargo worth more than the ship. When you unload at your own dock, this chapter is done and the last tier opens."
+				""
+				"The survey crew would have liked to see this."
+			]
+			id: "0F00000000000006"
+			rewards: [{
+				count: 1
+				id: "1F00000000000006"
+				item: "numismatics:sun"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "2F00000000000006"
+				title: "Bring it home"
+				type: "checkmark"
+			}]
+			title: "Homecoming"
+			x: 0.0d
+			y: 7.5d
+		}
+	]
+	title: "Chapter 5: The Crossing"
+}

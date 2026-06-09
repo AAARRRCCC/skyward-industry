@@ -1,0 +1,185 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "brass_age"
+	group: ""
+	icon: "create:brass_ingot"
+	id: "0C00000000000000"
+	order_index: 2
+	quests: [
+		{
+			dependencies: ["0B00000000000006"]
+			description: [
+				"Copper, zinc, a blaze burner, and a mixer. Brass unlocks casings, tunnels, and the machines that build machines."
+			]
+			icon: "create:brass_ingot"
+			id: "0C00000000000001"
+			rewards: [{
+				count: 1
+				id: "1C00000000000001"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				count: 16L
+				id: "2C00000000000001"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			title: "Chapter 2: hot metal"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0C00000000000001"]
+			description: [
+				"The calibrated shaft cannot be crafted by hand. At all. A press trues it, a deployer plates it with alloy, three passes."
+				""
+				"This is your first real production line: belt, press, deployer, depot. Sixteen of these means it works."
+			]
+			icon: "kubejs:calibrated_shaft"
+			id: "0C00000000000002"
+			rewards: [{
+				count: 1
+				id: "1C00000000000002"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				count: 16L
+				id: "2C00000000000002"
+				item: "kubejs:calibrated_shaft"
+				type: "item"
+			}]
+			title: "Line one: calibration"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0C00000000000001"]
+			description: [
+				"A spout quenches brass casings in lava. Pipes, pumps, a tank, a lava supply. The casing comes out tempered and the recipe book calls it yours."
+			]
+			icon: "kubejs:tempered_casing"
+			id: "0C00000000000003"
+			rewards: [{
+				count: 1
+				id: "1C00000000000003"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "2C00000000000003"
+				item: "kubejs:tempered_casing"
+				type: "item"
+			}]
+			title: "Line two: the quench"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0C00000000000001"]
+			description: [
+				"Rose quartz, polish, electron tubes — then a deployer winds them onto golden sheets. The coil hums. That's normal."
+			]
+			icon: "kubejs:resonant_coil"
+			id: "0C00000000000004"
+			rewards: [{
+				count: 1
+				id: "1C00000000000004"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "2C00000000000004"
+				item: "kubejs:resonant_coil"
+				type: "item"
+			}]
+			title: "Line three: resonance"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0C00000000000002"
+				"0C00000000000003"
+				"0C00000000000004"
+			]
+			description: [
+				"The precision mechanism now starts from your calibrated shafts and runs three deployers deep. Eighty percent yield — overbuild and let the scrap shafts loop back."
+				""
+				"Four of these and the brass age answers to you."
+			]
+			icon: "create:precision_mechanism"
+			id: "0C00000000000005"
+			rewards: [{
+				count: 2
+				id: "1C00000000000005"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				count: 4L
+				id: "2C00000000000005"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			title: "The mechanism"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0C00000000000005"]
+			description: [
+				"The mechanical crafter assembles the big patterns — and the aeronautics chapter is nothing but big patterns."
+			]
+			id: "0C00000000000006"
+			rewards: [{
+				count: 16
+				id: "1C00000000000006"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "2C00000000000006"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			title: "Crafters in series"
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0C00000000000005"]
+			description: [
+				"Optional, recommended: rails move bulk goods to the outposts before you have ships. The Cinderfall and Glasswind premiums pay for the track."
+			]
+			id: "0C00000000000007"
+			optional: true
+			rewards: [{
+				count: 1
+				id: "1C00000000000007"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "2C00000000000007"
+				item: "create:track"
+				type: "item"
+			}]
+			title: "Iron roads (optional)"
+			x: 1.5d
+			y: 4.5d
+		}
+	]
+	title: "Chapter 2: Brass Age"
+}

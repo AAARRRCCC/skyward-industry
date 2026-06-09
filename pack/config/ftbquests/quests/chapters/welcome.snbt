@@ -1,0 +1,107 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome"
+	group: ""
+	icon: "minecraft:campfire"
+	id: "0A00000000000000"
+	order_index: 0
+	quests: [
+		{
+			description: [
+				"Vanilla Create has a problem: you never actually NEED the factory. This pack fixes that."
+				""
+				"Every tier's core part is machine-made. Airships eat your production. Vendors pay for bulk goods. And 25,000 blocks out, there is an island with something on it worth the trip."
+				""
+				"Four ages: Andesite, Brass, Aeronautics, and the Crossing. The last chapter of this book is visible right now. Go look at it. That's where this ends."
+			]
+			icon: "minecraft:campfire"
+			id: "0A00000000000001"
+			rewards: [{
+				count: 4
+				id: "1A00000000000001"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Read this one. It's short."
+			tasks: [{
+				id: "2A00000000000001"
+				title: "Why you are here"
+				type: "checkmark"
+			}]
+			title: "Welcome to Skyward Industry"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0A00000000000001"]
+			description: [
+				"JEI (recipe viewer) is your contract: if we removed a recipe, the replacement is in there. No dead ends, no wiki required."
+				""
+				"Press R on any item for recipes, U for uses."
+			]
+			id: "0A00000000000002"
+			rewards: [{
+				id: "1A00000000000002"
+				item: "minecraft:torch"
+				count: 16
+				type: "item"
+			}]
+			tasks: [{
+				id: "2A00000000000002"
+				title: "Look up a recipe in JEI"
+				type: "checkmark"
+			}]
+			title: "The recipe viewer is law"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0A00000000000001"]
+			description: [
+				"The map (FTB Chunks) claims land. Claim your base; leave the outposts alone — they're claimed by the server."
+			]
+			id: "0A00000000000003"
+			rewards: [{
+				id: "1A00000000000003"
+				item: "minecraft:oak_sign"
+				count: 4
+				type: "item"
+			}]
+			tasks: [{
+				id: "2A00000000000003"
+				title: "Claim a chunk"
+				type: "checkmark"
+			}]
+			title: "Stake a claim"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0A00000000000001"]
+			description: [
+				"Spawn town has vendors. The brass ones BUY your bulk goods — that's your income. The others sell decor, books, and music. Nothing that matters for progression is for sale. Ever."
+				""
+				"Open an account at the blaze banker if you want a card instead of a coin pouch."
+			]
+			id: "0A00000000000004"
+			rewards: [{
+				count: 8
+				id: "1A00000000000004"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2A00000000000004"
+				title: "Visit the spawn market"
+				type: "checkmark"
+			}]
+			title: "Money exists"
+			x: 1.5d
+			y: 1.5d
+		}
+	]
+	title: "Chapter 0: Welcome"
+}

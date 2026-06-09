@@ -1,0 +1,242 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "aeronautics_age"
+	group: ""
+	icon: "aeronautics:smart_propeller"
+	id: "0D00000000000000"
+	order_index: 3
+	quests: [
+		{
+			dependencies: ["0C00000000000005"]
+			description: [
+				"The physics assembler turns a built structure into a ship. It wants a precision mechanism now — shipwrights are licensed professionals."
+			]
+			icon: "simulated:physics_assembler"
+			id: "0D00000000000001"
+			rewards: [{
+				count: 1
+				id: "1D00000000000001"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				count: 1L
+				id: "2D00000000000001"
+				item: "simulated:physics_assembler"
+				type: "item"
+			}]
+			title: "Chapter 3: the shipyard"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D00000000000001"]
+			description: [
+				"Envelopes hold the sky up. Grid recipes are gone — a deployer wraps wool onto sticks, two at a time. A hopper-sized hull wants about thirty; haulers want hundreds."
+				""
+				"Yes, this is a wool farm quest wearing a flight suit."
+			]
+			id: "0D00000000000002"
+			rewards: [{
+				count: 1
+				id: "1D00000000000002"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			tasks: [{
+				count: 32L
+				id: "2D00000000000002"
+				item: "aeronautics:white_envelope"
+				type: "item"
+			}]
+			title: "Hull plant"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0D00000000000001"]
+			description: [
+				"One engine assembly: a tempered casing, sawn, pressed, then fed four resonant coils and four calibrated shafts. Your three brass lines all feed this one machine cell."
+				""
+				"The first one is a milestone. The fourth one is a business."
+			]
+			icon: "simulated:engine_assembly"
+			id: "0D00000000000003"
+			rewards: [{
+				count: 1
+				id: "1D00000000000003"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				count: 1L
+				id: "2D00000000000003"
+				item: "simulated:engine_assembly"
+				type: "item"
+			}]
+			title: "Engine works"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0D00000000000003"]
+			description: [
+				"Four engines on the rack. The Highmoor Terminus pays 600 each if you can get them there — consider it a standing freight contract."
+			]
+			id: "0D00000000000004"
+			rewards: [{
+				count: 2
+				id: "1D00000000000004"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "2D00000000000004"
+				item: "simulated:engine_assembly"
+				type: "item"
+			}]
+			title: "Series production"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0D00000000000001"]
+			description: [
+				"A precision mechanism, four cogwheels, four coils, and patience. The gyroscopic mechanism is what keeps a ship pointing where you meant."
+			]
+			icon: "simulated:gyroscopic_mechanism"
+			id: "0D00000000000005"
+			rewards: [{
+				count: 1
+				id: "1D00000000000005"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "2D00000000000005"
+				item: "simulated:gyroscopic_mechanism"
+				type: "item"
+			}]
+			title: "Spin control"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0D00000000000005"]
+			description: [
+				"Gyroscope for stability, joystick for command, servos for the control surfaces. The bridge of your ship, in parts."
+			]
+			icon: "aeroworks:gyroscope"
+			id: "0D00000000000006"
+			rewards: [{
+				count: 2
+				id: "1D00000000000006"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 1L
+					id: "2D00000000000006"
+					item: "aeroworks:gyroscope"
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "2D00000000000016"
+					item: "aeroworks:joystick"
+					type: "item"
+				}
+			]
+			title: "The bridge"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0D00000000000002"
+				"0D00000000000003"
+			]
+			description: [
+				"Hull, engine, propeller, controls. Assemble it, launch it, and fly a lap around your base."
+				""
+				"Check this off when she holds altitude. Name her. That part is mandatory and we will not be taking questions."
+			]
+			icon: "aeronautics:wooden_propeller"
+			id: "0D00000000000007"
+			rewards: [{
+				count: 3
+				id: "1D00000000000007"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "2D00000000000007"
+				title: "Launch your first hopper"
+				type: "checkmark"
+			}]
+			title: "First flight"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0D00000000000007"]
+			description: [
+				"Visit any trade outpost BY AIR and sell a hold full of premium goods. Kelpwright is closest; Highmoor pays best."
+			]
+			id: "0D00000000000008"
+			rewards: [{
+				count: 2
+				id: "1D00000000000008"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2D00000000000008"
+				title: "Dock at an outpost"
+				type: "checkmark"
+			}]
+			title: "Trade winds"
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0D00000000000004"
+				"0D00000000000007"
+			]
+			description: [
+				"A cargo hauler: multiple engines, a real hold, range enough for the Highmoor run with capacity to spare."
+				""
+				"Check it off when you've delivered 8 engine assemblies to Highmoor Terminus in one trip. The Crossing wants a ship exactly like this."
+			]
+			icon: "simulated:docking_connector"
+			id: "0D00000000000009"
+			rewards: [{
+				count: 1
+				id: "1D00000000000009"
+				item: "numismatics:sun"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "2D00000000000009"
+				title: "Commission a cargo hauler"
+				type: "checkmark"
+			}]
+			title: "The hauler"
+			x: 1.5d
+			y: 6.0d
+		}
+	]
+	title: "Chapter 3: Aeronautics Age"
+}

@@ -1,6 +1,34 @@
 hash-format = "sha256"
 
 [[files]]
+	file = "config/ftbquests/quests/chapters/aeronautics_age.snbt"
+	hash = "356c042ac8e3edd298fe5c2bfc2b204a315a9639caaa2ca0d9d6a05da72ddcad"
+
+[[files]]
+	file = "config/ftbquests/quests/chapters/andesite_age.snbt"
+	hash = "98f56e5ef324e164f9e73647c226bc8b6ddce4ebdac3cbf5d5dcf2e4b980ab35"
+
+[[files]]
+	file = "config/ftbquests/quests/chapters/brass_age.snbt"
+	hash = "d42f0ddc04d892e7a34c0a2dd097d0b5fe4f867180d5bf0bc85e3971943a9a5e"
+
+[[files]]
+	file = "config/ftbquests/quests/chapters/crossing_tier.snbt"
+	hash = "ccbaa393eb1fe6e84a66fc92ce2b0ba2a3ad54e3445a1c6855da94b0eb57e796"
+
+[[files]]
+	file = "config/ftbquests/quests/chapters/the_crossing.snbt"
+	hash = "4c2c406d2dfc4cbbbb784b62ed54908d30179b66cc4c156d10e33c520d01b950"
+
+[[files]]
+	file = "config/ftbquests/quests/chapters/welcome.snbt"
+	hash = "f1f3c85990169aafa5a5b9e8d8fd9dd64c81a0344b9fb75674066c2f595a8887"
+
+[[files]]
+	file = "config/ftbquests/quests/data.snbt"
+	hash = "33526bc91d85610cc95b650c0bcf68d8af235958dcf43626487a7730d220755e"
+
+[[files]]
 	file = "kubejs/assets/kubejs/textures/block/aetherium_block.png"
 	hash = "4247b1a6a84edbdc7f2936363b32c4e94e9befd0fed3f0f3fc6c1b606e96d8e5"
 

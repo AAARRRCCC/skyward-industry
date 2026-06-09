@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+### Phase 4 — quest book (2026-06-09)
+- 6 FTB Quests chapters (33 quests): Welcome, Andesite, Brass, Aeronautics,
+  Crossing Tier, The Crossing (visible from day one, locked, shows the ending).
+- Rewards are coins/consumables/xp only; showcase checkmark quests for vessel
+  milestones; cross-chapter dependency graph validated (tools/validate_refs.py:
+  118 unique ids, 39 deps resolve, 85 item refs exist in extracted registries).
+- docs/TESTING/phase4.md.
+
 ### Phase 3 — economy (2026-06-09)
 - Backend: Numismatics (per Phase 0). economy_balance.js is the canonical price
   source (10 buy goods, ~20 sell goods, 1.5x outpost premium).

@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+### Phase 2 — progression gating (2026-06-09)
+- Verified all item IDs / recipe JSON shapes against the actual 1.21.1 jars
+  (docs/audit/jars/, docs/audit/recipes_aero.md) — Aeronautics post-dates training data.
+- Ch.1: andesite alloy is mixer-made; punishing hand fallback retained.
+- Ch.2: custom intermediates (calibrated shaft, tempered casing, resonant coil);
+  precision mechanism rebuilt on them (80% yield).
+- Ch.3: engine assembly, gyroscopic mechanism, envelopes, levitite, propellers,
+  Aeroworks parts, physics assembler all re-priced to eat Ch.2 output.
+- Ch.4: creative motor/crate/fluid tank gated behind loot-only aetherium.
+- Custom textures generated (tools/gen_textures.py); balance constants in balance.js.
+- docs/PROGRESSION.md, docs/TESTING/phase2.md.
+
 ### Phase 1 — scaffolding (2026-06-09)
 - Repo layout: kubejs/, config/ftbquests/quests/, datapacks/skyward/, docs/TESTING/.
 - docs/CONVENTIONS.md (file naming, namespacing, gating rules, comment style).

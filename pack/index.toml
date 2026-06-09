@@ -61,6 +61,10 @@ hash-format = "sha256"
 	hash = "de4ffaec7ee99eaefb347e1031a5f9f7432474c02a706a9b0288a20d26f2d51d"
 
 [[files]]
+	file = "kubejs/server_scripts/economy_balance.js"
+	hash = "15b7b0464fcb0412bc8e66cc07d2ae3e52afc3246b52fc08d69d2358504e6285"
+
+[[files]]
 	file = "kubejs/startup_scripts/items.js"
 	hash = "732dc02b0ab9658c94cbd6401a8c77894c8d432bc896e0be924a1785f0bad243"
 

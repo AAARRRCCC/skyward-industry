@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+### Phase 3 — economy (2026-06-09)
+- Backend: Numismatics (per Phase 0). economy_balance.js is the canonical price
+  source (10 buy goods, ~20 sell goods, 1.5x outpost premium).
+- Sell-list isolation verified by grep: nothing sellable appears in any gated recipe;
+  trap items (wool, sticks, blast furnace, crushable ore-stones) documented + excluded.
+- docs/ECONOMY_RUNBOOK.md (vendor/banker setup), docs/OUTPOSTS.md (4 outpost specs),
+  docs/TESTING/phase3.md (earn-and-spend loop).
+- Stretch flagged, not built: weekly rotating buy orders.
+
 ### Phase 2 — progression gating (2026-06-09)
 - Verified all item IDs / recipe JSON shapes against the actual 1.21.1 jars
   (docs/audit/jars/, docs/audit/recipes_aero.md) — Aeronautics post-dates training data.

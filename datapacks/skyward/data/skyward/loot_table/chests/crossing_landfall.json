@@ -1,0 +1,39 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{ "type": "minecraft:item", "name": "kubejs:ships_log_1" }
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kubejs:aetherium",
+					"functions": [
+						{ "function": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 2, "max": 4 } }
+					]
+				}
+			]
+		},
+		{
+			"rolls": { "type": "minecraft:uniform", "min": 2, "max": 4 },
+			"entries": [
+				{ "type": "minecraft:item", "name": "minecraft:golden_carrot", "weight": 20,
+					"functions": [{ "function": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 3, "max": 8 } }] },
+				{ "type": "minecraft:item", "name": "create:experience_nugget", "weight": 15,
+					"functions": [{ "function": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 2, "max": 6 } }] },
+				{ "type": "minecraft:item", "name": "minecraft:firework_rocket", "weight": 15,
+					"functions": [{ "function": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 4, "max": 12 } }] },
+				{ "type": "minecraft:item", "name": "create:sturdy_sheet", "weight": 10,
+					"functions": [{ "function": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 1, "max": 3 } }] },
+				{ "type": "minecraft:item", "name": "minecraft:spyglass", "weight": 8 },
+				{ "type": "minecraft:item", "name": "numismatics:cog", "weight": 10,
+					"functions": [{ "function": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 1, "max": 4 } }] }
+			]
+		}
+	]
+}

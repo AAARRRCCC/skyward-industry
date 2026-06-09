@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+### Phase 5 — Crossing support package (2026-06-09)
+- Datapack (pack_format 48): 3 chest loot tables (landfall / cache / vault);
+  one full site clear yields ~16-34 aetherium vs 12 for a creative motor.
+- docs/CROSSING_RUNBOOK.md: Chunky pregen (site disk + corridor strip), WorldEdit
+  paste workflow, chest LootTable binding commands, datapack install, optional
+  location-task quest wiring, walk-through checklist.
+- Ship's-log lore items shipped in Phase 2 registration; stocked via loot + frames.
+- docs/TESTING/phase5.md.
+
 ### Phase 4 — quest book (2026-06-09)
 - 6 FTB Quests chapters (33 quests): Welcome, Andesite, Brass, Aeronautics,
   Crossing Tier, The Crossing (visible from day one, locked, shows the ending).

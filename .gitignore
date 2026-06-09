@@ -1,0 +1,6 @@
+# local test instances / installer output
+/run/
+/.minecraft/
+packwiz-installer-bootstrap.jar
+packwiz-installer.jar
+__pycache__/

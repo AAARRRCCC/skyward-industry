@@ -1,0 +1,157 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "andesite_age"
+	group: ""
+	icon: "create:andesite_alloy"
+	id: "0B00000000000000"
+	order_index: 1
+	quests: [
+		{
+			description: [
+				"Andesite alloy doesn't come from the crafting grid anymore. Well — it does, at a miserable rate, for your first handful. The real recipe is in the mechanical mixer."
+				""
+				"Hand-craft just enough to bootstrap. You'll know when to stop. It's when you start hating it."
+			]
+			icon: "create:andesite_alloy"
+			id: "0B00000000000001"
+			rewards: [{
+				count: 16
+				id: "1B00000000000001"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				count: 16L
+				id: "2B00000000000001"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "The hard way, briefly"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B00000000000001"]
+			description: [
+				"Rotation first. A water wheel is honest work."
+			]
+			id: "0B00000000000002"
+			rewards: [{
+				count: 8
+				id: "1B00000000000002"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			tasks: [{
+				count: 1L
+				id: "2B00000000000002"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			title: "Something turns"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B00000000000001"]
+			description: [
+				"The mechanical press makes sheets and presses assemblies. Every later line uses one. You will build many."
+			]
+			id: "0B00000000000003"
+			rewards: [{
+				count: 16
+				id: "1B00000000000003"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			tasks: [{
+				count: 1L
+				id: "2B00000000000003"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			title: "Heavy industry, small"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B00000000000003"]
+			description: [
+				"The mixer is the andesite age's gate: basin + mixer turns andesite and nuggets into alloy at four times the hand rate."
+				""
+				"This is the moment the pack starts. Feed it."
+			]
+			icon: "create:mechanical_mixer"
+			id: "0B00000000000004"
+			rewards: [{
+				count: 1
+				id: "1B00000000000004"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				count: 1L
+				id: "2B00000000000004"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			title: "The real recipe"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B00000000000004"]
+			description: [
+				"A mechanical saw for shafts and lumber. With press, mixer, and saw running off one shaft line, you have a factory. A small, ugly factory. It counts."
+			]
+			id: "0B00000000000005"
+			rewards: [{
+				count: 16
+				id: "1B00000000000005"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			tasks: [{
+				count: 1L
+				id: "2B00000000000005"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			title: "Cutting room"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B00000000000004"]
+			description: [
+				"256 alloy in the bank means your mixer line, andesite supply, and nugget source all work without you standing there."
+				""
+				"The spawn market pays 1 spur per alloy if you want the line to pay rent. Brass is next, and brass is hungry."
+			]
+			icon: "create:andesite_casing"
+			id: "0B00000000000006"
+			rewards: [{
+				count: 2
+				id: "1B00000000000006"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				count: 256L
+				id: "2B00000000000006"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "Alloy by the barrel"
+			x: 3.0d
+			y: 1.5d
+		}
+	]
+	title: "Chapter 1: Andesite Age"
+}

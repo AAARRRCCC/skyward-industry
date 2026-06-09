@@ -1,0 +1,6 @@
+{
+	default_quest_shape: ""
+	default_reward_team: false
+	emergency_items_cooldown: 300
+	title: "Skyward Industry"
+}

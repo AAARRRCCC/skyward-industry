@@ -1,0 +1,129 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "crossing_tier"
+	group: ""
+	icon: "kubejs:aetherium_block"
+	id: "0E00000000000000"
+	order_index: 4
+	quests: [
+		{
+			dependencies: ["0F00000000000006"]
+			description: [
+				"Nine pieces, one block. Mostly so the vault has something to be proud of. It comes back apart when you need it."
+			]
+			icon: "kubejs:aetherium_block"
+			id: "0E00000000000001"
+			rewards: [{
+				id: "1E00000000000001"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				count: 1L
+				id: "2E00000000000001"
+				item: "kubejs:aetherium_block"
+				type: "item"
+			}]
+			title: "Solid proof"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F00000000000006"]
+			description: [
+				"Twelve aetherium, four engine assemblies, four gyroscopic mechanisms, sturdy sheets, one precision mechanism, one mechanical crafter array big enough to be embarrassing."
+				""
+				"Infinite rotation. No fuel, no water wheel farms, no excuses. The factory built the thing that retires the factory's hardest problem."
+			]
+			icon: "create:creative_motor"
+			id: "0E00000000000002"
+			rewards: [{
+				count: 1
+				id: "1E00000000000002"
+				item: "numismatics:sun"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				count: 1L
+				id: "2E00000000000002"
+				item: "create:creative_motor"
+				type: "item"
+			}]
+			title: "The Creative Motor"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0E00000000000002"]
+			description: [
+				"Bottomless storage for one item type. Aetherium does not respect conservation laws and at this point neither do you."
+			]
+			id: "0E00000000000003"
+			optional: true
+			rewards: [{
+				id: "1E00000000000003"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				count: 1L
+				id: "2E00000000000003"
+				item: "create:creative_crate"
+				type: "item"
+			}]
+			title: "Post-game logistics, dry"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0E00000000000002"]
+			description: [
+				"The wet one. Infinite fluid of your choosing. The lava line that fed your tempered casings salutes as it is decommissioned."
+			]
+			id: "0E00000000000004"
+			optional: true
+			rewards: [{
+				id: "1E00000000000004"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				count: 1L
+				id: "2E00000000000004"
+				item: "create:creative_fluid_tank"
+				type: "item"
+			}]
+			title: "Post-game logistics, wet"
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0E00000000000002"]
+			description: [
+				"That's the pack. There is no chapter six. Build the second ship anyway — the pretty one, the one with no cargo hold, the one that exists because you can."
+				""
+				"Thanks for flying Skyward."
+			]
+			id: "0E00000000000005"
+			rewards: [{
+				count: 3
+				id: "1E00000000000005"
+				item: "minecraft:firework_rocket"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "2E00000000000005"
+				title: "Build something unnecessary"
+				type: "checkmark"
+			}]
+			title: "Roll credits"
+			x: 0.0d
+			y: 4.5d
+		}
+	]
+	title: "Chapter 4: Crossing Tier"
+}

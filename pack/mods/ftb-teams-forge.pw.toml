@@ -1,0 +1,13 @@
+name = "FTB Teams (NeoForge)"
+filename = "ftb-teams-neoforge-2101.1.10.jar"
+side = "both"
+
+[download]
+	hash-format = "murmur2"
+	hash = "3463802119"
+	mode = "metadata:curseforge"
+
+[update]
+	[update.curseforge]
+		file-id = 7878281
+		project-id = 404468

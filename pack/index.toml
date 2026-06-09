@@ -1,0 +1,126 @@
+hash-format = "sha256"
+
+[[files]]
+	file = "mods/architectury-api.pw.toml"
+	hash = "b11ad70c92cc3df06a1a2707a3c2f2901ac23f8cfa06b7f90b48a3c6085fca1f"
+	metafile = true
+
+[[files]]
+	file = "mods/chunky.pw.toml"
+	hash = "fa4a0a22947299aea99b8ed2c5c5efc45c61616c05810fb74ddb0e57a14fb93b"
+	metafile = true
+
+[[files]]
+	file = "mods/create-aeronautics.pw.toml"
+	hash = "5f9e7643dd414b106c5fbe433fe4ba18149fc1aa03b9bb41f4bd50b0eb52186e"
+	metafile = true
+
+[[files]]
+	file = "mods/create-aeroworks.pw.toml"
+	hash = "7ae7b66c07d8fd7e4f10756731b349652050acb4b2fdffd7c3a999bc69f7c0e9"
+	metafile = true
+
+[[files]]
+	file = "mods/create.pw.toml"
+	hash = "1ab83aacbfe2cebf524391d0e5497a8024fcc58400b579792ffc612bed6aeb8b"
+	metafile = true
+
+[[files]]
+	file = "mods/ferrite-core.pw.toml"
+	hash = "32b3f29b70d40ef835c363d126ba9a5b39eb2d5ff6599aafdacaf717e16e2321"
+	metafile = true
+
+[[files]]
+	file = "mods/ftb-chunks-forge.pw.toml"
+	hash = "c20794aaf41400d704c7dbfb025b046e1cadc981eb8d9c428433667d9670b1de"
+	metafile = true
+
+[[files]]
+	file = "mods/ftb-library-forge.pw.toml"
+	hash = "9d79f5342a4e325245b53ecf088d769079a15bd0dacd1e30460fdf78fa8785b4"
+	metafile = true
+
+[[files]]
+	file = "mods/ftb-quests-forge.pw.toml"
+	hash = "69efecc83568e2988fde8175af5dbf90b8cc6e67fbe2bd67326ea2799073d5a4"
+	metafile = true
+
+[[files]]
+	file = "mods/ftb-teams-forge.pw.toml"
+	hash = "2b4acbbd49a1c50adc25cbd963d817e35a4b86f97a7333bd0109813575603ca1"
+	metafile = true
+
+[[files]]
+	file = "mods/ftb-xmod-compat.pw.toml"
+	hash = "6d35d979c13249cf9b364407da1a1db084eaa5673083ed19f3bc95872803a1bc"
+	metafile = true
+
+[[files]]
+	file = "mods/inventory-profiles-next.pw.toml"
+	hash = "84e0984be55fbd03f2a8174c18b671cfabf457b1a3c69518938bf36e2ec0b5a6"
+	metafile = true
+
+[[files]]
+	file = "mods/jade.pw.toml"
+	hash = "755a6ab666738246c479b5f60e392c9bcab37d06ae71fa58afa3d83d103a034d"
+	metafile = true
+
+[[files]]
+	file = "mods/jei.pw.toml"
+	hash = "de9433a8e844fbba0cf3bfa1287f29cd46579472eaab8fe86f6d9bee13330f89"
+	metafile = true
+
+[[files]]
+	file = "mods/kotlin-for-forge.pw.toml"
+	hash = "e8dace23994af956fa3b6e35bec2325f87cddcfc073da78e83d8e4d15099face"
+	metafile = true
+
+[[files]]
+	file = "mods/kubejs.pw.toml"
+	hash = "12feec14f6183aa76249de286d7e6c945c7235e52c83e8255b317fab5a1d438c"
+	metafile = true
+
+[[files]]
+	file = "mods/libipn.pw.toml"
+	hash = "3672c11b48c9428deab55024b25aabed680c4dfd3a74d6cec0c0b805ff5021a3"
+	metafile = true
+
+[[files]]
+	file = "mods/lithium.pw.toml"
+	hash = "5abd2b353d80aa9a9acd509434cc508bc4cd13fc033278e1c9ce6d4c7c736ca3"
+	metafile = true
+
+[[files]]
+	file = "mods/mouse-tweaks.pw.toml"
+	hash = "93108d7926a456a6c8944bc80010ebeca71e3c63575c2170b0118d732161db11"
+	metafile = true
+
+[[files]]
+	file = "mods/numismatics.pw.toml"
+	hash = "6b28b97a4aedf32791b6d4ec86805de32e62bc51bb6e10f54c9002500db2b042"
+	metafile = true
+
+[[files]]
+	file = "mods/rhino.pw.toml"
+	hash = "aadaf7659b44e598d879ee89264b961986c56e68ada6035a4f5cfd61ee90b518"
+	metafile = true
+
+[[files]]
+	file = "mods/sable.pw.toml"
+	hash = "2374d2275bbfc265d1c11f6b71bfb3248deb01f8d11e180573ec79f004ad8626"
+	metafile = true
+
+[[files]]
+	file = "mods/sablecompat.pw.toml"
+	hash = "7595ed92ca1c5a1f9c25661a190cee1839c34b3a3e23d29a7b769a4f20e4c3c1"
+	metafile = true
+
+[[files]]
+	file = "mods/sodium.pw.toml"
+	hash = "b0a8abf5b98c9e389e645e9fcdabee74054c413bfcbd58fe055ca0a3799f2538"
+	metafile = true
+
+[[files]]
+	file = "mods/worldedit.pw.toml"
+	hash = "cdd6956e45ad93aa056691a6208854d6b58f3c761d34b008bd012390fa9cdb75"
+	metafile = true

@@ -1,0 +1,171 @@
+{
+  "ftb-quests-forge": {
+    "slug": "ftb-quests-forge",
+    "mod_id": 289412,
+    "name": "FTB Quests (NeoForge)",
+    "allowModDistribution": true,
+    "status": "ok",
+    "file_id": 8216578,
+    "filename": "ftb-quests-neoforge-2101.1.26.jar",
+    "display_name": "[NEOFORGE][1.21.1] FTB Quests 2101.1.26",
+    "date": "2026-06-08T14:47:32.133Z",
+    "release_type": 1,
+    "fingerprint": 1482015807,
+    "download_url": "https://edge.forgecdn.net/files/8216/578/ftb-quests-neoforge-2101.1.26.jar",
+    "sha1": "831328b1f1aefc3b9ce5b7ff8c799a6610ccc1ab",
+    "dependencies": [
+      {
+        "modId": 889915,
+        "relationType": 2
+      },
+      {
+        "modId": 404465,
+        "relationType": 3
+      },
+      {
+        "modId": 419699,
+        "relationType": 3
+      },
+      {
+        "modId": 404468,
+        "relationType": 3
+      }
+    ]
+  },
+  "ftb-teams-forge": {
+    "slug": "ftb-teams-forge",
+    "mod_id": 404468,
+    "name": "FTB Teams (NeoForge)",
+    "allowModDistribution": true,
+    "status": "ok",
+    "file_id": 7878281,
+    "filename": "ftb-teams-neoforge-2101.1.10.jar",
+    "display_name": "[NEOFORGE][1.21.1] FTB Teams 2101.1.10",
+    "date": "2026-04-05T08:31:58.663Z",
+    "release_type": 1,
+    "fingerprint": 3463802119,
+    "download_url": "https://edge.forgecdn.net/files/7878/281/ftb-teams-neoforge-2101.1.10.jar",
+    "sha1": "363376ae0fb22cb0527170fdf6a066d1da9b0225",
+    "dependencies": [
+      {
+        "modId": 404465,
+        "relationType": 3
+      },
+      {
+        "modId": 419699,
+        "relationType": 3
+      }
+    ]
+  },
+  "ftb-library-forge": {
+    "slug": "ftb-library-forge",
+    "mod_id": 404465,
+    "name": "FTB Library (NeoForge)",
+    "allowModDistribution": true,
+    "status": "ok",
+    "file_id": 7746959,
+    "filename": "ftb-library-neoforge-2101.1.31.jar",
+    "display_name": "[NEOFORGE][1.21.1] FTB Library 2101.1.31",
+    "date": "2026-03-12T13:59:06.853Z",
+    "release_type": 1,
+    "fingerprint": 2049429281,
+    "download_url": "https://edge.forgecdn.net/files/7746/959/ftb-library-neoforge-2101.1.31.jar",
+    "sha1": "686d4e784c28c14f7760cc22b2de6a8573b56b74",
+    "dependencies": [
+      {
+        "modId": 310111,
+        "relationType": 2
+      },
+      {
+        "modId": 419699,
+        "relationType": 3
+      },
+      {
+        "modId": 238222,
+        "relationType": 2
+      }
+    ]
+  },
+  "ftb-chunks-forge": {
+    "slug": "ftb-chunks-forge",
+    "mod_id": 314906,
+    "name": "FTB Chunks (NeoForge)",
+    "allowModDistribution": true,
+    "status": "ok",
+    "file_id": 8216875,
+    "filename": "ftb-chunks-neoforge-2101.1.17.jar",
+    "display_name": "[NEOFORGE][1.21.1] FTB Chunks 2101.1.17",
+    "date": "2026-06-08T15:48:57.917Z",
+    "release_type": 1,
+    "fingerprint": 4218686862,
+    "download_url": "https://edge.forgecdn.net/files/8216/875/ftb-chunks-neoforge-2101.1.17.jar",
+    "sha1": "6578a2d0c08038f3c218caf215a82715de09bf5f",
+    "dependencies": [
+      {
+        "modId": 314905,
+        "relationType": 2
+      },
+      {
+        "modId": 404465,
+        "relationType": 3
+      },
+      {
+        "modId": 404468,
+        "relationType": 3
+      },
+      {
+        "modId": 419699,
+        "relationType": 3
+      }
+    ]
+  },
+  "ftb-xmod-compat": {
+    "slug": "ftb-xmod-compat",
+    "mod_id": 889915,
+    "name": "FTB XMod Compat",
+    "allowModDistribution": true,
+    "status": "ok",
+    "file_id": 7715134,
+    "filename": "ftb-xmod-compat-neoforge-21.1.8.jar",
+    "display_name": "[NEOFORGE][1.21.1] FTB XMod Compat 21.1.8",
+    "date": "2026-03-05T16:17:50.593Z",
+    "release_type": 1,
+    "fingerprint": 697946099,
+    "download_url": "https://edge.forgecdn.net/files/7715/134/ftb-xmod-compat-neoforge-21.1.8.jar",
+    "sha1": "0c25fc1a43c99eaa68c883dc77e3ebf4539629e6",
+    "dependencies": [
+      {
+        "modId": 289412,
+        "relationType": 2
+      },
+      {
+        "modId": 404465,
+        "relationType": 3
+      },
+      {
+        "modId": 419699,
+        "relationType": 3
+      },
+      {
+        "modId": 238222,
+        "relationType": 2
+      },
+      {
+        "modId": 310111,
+        "relationType": 2
+      },
+      {
+        "modId": 314905,
+        "relationType": 2
+      },
+      {
+        "modId": 245755,
+        "relationType": 2
+      },
+      {
+        "modId": 238086,
+        "relationType": 2
+      }
+    ]
+  }
+}

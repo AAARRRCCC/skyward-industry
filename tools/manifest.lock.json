@@ -1,0 +1,446 @@
+{
+  "pack": {
+    "name": "Skyward Industry",
+    "author": "Brady",
+    "version": "0.1.0",
+    "minecraft": "1.21.1",
+    "neoforge": "21.1.233"
+  },
+  "mods": [
+    {
+      "name": "Create",
+      "slug": "create",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "LNytGWDc",
+        "version_id": "UjX6dr61",
+        "version_number": "6.0.10+mc1.21.1",
+        "filename": "create-1.21.1-6.0.10.jar",
+        "url": "https://cdn.modrinth.com/data/LNytGWDc/versions/UjX6dr61/create-1.21.1-6.0.10.jar",
+        "sha512": "11cc8fc049d2f67f6548c7abfada6b82a3adb5c7ca410a742de04bbca76e03862c518721b88d806f6e6d768a4d68531fdb903a85859b25d1484d550cc7bafd4b",
+        "size": 19123767
+      }
+    },
+    {
+      "name": "Create Aeronautics",
+      "slug": "create-aeronautics",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "oWaK0Q19",
+        "version_id": "YhZLrAFC",
+        "version_number": "1.2.1+mc1.21.1",
+        "filename": "create-aeronautics-bundled-1.21.1-1.2.1.jar",
+        "url": "https://cdn.modrinth.com/data/oWaK0Q19/versions/YhZLrAFC/create-aeronautics-bundled-1.21.1-1.2.1.jar",
+        "sha512": "c7899f8a693cf1b4c17a31faf64e631383f6df331b82b517ed6abe01b0464a9f10b226f0336fa8611c5af514375716c4d009d55c7f92640445c68239b63ebc03",
+        "size": 33030286
+      }
+    },
+    {
+      "name": "Sable",
+      "slug": "sable",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "T9PomCSv",
+        "version_id": "3FMsUjO4",
+        "version_number": "1.2.2+mc1.21.1",
+        "filename": "sable-neoforge-1.21.1-1.2.2.jar",
+        "url": "https://cdn.modrinth.com/data/T9PomCSv/versions/3FMsUjO4/sable-neoforge-1.21.1-1.2.2.jar",
+        "sha512": "eb7c46649f5aa359f688fecacfa348b205dff0cfc2d27694632c2e1e1f8f4dbab2c31bdc95b2577201529b2597afe49328c7ad8c348d25eaca109f1a02667534",
+        "size": 12719293
+      }
+    },
+    {
+      "name": "Create: Aeroworks",
+      "slug": "create-aeroworks",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "P26k79kP",
+        "version_id": "vsT0uzkn",
+        "version_number": "1.2.11+mc1.21.1",
+        "filename": "aeroworks-1.2.11.jar",
+        "url": "https://cdn.modrinth.com/data/P26k79kP/versions/vsT0uzkn/aeroworks-1.2.11.jar",
+        "sha512": "9ee802051aed7cb0e75461c374c360b06c7df8d1bde7b0694f31c4fe226aef3a5db01841d58871a8b5e95043021c2ed971cd0d911ec765886b6ec737d7dff1f8",
+        "size": 278098
+      }
+    },
+    {
+      "name": "Sable: Physics Compat",
+      "slug": "sablecompat",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "sZbcIrJb",
+        "version_id": "Ucq7afTi",
+        "version_number": "1.3.0",
+        "filename": "sablephysicscompat-1.3.0.jar",
+        "url": "https://cdn.modrinth.com/data/sZbcIrJb/versions/Ucq7afTi/sablephysicscompat-1.3.0.jar",
+        "sha512": "8da8791d255aeae21ecc201318b2c670e594984fa0ce726bfce8a4f27e8983c50c7152e93cf68a389b7d06711e85bcfef925eea0a00a39dd6718db89326ec494",
+        "size": 25334
+      }
+    },
+    {
+      "name": "KubeJS",
+      "slug": "kubejs",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "umyGl7zF",
+        "version_id": "F2nzeC19",
+        "version_number": "2101.7.2-build.368",
+        "filename": "kubejs-neoforge-2101.7.2-build.368.jar",
+        "url": "https://cdn.modrinth.com/data/umyGl7zF/versions/F2nzeC19/kubejs-neoforge-2101.7.2-build.368.jar",
+        "sha512": "5e2f1bd1460d8f443ce4bd44ed367d27f9170e50dff2ce9430954206e89651f8969dfbe842c3100b0244f8d58f843fc5fb9c46b5c576430a07f1e5b6dd4b9f7b",
+        "size": 2281720
+      }
+    },
+    {
+      "name": "Rhino",
+      "slug": "rhino",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "sk9knFPE",
+        "version_id": "cQ4POTah",
+        "version_number": "2101.2.7-build.85+Rhino-1.21",
+        "filename": "rhino-2101.2.7-build.85.jar",
+        "url": "https://cdn.modrinth.com/data/sk9knFPE/versions/cQ4POTah/rhino-2101.2.7-build.85.jar",
+        "sha512": "0a6c7f4410281aeb03b815ec03487a8e80a4d3dae013d81282e447bf9c08144ef57318af614ea6d40b7d9a8c25031c557890ec792a5895a82467c1643116f693",
+        "size": 882075
+      }
+    },
+    {
+      "name": "Architectury API",
+      "slug": "architectury-api",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "lhGA9TYQ",
+        "version_id": "ZxYGwlk0",
+        "version_number": "13.0.8+neoforge",
+        "filename": "architectury-13.0.8-neoforge.jar",
+        "url": "https://cdn.modrinth.com/data/lhGA9TYQ/versions/ZxYGwlk0/architectury-13.0.8-neoforge.jar",
+        "sha512": "65e3664953385d880320dd6bb818bcb96d361c07c53e2a7f65e64c6a47720ee26b233224ae9cad465ef0b2bbaefdaf30fb0175a983cecd91de058817d6fcf57e",
+        "size": 584004
+      }
+    },
+    {
+      "name": "Create: Numismatics",
+      "slug": "numismatics",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "Jdbbtt0i",
+        "version_id": "guON3qvQ",
+        "version_number": "1.0.20+neoforge-mc1.21.1",
+        "filename": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
+        "url": "https://cdn.modrinth.com/data/Jdbbtt0i/versions/guON3qvQ/CreateNumismatics-1.0.20%2Bneoforge-mc1.21.1.jar",
+        "sha512": "2b4ccd516865997735e1a3ec323615bd32d9388e15cc04097ac455f2b453423fccd21969782ecfd031b3de6ed85506ba5349da24c32f5e3eaaf558c5163cf203",
+        "size": 693446
+      }
+    },
+    {
+      "name": "Just Enough Items (JEI)",
+      "slug": "jei",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "u6dRKJwZ",
+        "version_id": "YAcQ6elZ",
+        "version_number": "19.27.0.340",
+        "filename": "jei-1.21.1-neoforge-19.27.0.340.jar",
+        "url": "https://cdn.modrinth.com/data/u6dRKJwZ/versions/YAcQ6elZ/jei-1.21.1-neoforge-19.27.0.340.jar",
+        "sha512": "8bad8eb3c8e974f867e23e4d74598f603c5fbf03eb5356a386dd37cb9fa23e08ad1f58be6b7be50d2fbf9d3fbfaeac8584c70ced736df4b8f82c7c75be242998",
+        "size": 1529391
+      }
+    },
+    {
+      "name": "Jade \ud83d\udd0d",
+      "slug": "jade",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "nvQzSEkH",
+        "version_id": "yd8FKCmx",
+        "version_number": "15.10.5+neoforge",
+        "filename": "Jade-1.21.1-NeoForge-15.10.5.jar",
+        "url": "https://cdn.modrinth.com/data/nvQzSEkH/versions/yd8FKCmx/Jade-1.21.1-NeoForge-15.10.5.jar",
+        "sha512": "678b998677a3d73f98f82dac4093893bfc8a3c2335ec627b4147811c381a040475decdb8db31cc3cbe600abb5a7a6dedcd356eed0ba471af0becdcf49bf5b137",
+        "size": 725742
+      }
+    },
+    {
+      "name": "Lithium",
+      "slug": "lithium",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "gvQqBUqZ",
+        "version_id": "RXHf27Wv",
+        "version_number": "mc1.21.1-0.15.3-neoforge",
+        "filename": "lithium-neoforge-0.15.3+mc1.21.1.jar",
+        "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/RXHf27Wv/lithium-neoforge-0.15.3%2Bmc1.21.1.jar",
+        "sha512": "65568e6c7e41684ad20e58db8766813840c0c8406eed9edc3f7a2514da7250ac46bde2bfb0936984cc5516c2782f86387ad0ed3d1b804b8bdddc7f7048759df4",
+        "size": 774148
+      }
+    },
+    {
+      "name": "FerriteCore",
+      "slug": "ferrite-core",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "uXXizFIs",
+        "version_id": "x7kQWVju",
+        "version_number": "7.0.3-neoforge",
+        "filename": "ferritecore-7.0.3-neoforge.jar",
+        "url": "https://cdn.modrinth.com/data/uXXizFIs/versions/x7kQWVju/ferritecore-7.0.3-neoforge.jar",
+        "sha512": "19af89a2075bb10a63884fa853ebf84b02c79dc3242430ecdad056fd764fdcde367a7303276b329df01b0736e2ef264c5d80c7dc92c6aebd244f556a230bb417",
+        "size": 121559
+      }
+    },
+    {
+      "name": "Chunky",
+      "slug": "chunky",
+      "side": "server",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "fALzjamp",
+        "version_id": "LuFhm4eU",
+        "version_number": "1.4.23",
+        "filename": "Chunky-NeoForge-1.4.23.jar",
+        "url": "https://cdn.modrinth.com/data/fALzjamp/versions/LuFhm4eU/Chunky-NeoForge-1.4.23.jar",
+        "sha512": "2db769dd723f243a21e1881e7c9f825e9c193da6f2bed454b70cb6fa9e51c57f63fdcf017c0657bbd26f7bba30815413e27c74d3c7be0783390a96ee9baa4bf7",
+        "size": 340572
+      }
+    },
+    {
+      "name": "WorldEdit",
+      "slug": "worldedit",
+      "side": "server",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "1u6JkXh5",
+        "version_id": "WTAFvuRx",
+        "version_number": "7.3.8",
+        "filename": "worldedit-mod-7.3.8.jar",
+        "url": "https://cdn.modrinth.com/data/1u6JkXh5/versions/WTAFvuRx/worldedit-mod-7.3.8.jar",
+        "sha512": "e039492df0b486e7ce76d0eaf8cb11eadad2e78220600b8498ab8eef4642a29e310a6bcb4378257553b3639c6d0bc1ebf0f73df3a7a677c6af6baf86716b0bc7",
+        "size": 6222854
+      }
+    },
+    {
+      "name": "Mouse Tweaks",
+      "slug": "mouse-tweaks",
+      "side": "client",
+      "optional": true,
+      "default": true,
+      "note": "Client QoL: drag-stacking",
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "aC3cM3Vq",
+        "version_id": "9I21YYxf",
+        "version_number": "1.21-2.26.1-neoforge",
+        "filename": "MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+        "url": "https://cdn.modrinth.com/data/aC3cM3Vq/versions/9I21YYxf/MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+        "sha512": "f95c0cc881211ee0442434976775e07aae40b4a2ba4e3a85455bc57ca9d3c991e239cd98374a8abd442dc9c378dcd9001e2caa1bf69991d424b5652dd7f3483b",
+        "size": 73938
+      }
+    },
+    {
+      "name": "Inventory Profiles Next",
+      "slug": "inventory-profiles-next",
+      "side": "client",
+      "optional": true,
+      "default": true,
+      "note": "Client QoL: inventory sorting (needs libipn + kotlin-for-forge)",
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "O7RBXm3n",
+        "version_id": "vjuNnHLv",
+        "version_number": "neoforge-1.21.1-2.2.5",
+        "filename": "InventoryProfilesNext-neoforge-1.21.1-2.2.5.jar",
+        "url": "https://cdn.modrinth.com/data/O7RBXm3n/versions/vjuNnHLv/InventoryProfilesNext-neoforge-1.21.1-2.2.5.jar",
+        "sha512": "521296cc7e4fa48e06eb0c00d430968c7b879946db5b02e632cc724672759ac152e11bd9d320bd09f7418edd6fe4ece521a1a2cac49d7f5687519c69a0bcbf12",
+        "size": 1295466
+      }
+    },
+    {
+      "name": "libIPN",
+      "slug": "libipn",
+      "side": "client",
+      "optional": true,
+      "default": true,
+      "note": "Dep of inventory-profiles-next",
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "onSQdWhM",
+        "version_id": "BGe4KMlE",
+        "version_number": "neoforge-1.21.1-6.6.3",
+        "filename": "libIPN-neoforge-1.21.1-6.6.3.jar",
+        "url": "https://cdn.modrinth.com/data/onSQdWhM/versions/BGe4KMlE/libIPN-neoforge-1.21.1-6.6.3.jar",
+        "sha512": "89383465eb8dfa296e7518dd0e6ddc1a242f4537a3183425f2319c79a3e97843ded0f5e13f86b095f2f09beacd2a1f249f554e0f4e18291209720826031a8b93",
+        "size": 626146
+      }
+    },
+    {
+      "name": "Kotlin for Forge",
+      "slug": "kotlin-for-forge",
+      "side": "client",
+      "optional": true,
+      "default": true,
+      "note": "Dep of libipn",
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "ordsPcFz",
+        "version_id": "NrSebcsG",
+        "version_number": "5.11.0",
+        "filename": "kotlinforforge-5.11.0-all.jar",
+        "url": "https://cdn.modrinth.com/data/ordsPcFz/versions/NrSebcsG/kotlinforforge-5.11.0-all.jar",
+        "sha512": "b32faa6d616511aff4f8b32197877c53b9f8bee103884ec37c632b5d017bb59a498ec971b68d8d94787043b0c5be666a330b61d285033c341bff83ac28a90992",
+        "size": 6869790
+      }
+    },
+    {
+      "name": "Sodium",
+      "slug": "sodium",
+      "side": "client",
+      "optional": true,
+      "default": true,
+      "note": "Client QoL: rendering performance",
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "AANobbMI",
+        "version_id": "Pb3OXVqC",
+        "version_number": "mc1.21.1-0.6.13-neoforge",
+        "filename": "sodium-neoforge-0.6.13+mc1.21.1.jar",
+        "url": "https://cdn.modrinth.com/data/AANobbMI/versions/Pb3OXVqC/sodium-neoforge-0.6.13%2Bmc1.21.1.jar",
+        "sha512": "ce58f34d05d96c0a109a5cea23c741f6bdb2e6be31fc087c5989274cefca5f10ba0c08c62083cf554a51f2c7667bf46e4164383f675c844e77633aef2659996b",
+        "size": 1162994
+      }
+    },
+    {
+      "name": "FTB Quests (NeoForge)",
+      "slug": "ftb-quests-forge",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "curseforge",
+      "curseforge": {
+        "project_id": 289412,
+        "file_id": 8216578,
+        "filename": "ftb-quests-neoforge-2101.1.26.jar",
+        "fingerprint": 1482015807
+      }
+    },
+    {
+      "name": "FTB Teams (NeoForge)",
+      "slug": "ftb-teams-forge",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "curseforge",
+      "curseforge": {
+        "project_id": 404468,
+        "file_id": 7878281,
+        "filename": "ftb-teams-neoforge-2101.1.10.jar",
+        "fingerprint": 3463802119
+      }
+    },
+    {
+      "name": "FTB Library (NeoForge)",
+      "slug": "ftb-library-forge",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "curseforge",
+      "curseforge": {
+        "project_id": 404465,
+        "file_id": 7746959,
+        "filename": "ftb-library-neoforge-2101.1.31.jar",
+        "fingerprint": 2049429281
+      }
+    },
+    {
+      "name": "FTB Chunks (NeoForge)",
+      "slug": "ftb-chunks-forge",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "curseforge",
+      "curseforge": {
+        "project_id": 314906,
+        "file_id": 8216875,
+        "filename": "ftb-chunks-neoforge-2101.1.17.jar",
+        "fingerprint": 4218686862
+      }
+    },
+    {
+      "name": "FTB XMod Compat",
+      "slug": "ftb-xmod-compat",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "curseforge",
+      "curseforge": {
+        "project_id": 889915,
+        "file_id": 7715134,
+        "filename": "ftb-xmod-compat-neoforge-21.1.8.jar",
+        "fingerprint": 697946099
+      }
+    }
+  ]
+}

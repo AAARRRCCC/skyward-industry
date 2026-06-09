@@ -1,0 +1,12 @@
+
+block.aeroworks.gyroscope
+block.aeroworks.joystick
+block.aeroworks.joystick.tooltip.behaviour1
+block.aeroworks.joystick.tooltip.behaviour2
+block.aeroworks.joystick.tooltip.behaviour3
+block.aeroworks.joystick.tooltip.condition1
+block.aeroworks.joystick.tooltip.condition2
+block.aeroworks.joystick.tooltip.condition3
+block.aeroworks.joystick.tooltip.summary
+block.aeroworks.mechanical_servo
+block.aeroworks.stepper_servo

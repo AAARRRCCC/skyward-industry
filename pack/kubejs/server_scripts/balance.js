@@ -1,0 +1,59 @@
+// =============================================================================
+// SKYWARD INDUSTRY — PROGRESSION BALANCE CONSTANTS
+// Every gating quantity in the pack lives here. Playtest tuning = edit this
+// file only. See docs/PROGRESSION.md for the intent behind each number.
+// =============================================================================
+
+global.BAL = {
+	ch1: {
+		// Mixer path (the "real" recipe): cheap per-unit, needs a running mixer.
+		alloyMix: { andesite: 2, ironNuggets: 1, output: 2 },
+		// Hand path: possible, punishing. ~4x worse per andesite than the mixer.
+		alloyGrid: { andesite: 2, ironNuggets: 2, output: 1 },
+	},
+
+	ch2: {
+		// Sequenced assembly: each loop presses then deploys one andesite alloy.
+		// Cost per shaft = 1 create:shaft + loops x 1 alloy.
+		calibratedShaft: { loops: 3 },
+		// Spout-filled brass casing. mb of lava per casing.
+		temperedCasing: { lavaMb: 250 },
+		// Each loop deploys 1 electron tube onto a golden sheet core.
+		resonantCoil: { loops: 2 },
+		// Precision mechanism rebuilt on calibrated shafts.
+		// Cost per attempt = 1 calibrated shaft + loops x (cogwheel + large cogwheel + iron nugget).
+		precisionMechanism: {
+			loops: 3,
+			primaryWeight: 80,  // % chance-weight of getting the mechanism vs scrap
+			scrapWeight: 20,
+		},
+	},
+
+	ch3: {
+		// Engine assembly: tempered casing core; each loop cuts, presses, then
+		// deploys 1 resonant coil + 1 calibrated shaft.
+		engineAssembly: { loops: 4 },
+		// Gyroscopic mechanism: precision mechanism core; each loop deploys
+		// 1 cogwheel + 1 resonant coil.
+		gyroMechanism: { loops: 4 },
+		// Deployer wraps wool around sticks. Output per operation (mod default 3).
+		envelopePerDeploy: 2,
+		// Levitite blend mixing (mod default: 4 powder + 2 zinc nuggets -> 500mb).
+		levitite: { endStonePowder: 6, zincNuggets: 4, waterMb: 500, outputMb: 250 },
+		// Andesite propeller: alloy per propeller (plus 1 calibrated shaft).
+		andesitePropeller: { alloy: 4 },
+		// Smart propeller output count (mod default 2).
+		smartPropellerCount: 1,
+		// Aeroworks gyroscope: gyroscopic mechanisms per unit.
+		gyroscope: { gyroMechanisms: 2 },
+	},
+
+	ch4: {
+		// The Crossing tier. Aetherium is loot-only (see datapacks/skyward).
+		// NOTE: these counts document the mechanical-crafting patterns in
+		// ch4_crossing.js; changing one means editing the pattern there.
+		creativeMotor: { aetherium: 12, engineAssemblies: 4, gyroMechanisms: 4, sturdySheets: 4, precisionMechanisms: 1 },
+		creativeCrate: { aetherium: 4, brassCasings: 4, itemVaults: 1 },
+		creativeFluidTank: { aetherium: 4, copperCasings: 4, fluidTanks: 1 },
+	},
+}

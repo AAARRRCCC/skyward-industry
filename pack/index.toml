@@ -1,6 +1,70 @@
 hash-format = "sha256"
 
 [[files]]
+	file = "kubejs/assets/kubejs/textures/block/aetherium_block.png"
+	hash = "4247b1a6a84edbdc7f2936363b32c4e94e9befd0fed3f0f3fc6c1b606e96d8e5"
+
+[[files]]
+	file = "kubejs/assets/kubejs/textures/item/aetherium.png"
+	hash = "92137bdb5ac344d1950842f91bceead8bde5326563467c011d5431b1d39c1a03"
+
+[[files]]
+	file = "kubejs/assets/kubejs/textures/item/calibrated_shaft.png"
+	hash = "7233fbecf2b9f7e633c178cce127caebeea05d781fe96ac3fbff54a3d79b8893"
+
+[[files]]
+	file = "kubejs/assets/kubejs/textures/item/resonant_coil.png"
+	hash = "863eaaab7828181fe94906ea1b6e179fd2d601ea14c220388986d88124946285"
+
+[[files]]
+	file = "kubejs/assets/kubejs/textures/item/ships_log_1.png"
+	hash = "e3d96b9afdf4937dd97a616331805c565e01f573d5fc409cd0b60f6a695138d9"
+
+[[files]]
+	file = "kubejs/assets/kubejs/textures/item/ships_log_2.png"
+	hash = "e3d96b9afdf4937dd97a616331805c565e01f573d5fc409cd0b60f6a695138d9"
+
+[[files]]
+	file = "kubejs/assets/kubejs/textures/item/ships_log_3.png"
+	hash = "e3d96b9afdf4937dd97a616331805c565e01f573d5fc409cd0b60f6a695138d9"
+
+[[files]]
+	file = "kubejs/assets/kubejs/textures/item/ships_log_4.png"
+	hash = "e3d96b9afdf4937dd97a616331805c565e01f573d5fc409cd0b60f6a695138d9"
+
+[[files]]
+	file = "kubejs/assets/kubejs/textures/item/tempered_casing.png"
+	hash = "4b6c528a7d857fef1bcfefef16abda157155686d256c55d7b18b20a176546df3"
+
+[[files]]
+	file = "kubejs/server_scripts/balance.js"
+	hash = "0bb41ea0891e4be50dedb63a0c014a918a274f426f680a398160e352cbcf48b2"
+
+[[files]]
+	file = "kubejs/server_scripts/ch1_andesite.js"
+	hash = "f2f1991e1ead619af217cedc7a9989da7ca29438d02559f272fbd3151263e4fe"
+
+[[files]]
+	file = "kubejs/server_scripts/ch2_brass.js"
+	hash = "a94a42d886ffad555798dd56c7ceb3a737667c1cce7f6296ff4f89404af180eb"
+
+[[files]]
+	file = "kubejs/server_scripts/ch3_aeronautics.js"
+	hash = "4e708d014d23918ffa801c71a1cb32dd1ae82fe355cef7dbcff58898b7826e4d"
+
+[[files]]
+	file = "kubejs/server_scripts/ch4_crossing.js"
+	hash = "3f407a274718e4f94746513f2d53cf0b83aebe618d77c3e9205926fb7b51c725"
+
+[[files]]
+	file = "kubejs/server_scripts/compat_cleanup.js"
+	hash = "de4ffaec7ee99eaefb347e1031a5f9f7432474c02a706a9b0288a20d26f2d51d"
+
+[[files]]
+	file = "kubejs/startup_scripts/items.js"
+	hash = "732dc02b0ab9658c94cbd6401a8c77894c8d432bc896e0be924a1785f0bad243"
+
+[[files]]
 	file = "mods/architectury-api.pw.toml"
 	hash = "b11ad70c92cc3df06a1a2707a3c2f2901ac23f8cfa06b7f90b48a3c6085fca1f"
 	metafile = true

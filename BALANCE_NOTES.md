@@ -40,5 +40,10 @@ One entry per session. Don't editorialize less — "felt bad" is data.
 - Anything bypassed or cheesed: nothing found; old cheap recipes confirmed gone
 - Change applied: `BAL.ch3.engineAssembly.loops` 4 → 3 (−25% coils/shafts per
   engine). Next lever if still steep after a survival build: `resonantCoil.loops`
-  2 → 1. Also documented the "budget hopper" path (wooden propellers + plain
-  propeller bearing + 1 portable engine, no gyroscope) in PROGRESSION.md
+  2 → 1. Also documented the "budget hopper" path (wooden propellers + 1 portable
+  engine, no gyroscope) in PROGRESSION.md
+- Follow-up same day (Brady): propellers re-tiered. Wooden = new cheap recipe
+  (plank/slab/shaft) + EXPERIMENTAL drag penalty (floating_scale 2.0, needs A/B
+  flight test); andesite = mod-original recipe restored; free 1:1 conversions
+  removed; propeller bearing re-keyed onto calibrated shaft (large-ship tech).
+  Em dashes stripped from all quest text (12 instances).

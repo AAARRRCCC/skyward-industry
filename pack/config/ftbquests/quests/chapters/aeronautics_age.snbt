@@ -10,7 +10,7 @@
 		{
 			dependencies: ["0C00000000000005"]
 			description: [
-				"The physics assembler turns a built structure into a ship. It wants a precision mechanism now — shipwrights are licensed professionals."
+				"The physics assembler turns a built structure into a ship. It wants a precision mechanism now. Shipwrights are licensed professionals."
 			]
 			icon: "simulated:physics_assembler"
 			id: "0D00000000000001"
@@ -35,7 +35,7 @@
 		{
 			dependencies: ["0D00000000000001"]
 			description: [
-				"Envelopes hold the sky up. Grid recipes are gone — a deployer wraps wool onto sticks, two at a time. A hopper-sized hull wants about thirty; haulers want hundreds."
+				"Envelopes hold the sky up. Grid recipes are gone: a deployer wraps wool onto sticks, two at a time. A hopper-sized hull wants about thirty; haulers want hundreds."
 				""
 				"Yes, this is a wool farm quest wearing a flight suit."
 			]
@@ -85,7 +85,7 @@
 		{
 			dependencies: ["0D00000000000003"]
 			description: [
-				"Four engines on the rack. The Highmoor Terminus pays 600 each if you can get them there — consider it a standing freight contract."
+				"Four engines on the rack. The Highmoor Terminus pays 600 each if you can get them there. Consider it a standing freight contract."
 			]
 			id: "0D00000000000004"
 			rewards: [{

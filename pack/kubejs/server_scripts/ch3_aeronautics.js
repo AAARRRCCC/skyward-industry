@@ -93,18 +93,50 @@ ServerEvents.recipes(event => {
 		results: [{ amount: B.levitite.outputMb, id: 'aeronautics:levitite_blend' }]
 	}).id('skyward:ch3/levitite_blend')
 
-	// --- Propellers ----------------------------------------------------------------
-	// Andesite propeller: built, not upgraded. Conversion shortcut removed.
+	// --- Propellers: re-tiered (2026-06-09 playtest) ---------------------------------
+	// Wooden and andesite propellers are EARLY thrust; propeller bearings are the
+	// big-ship mount and eat a calibrated shaft. The mod's free 1:1 wooden<->andesite
+	// conversions are removed so the tiers stay distinct (wooden carries an
+	// experimental drag penalty via kubejs/data/skyward/physics_block_properties/).
 	event.remove({ id: 'aeronautics:andesite_propeller' })
 	event.remove({ id: 'aeronautics:andesite_propeller_from_andesite' })
-	event.shaped(Item.of('aeronautics:andesite_propeller', 1), [
-		'A A',
-		' S ',
-		'A A'
+	event.remove({ id: 'aeronautics:wooden_propeller_from_andesite' })
+
+	// Wooden: dirt cheap, draggy. The first-flight propeller.
+	event.shaped(Item.of('aeronautics:wooden_propeller', 1), [
+		'P',
+		'C',
+		'S'
 	], {
-		A: 'create:andesite_alloy',
-		S: 'kubejs:calibrated_shaft'
+		P: '#minecraft:planks',
+		C: '#minecraft:wooden_slabs',
+		S: 'create:shaft'
+	}).id('skyward:ch3/wooden_propeller')
+
+	// Andesite: the mod's original recipe, restored (create:propeller core). Clean
+	// airflow, no drag penalty, still pre-brass tech.
+	event.shaped(Item.of('aeronautics:andesite_propeller', 1), [
+		'P',
+		'C',
+		'S'
+	], {
+		P: 'create:propeller',
+		C: '#minecraft:wooden_slabs',
+		S: 'create:shaft'
 	}).id('skyward:ch3/andesite_propeller')
+
+	// Plain propeller bearing: the large-ship propulsion mount, re-keyed onto a
+	// calibrated shaft (was iron sheet).
+	event.remove({ id: 'aeronautics:propeller_bearing' })
+	event.shaped(Item.of('aeronautics:propeller_bearing', 1), [
+		' A ',
+		' S ',
+		' B '
+	], {
+		A: '#minecraft:wooden_slabs',
+		S: 'kubejs:calibrated_shaft',
+		B: 'create:brass_casing'
+	}).id('skyward:ch3/propeller_bearing')
 
 	// Smart propeller: same build, but one per craft (mod default was two).
 	event.remove({ id: 'aeronautics:smart_propeller' })

@@ -30,4 +30,15 @@ One entry per session. Don't editorialize less — "felt bad" is data.
 
 ## Sessions
 
-(empty — add the first one after the Phase 0/2 checkpoints)
+### 2026-06-09 — Brady — creative verification (phase2 checklist)
+- Session length: first pass, creative
+- What was built: mixer alloy line, calibrated shaft line (press+deployer),
+  tempered casing spout, precision mechanism 3-deployer line
+- Friction: **first airship looks too expensive** for the "few hours of factory
+  output" target — engine assembly's per-unit intermediate bill is the driver
+- Money: n/a (economy not yet placed)
+- Anything bypassed or cheesed: nothing found; old cheap recipes confirmed gone
+- Change applied: `BAL.ch3.engineAssembly.loops` 4 → 3 (−25% coils/shafts per
+  engine). Next lever if still steep after a survival build: `resonantCoil.loops`
+  2 → 1. Also documented the "budget hopper" path (wooden propellers + plain
+  propeller bearing + 1 portable engine, no gyroscope) in PROGRESSION.md

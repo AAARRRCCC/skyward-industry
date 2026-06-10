@@ -35,7 +35,9 @@ global.BAL = {
 	ch3: {
 		// Engine assembly: tempered casing core; each loop cuts, presses, then
 		// deploys 1 resonant coil + 1 calibrated shaft.
-		engineAssembly: { loops: 4 },
+		// 2026-06-09: 4 -> 3 after first creative pass (first ship looked too
+		// steep). Next lever if still steep: resonantCoil.loops 2 -> 1.
+		engineAssembly: { loops: 3 },
 		// Gyroscopic mechanism: precision mechanism core; each loop deploys
 		// 1 cogwheel + 1 resonant coil.
 		gyroMechanism: { loops: 4 },

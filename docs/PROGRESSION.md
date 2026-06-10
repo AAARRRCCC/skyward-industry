@@ -41,7 +41,7 @@ the pack — enough to make overbuilding lines feel right, not enough to be a ca
 
 | Component | Cost per unit (see `BAL.ch3`) |
 |---|---|
-| `simulated:engine_assembly` | 1 tempered casing + 4 resonant coils + 4 calibrated shafts (saw→press→2 deployers, 4 loops) |
+| `simulated:engine_assembly` | 1 tempered casing + 3 resonant coils + 3 calibrated shafts (saw→press→2 deployers, 3 loops; tuned down from 4 on 2026-06-09) |
 | `simulated:gyroscopic_mechanism` | 1 precision mechanism + 4 cogwheels + 4 resonant coils |
 | `simulated:red_portable_engine` | engine assembly + tempered casing + blast furnace |
 | `aeronautics:*_envelope` | deployer-only (grid recipes removed), 2 per wool+stick |
@@ -52,10 +52,16 @@ the pack — enough to make overbuilding lines feel right, not enough to be a ca
 | `aeroworks:joystick` / servos | re-keyed onto calibrated shafts / resonant coils |
 | `simulated:physics_assembler` | now needs a precision mechanism + brass casing (shipbuilding starts in brass age) |
 
-Rough bill for a minimal hopper (2 engines, 1 gyroscope, controls, ~30 envelopes):
-≈ 10 tempered casings, ≈ 50 resonant coils, ≈ 45 calibrated shafts, ≈ 8 precision
-mechanisms → ≈ 150 alloy, ≈ 100 electron tubes, a lava line, a wool farm. A cargo
-hauler runs 4–6x that. That is the resource sink doing its job.
+**The budget hopper** (the intended first ship): wooden propellers, a plain
+propeller bearing (iron sheet, not gyro), ONE portable engine, steering wheel +
+throttle, ~30 envelopes. No gyroscope, no smart propellers — those are the
+*comfort* upgrades, priced accordingly. Bill ≈ 2 tempered casings, ≈ 4 resonant
+coils, ≈ 5 calibrated shafts, 1 precision mechanism (for the physics assembler).
+
+Rough bill for a comfortable hopper (2 engines, 1 gyroscope, controls, ~30
+envelopes): ≈ 8 tempered casings, ≈ 35 resonant coils, ≈ 30 calibrated shafts,
+≈ 6 precision mechanisms → ≈ 100 alloy, ≈ 70 electron tubes, a lava line, a wool
+farm. A cargo hauler runs 4–6x that. That is the resource sink doing its job.
 
 ## Chapter 4 — Crossing Tier (post-voyage)
 

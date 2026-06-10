@@ -25,14 +25,14 @@ In JEI, look up Andesite Alloy (recipes FOR it):
 
 - [x] JEI on Calibrated Shaft shows sequenced assembly: shaft core, press → deploy alloy, 3 loops *(verified 2026-06-09)*
 - [x] Run the line for real: depot/belt + press + deployer; confirm the transitional item is "Uncalibrated Shaft" and output is deterministic (no scrap) *(line built + shaft produced 2026-06-09)*
-- [ ] Spout with lava over a depot fills Brass Casing → Tempered Casing at 250mb
+- [x] Spout with lava over a depot fills Brass Casing → Tempered Casing at 250mb *(verified 2026-06-09)*
 - [ ] Resonant Coil assembly works (golden sheet core, deploy electron tube, press, x2)
-- [ ] Precision Mechanism: old golden-sheet assembly GONE from JEI; new one takes calibrated shaft, deploys cogwheel/large cogwheel/iron nugget, 3 loops, ~80% yield (run ~10, expect 1–3 shafts back)
+- [x] Precision Mechanism: old golden-sheet assembly GONE from JEI; new one takes calibrated shaft, deploys cogwheel/large cogwheel/iron nugget, 3 loops, ~80% yield (run ~10, expect 1–3 shafts back) *(setup verified 2026-06-09)*
 
 ## D. Ch.3 — aeronautics sink
 
-- [ ] JEI on Engine Assembly: tempered-casing core, saw → press → deploy coil → deploy calibrated shaft, 4 loops. Old iron-sheet recipe GONE
-- [ ] Gyroscopic Mechanism: precision-mechanism core, deploys cogwheel + coil, 4 loops. Old recipe GONE
+- [x] JEI on Engine Assembly: tempered-casing core, saw → press → deploy coil → deploy calibrated shaft. Old iron-sheet recipe GONE *(verified 2026-06-09; loops since tuned 4→3)*
+- [x] Gyroscopic Mechanism: precision-mechanism core, deploys cogwheel + coil, 4 loops. Old recipe GONE *(verified 2026-06-09)*
 - [ ] Envelopes (spot-check 3 colors): grid recipe GONE, deployer recipe gives 2 (not 3)
 - [ ] Levitite Blend: 6 end stone powder + 4 zinc nuggets + 500mb water → 250mb, heated basin
 - [ ] Andesite Propeller: 4 alloy + calibrated shaft; the wooden→andesite conversion is GONE

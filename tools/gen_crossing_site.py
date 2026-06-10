@@ -283,3 +283,72 @@ print(f"wrote {FUNC.relative_to(ROOT)}")
 chest_states = sum(1 for s in grid.values() if s.startswith(("minecraft:chest", "minecraft:barrel")))
 assert chest_states >= len(manifest), "container blocks missing from grid"
 print(f"grid: {len(grid)} non-air blocks, {chest_states} containers present")
+
+# ------------------------------------------------------------- preview PNGs
+import struct as _st  # noqa: E402
+import zlib as _zl  # noqa: E402
+
+COLORS = {
+    "minecraft:grass_block": (96, 144, 72), "minecraft:dirt": (121, 85, 58),
+    "minecraft:deepslate": (70, 70, 76), "minecraft:stone": (125, 125, 125),
+    "minecraft:tuff": (108, 110, 102), "minecraft:cobbled_deepslate": (52, 52, 58),
+    "minecraft:oxidized_copper": (82, 162, 132), "minecraft:warped_nylium": (43, 114, 101),
+    "minecraft:warped_roots": (20, 138, 124), "minecraft:fern": (110, 150, 80),
+    "minecraft:gravel": (130, 127, 126), "minecraft:mossy_cobblestone": (100, 118, 92),
+    "minecraft:deepslate_bricks": (80, 80, 86), "minecraft:cracked_deepslate_bricks": (66, 66, 72),
+    "minecraft:mossy_stone_bricks": (95, 112, 88), "minecraft:polished_deepslate": (88, 88, 94),
+    "minecraft:deepslate_tiles": (60, 60, 66), "minecraft:sea_lantern": (200, 230, 220),
+    "minecraft:white_wool": (235, 235, 235), "minecraft:light_gray_wool": (160, 160, 160),
+    "createdeco:copper_hull": (190, 110, 70), "minecraft:lodestone": (255, 255, 0),
+    "kubejs:aetherium_block": (60, 240, 220), "minecraft:lantern": (250, 200, 120),
+}
+MARKERS = {"minecraft:chest": (255, 40, 40), "minecraft:barrel": (255, 150, 30)}
+DEFAULT = (150, 120, 150)
+SCALE = 4
+
+
+def _png(path, px, w, h):
+    rows = b"".join(b"\x00" + bytes(c for p in row for c in p) for row in px)
+
+    def chunk(t, d):
+        c = t + d
+        return _st.pack(">I", len(d)) + c + _st.pack(">I", _zl.crc32(c))
+
+    hdr = _st.pack(">IIBBBBB", w, h, 8, 2, 0, 0, 0)
+    path.write_bytes(b"\x89PNG\r\n\x1a\n" + chunk(b"IHDR", hdr)
+                     + chunk(b"IDAT", _zl.compress(rows, 9)) + chunk(b"IEND", b""))
+
+
+def _color(state, y):
+    base = next((c for k, c in MARKERS.items() if state.startswith(k)), None)
+    if base:
+        return base
+    c = COLORS.get(state.split("[")[0], DEFAULT)
+    f = 0.55 + 0.45 * (y / H)  # height shading
+    return tuple(min(255, int(v * f)) for v in c)
+
+
+PREV = ROOT / "admin_assets/previews"
+PREV.mkdir(parents=True, exist_ok=True)
+# top-down
+img = [[(14, 16, 26)] * W for _ in range(L)]
+for x in range(W):
+    for z in range(L):
+        for y in range(H - 1, -1, -1):
+            s = grid.get((x, y, z))
+            if s and s != "minecraft:air":
+                img[z][x] = _color(s, y)
+                break
+big = [[img[z // SCALE][x // SCALE] for x in range(W * SCALE)] for z in range(L * SCALE)]
+_png(PREV / "crossing_topdown.png", big, W * SCALE, L * SCALE)
+# cross-section through the vault (z = 73)
+ZS = 73
+img2 = [[(14, 16, 26)] * W for _ in range(H)]
+for x in range(W):
+    for y in range(H):
+        s = grid.get((x, y, ZS))
+        if s and s != "minecraft:air":
+            img2[H - 1 - y][x] = _color(s, y)
+big2 = [[img2[r // SCALE][x // SCALE] for x in range(W * SCALE)] for r in range(H * SCALE)]
+_png(PREV / "crossing_section_z73.png", big2, W * SCALE, H * SCALE)
+print(f"previews: {PREV.relative_to(ROOT)}\\crossing_topdown.png + crossing_section_z73.png")

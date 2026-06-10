@@ -17,14 +17,14 @@ Run in a fresh single-player creative world (cheats on). Open the log
 
 In JEI, look up Andesite Alloy (recipes FOR it):
 
-- [ ] Exactly 3 recipes: mixer (iron nugget), mixer (zinc nugget), grid (2 andesite + 2 iron nuggets → 1)
-- [ ] Create's old grid recipes (andesite + iron nugget → 2) are GONE
+- [x] Exactly 3 recipes: mixer (iron nugget), mixer (zinc nugget), grid (2 andesite + 2 iron nuggets → 1) *(verified 2026-06-09; Create's JEI also mirrors the grid recipe in its "automated crafting" category — same recipe, not a 4th path)*
+- [x] Create's old grid recipes (andesite + iron nugget → 2) are GONE *(verified 2026-06-09)*
 - [ ] Build a mixer+basin in creative; 2 andesite + 1 iron nugget mixes into 2 alloy, no heat needed
 
 ## C. Ch.2 — intermediates
 
-- [ ] JEI on Calibrated Shaft shows sequenced assembly: shaft core, press → deploy alloy, 3 loops
-- [ ] Run the line for real: depot/belt + press + deployer; confirm the transitional item is "Uncalibrated Shaft" and output is deterministic (no scrap)
+- [x] JEI on Calibrated Shaft shows sequenced assembly: shaft core, press → deploy alloy, 3 loops *(verified 2026-06-09)*
+- [x] Run the line for real: depot/belt + press + deployer; confirm the transitional item is "Uncalibrated Shaft" and output is deterministic (no scrap) *(line built + shaft produced 2026-06-09)*
 - [ ] Spout with lava over a depot fills Brass Casing → Tempered Casing at 250mb
 - [ ] Resonant Coil assembly works (golden sheet core, deploy electron tube, press, x2)
 - [ ] Precision Mechanism: old golden-sheet assembly GONE from JEI; new one takes calibrated shaft, deploys cogwheel/large cogwheel/iron nugget, 3 loops, ~80% yield (run ~10, expect 1–3 shafts back)

@@ -4,6 +4,31 @@ Brady's brief: a bounded world (~20k around spawn), "void" beyond it except the
 Crossing island, and Distant Horizons LODs pregenerated so every player sees the
 whole world the moment they join.
 
+## Terrain: Tectonic (added 2026-06-10)
+
+The spec's "no custom worldgen" rule was a guard against *agent-authored*
+worldgen, not a vanilla-terrain aesthetic choice; Brady amended it for
+established worldgen mods. **Tectonic 3.0.22 + Lithostitched** now ship in the
+pack: dramatically larger mountains, real foothills, and (config) **Increased
+Height = max build/generation height y640**.
+
+**MUST DO before world creation, server side:**
+1. Open the Tectonic config (config screen in-game on the client that prepares
+   the server world, or its config file under `config/`) and enable
+   **Increased Height**. Consider **Vertical Scale** to taste.
+2. Copy the resulting `config/tectonic*` file into this repo's `config/` dir so
+   the pack ships it and every client matches the server. (Flag it to the agent
+   and it gets committed + synced.)
+3. THEN create the world / start pregen. Worldgen choices do not retrofit —
+   changing them after pregen means starting over.
+
+Knock-on effects, already accounted for below: pregen is slower (Tectonic's
+density functions cost more per chunk — budget extra overnight time); DH vistas
+get better, not worse; the Crossing island schematic floats and pastes at any
+altitude. One open test: Aeronautics' atmosphere/lift model vs y640 terrain
+(does envelope lift or the 0%-pressure ceiling care about the taller world?) —
+check during the phase2 flight tests and log it in BALANCE_NOTES.
+
 ## The honest engineering correction
 
 **True void beyond a radius is off the table** without custom worldgen: vanilla

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+### Terrain: Tectonic (2026-06-10, spec amendment)
+- Tectonic 3.0.22 + Lithostitched 1.7.9 (47 → 49 mods). Spec's no-custom-worldgen
+  rule amended by owner: established worldgen mods allowed; agent-authored
+  worldgen still banned.
+- Enable "Increased Height" (y640) in Tectonic config BEFORE world creation;
+  ship the config in repo config/ once set (WORLD_SHAPE.md §Terrain).
+- Open test item: Aeronautics atmosphere/lift vs y640 terrain.
+
 ### CI + world shape + Flight Computer chapter (2026-06-10)
 - GitHub Actions: validators, quest audits, script syntax, data parse, and
   pack-drift check on every push/PR.

@@ -107,7 +107,15 @@ forward is server performance, measured with Spark, not a count.
 circular wall) and Distant Horizons 3.0.3-b (both sides, optional default-on;
 server-side LOD pregen + sharing so the whole 20k charted disk renders instantly
 for every player). Architecture, commands, and the void-isn't-possible honesty:
-`docs/WORLD_SHAPE.md`. Pack now 47 mods.
+`docs/WORLD_SHAPE.md`.
+
+**Terrain (same day, spec amendment):** Tectonic 3.0.22 + Lithostitched 1.7.9.
+The REQUIREMENTS.md "no custom worldgen" constraint was a guard against
+agent-authored worldgen (unverifiable offline, compat risk); Brady amended it to
+allow established worldgen mods. Agent-authored worldgen/dimensions remain
+banned. Tectonic's "Increased Height" (y640 build/gen ceiling) addresses the
+build-height complaint; must be enabled before world creation (WORLD_SHAPE.md).
+Pack now 49 mods.
 
 **Considered for this tier and excluded:** Create Jetpack (personal flight before
 airships guts the "ships matter" pillar), Create Big Cannons (ship-to-ship combat vs

@@ -71,6 +71,11 @@ MODRINTH_PINS = [
     ("chunkyborder",      "server", False, True, None),
     ("distanthorizons",   "both",   True,  True,
      "Whole-world LODs (server-side pregen + sharing). Disable client-side if FPS suffers."),
+    # Terrain: spec's no-custom-worldgen rule amended by Brady 2026-06-10 —
+    # established worldgen mods allowed, agent-authored worldgen still banned.
+    # Enable Tectonic's "Increased Height" (y640) BEFORE world creation.
+    ("tectonic",          "both",   False, True, None),
+    ("lithostitched",     "both",   False, True, "Required by tectonic"),
 ]
 # slugs whose pinned version differs from the audit's newest, or weren't audited
 VERSION_OVERRIDES = {

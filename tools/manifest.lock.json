@@ -746,6 +746,42 @@
       }
     },
     {
+      "name": "Tectonic",
+      "slug": "tectonic",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "lWDHr9jE",
+        "version_id": "iCGkqnnx",
+        "version_number": "3.0.22-neoforge-21.1",
+        "filename": "tectonic-3.0.22-neoforge-21.1.jar",
+        "url": "https://cdn.modrinth.com/data/lWDHr9jE/versions/iCGkqnnx/tectonic-3.0.22-neoforge-21.1.jar",
+        "sha512": "a02d3f2bfd8aa099512005df23b45ec723694c397b4224a69ffd47b41cd06bb3d56a0f10bbfd81e8159e0fc55f61d0729656f91231410a74ed55e6fc16fd18ec",
+        "size": 337253
+      }
+    },
+    {
+      "name": "Lithostitched",
+      "slug": "lithostitched",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": "Required by tectonic",
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "XaDC71GB",
+        "version_id": "wiffJSbz",
+        "version_number": "1.7.9-neoforge-21.1",
+        "filename": "lithostitched-1.7.9-neoforge-21.1.jar",
+        "url": "https://cdn.modrinth.com/data/XaDC71GB/versions/wiffJSbz/lithostitched-1.7.9-neoforge-21.1.jar",
+        "sha512": "5e760a733b9ebb01d9292676924f7778bee72774a2dc83fa566f22630782aa5048ad47ce440bf2a053c999104f6a1d5d755e3fcd71db8aed8a03dd65551acf73",
+        "size": 824695
+      }
+    },
+    {
       "name": "Sodium",
       "slug": "sodium",
       "side": "client",

@@ -297,6 +297,11 @@ hash-format = "sha256"
 	metafile = true
 
 [[files]]
+	file = "mods/lithostitched.pw.toml"
+	hash = "784b5df5c4a2f867099aead07dec511ac43bff200393a56973ac2731c9a83f85"
+	metafile = true
+
+[[files]]
 	file = "mods/modernfix.pw.toml"
 	hash = "38ca401cb2bdd83a5f91712b6375f0ba11371b863e8c63ba8fafb110515b3b38"
 	metafile = true
@@ -344,6 +349,11 @@ hash-format = "sha256"
 [[files]]
 	file = "mods/spark.pw.toml"
 	hash = "287e9897fa366a78ac53138d39ee529a436e8fcde6fce39f6f3379ef7dc93525"
+	metafile = true
+
+[[files]]
+	file = "mods/tectonic.pw.toml"
+	hash = "00002c60e12ac0bb9b594ed28c21a722a672f523f2bf93139db14a7907d136f0"
 	metafile = true
 
 [[files]]

@@ -65,10 +65,6 @@ hash-format = "sha256"
 	hash = "4b6c528a7d857fef1bcfefef16abda157155686d256c55d7b18b20a176546df3"
 
 [[files]]
-	file = "kubejs/server_scripts/balance.js"
-	hash = "0bb41ea0891e4be50dedb63a0c014a918a274f426f680a398160e352cbcf48b2"
-
-[[files]]
 	file = "kubejs/server_scripts/ch1_andesite.js"
 	hash = "f2f1991e1ead619af217cedc7a9989da7ca29438d02559f272fbd3151263e4fe"
 
@@ -89,8 +85,12 @@ hash-format = "sha256"
 	hash = "de4ffaec7ee99eaefb347e1031a5f9f7432474c02a706a9b0288a20d26f2d51d"
 
 [[files]]
-	file = "kubejs/server_scripts/economy_balance.js"
-	hash = "15b7b0464fcb0412bc8e66cc07d2ae3e52afc3246b52fc08d69d2358504e6285"
+	file = "kubejs/startup_scripts/balance.js"
+	hash = "371baca27f28d25bc67cdbb0d6efe9c56eca2b4f5ef739dd17d2ae05e5c06e21"
+
+[[files]]
+	file = "kubejs/startup_scripts/economy_balance.js"
+	hash = "35ecfb2e099650c961184e43e298abeb3fdd643ff1cbd8e6471e8c25642a633f"
 
 [[files]]
 	file = "kubejs/startup_scripts/items.js"

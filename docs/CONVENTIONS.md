@@ -26,13 +26,18 @@ py tools/build_pack.py      # regenerates pack/ (pw.tomls, synced dirs, index, h
 One file per concern, numbered for load-order readability (KubeJS loads
 alphabetically; our scripts must not depend on order, the numbers are for humans):
 
-- `server_scripts/balance.js` — ALL progression quantities/multipliers. The only file
+- `startup_scripts/balance.js` — ALL progression quantities/multipliers. The only file
   you touch when tuning. No literal counts anywhere else — `global.BAL` only.
-- `server_scripts/economy_balance.js` — ALL prices. Same rule, `global.ECON`.
+- `startup_scripts/economy_balance.js` — ALL prices. Same rule, `global.ECON`.
+- `startup_scripts/items.js` — custom item/block registration.
 - `server_scripts/ch1_andesite.js` … `ch4_crossing.js` — one file per chapter.
 - `server_scripts/compat_cleanup.js` — dead-end removals, JEI hiding, misc.
-- `startup_scripts/items.js` — custom item/block registration.
 - `client_scripts/tooltips.js` — item lore/tooltip hints.
+
+The balance files live in **startup_scripts** because KubeJS 2101 only allows
+assigning `global` there (server scripts read `global.BAL`/`global.ECON` freely).
+Consequence: balance edits need a full game/server restart — `/kubejs reload` is
+not enough.
 
 ## Namespacing
 

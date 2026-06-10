@@ -2,7 +2,7 @@
 
 Backend decision: **Create: Numismatics 1.0.20** (Phase 0 verified the 1.21.1 NeoForge
 port; see docs/MOD_DECISIONS.md). Prices are canonical in
-`kubejs/server_scripts/economy_balance.js` — if you change a price, change it there
+`kubejs/startup_scripts/economy_balance.js` — if you change a price, change it there
 first, then update the vendor.
 
 ## Concepts (5-minute orientation)

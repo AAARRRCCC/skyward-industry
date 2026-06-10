@@ -1,0 +1,7 @@
+{
+	"selector": "aeronautics:wooden_propeller",
+	"properties": {
+		"sable:floating_material": "aeronautics:simple_drag",
+		"sable:floating_scale": 2.0
+	}
+}

@@ -9,7 +9,7 @@
 	quests: [
 		{
 			description: [
-				"Andesite alloy doesn't come from the crafting grid anymore. Well — it does, at a miserable rate, for your first handful. The real recipe is in the mechanical mixer."
+				"Andesite alloy doesn't come from the crafting grid anymore. Well, it does, at a miserable rate, for your first handful. The real recipe is in the mechanical mixer."
 				""
 				"Hand-craft just enough to bootstrap. You'll know when to stop. It's when you start hating it."
 			]

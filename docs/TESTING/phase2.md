@@ -35,7 +35,15 @@ In JEI, look up Andesite Alloy (recipes FOR it):
 - [x] Gyroscopic Mechanism: precision-mechanism core, deploys cogwheel + coil, 4 loops. Old recipe GONE *(verified 2026-06-09)*
 - [ ] Envelopes (spot-check 3 colors): grid recipe GONE, deployer recipe gives 2 (not 3)
 - [ ] Levitite Blend: 6 end stone powder + 4 zinc nuggets + 500mb water → 250mb, heated basin
-- [ ] Andesite Propeller: 4 alloy + calibrated shaft; the wooden→andesite conversion is GONE
+- [ ] Wooden Propeller: plank + slab + shaft (new cheap recipe); BOTH 1:1
+      wooden↔andesite conversion recipes are GONE
+- [ ] Andesite Propeller: create:propeller + slab + shaft (mod-original restored)
+- [ ] Propeller Bearing: slab + calibrated shaft + brass casing (was iron sheet)
+- [ ] EXPERIMENTAL drag penalty: build two identical mini-ships, one with wooden
+      props, one with andesite; wooden should be noticeably slower at top speed.
+      Tune floating_scale in kubejs/data/skyward/physics_block_properties/
+      wooden_propeller_drag.json (2.0 now; envelope drag is 0.33 for reference);
+      delete that file if it feels wrong
 - [ ] Smart Propeller crafts 1 (not 2)
 - [ ] Portable Engine (red): tempered casing on top (not iron sheet)
 - [ ] Physics Assembler needs precision mechanism + brass casing

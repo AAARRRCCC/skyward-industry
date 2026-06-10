@@ -2,27 +2,27 @@ hash-format = "sha256"
 
 [[files]]
 	file = "config/ftbquests/quests/chapters/aeronautics_age.snbt"
-	hash = "356c042ac8e3edd298fe5c2bfc2b204a315a9639caaa2ca0d9d6a05da72ddcad"
+	hash = "8601c770312c2fc391efae17be32ea39a431aae3e029d6d6d9cab15fe26e083c"
 
 [[files]]
 	file = "config/ftbquests/quests/chapters/andesite_age.snbt"
-	hash = "98f56e5ef324e164f9e73647c226bc8b6ddce4ebdac3cbf5d5dcf2e4b980ab35"
+	hash = "a3f4ddafb4fb5bfbe9002d801a1c3e6ef4368fda3012b14f9d681fdb466a123e"
 
 [[files]]
 	file = "config/ftbquests/quests/chapters/brass_age.snbt"
-	hash = "d42f0ddc04d892e7a34c0a2dd097d0b5fe4f867180d5bf0bc85e3971943a9a5e"
+	hash = "2a0fce0bac6a5c5909d1e8263b00327f9d3d752e109deb547402c8b3f84513e2"
 
 [[files]]
 	file = "config/ftbquests/quests/chapters/crossing_tier.snbt"
-	hash = "ccbaa393eb1fe6e84a66fc92ce2b0ba2a3ad54e3445a1c6855da94b0eb57e796"
+	hash = "cd6eccef83aafbfbf6846017574355d4120ef5c6e6e22aef6482755816fe294a"
 
 [[files]]
 	file = "config/ftbquests/quests/chapters/the_crossing.snbt"
-	hash = "4c2c406d2dfc4cbbbb784b62ed54908d30179b66cc4c156d10e33c520d01b950"
+	hash = "a35a63bd394a7dd27457c013d07f5db8c7fbaa52f60a24b005d931ffe3371051"
 
 [[files]]
 	file = "config/ftbquests/quests/chapters/welcome.snbt"
-	hash = "f1f3c85990169aafa5a5b9e8d8fd9dd64c81a0344b9fb75674066c2f595a8887"
+	hash = "a6cce0c120e0a9d367689141031d91846a5128b26b6cb99d4b33b3d3ed692d78"
 
 [[files]]
 	file = "config/ftbquests/quests/data.snbt"
@@ -69,6 +69,10 @@ hash-format = "sha256"
 	hash = "1b00a8f4458aa070e35af5b1339f6c86b2d0d7b37a05c443212b693c7c7928e0"
 
 [[files]]
+	file = "kubejs/data/skyward/physics_block_properties/wooden_propeller_drag.json"
+	hash = "cdf7d7f2183b0145404b01f5dc8f03693b61e7b02977fdf0c360ab5a29454eeb"
+
+[[files]]
 	file = "kubejs/server_scripts/ch1_andesite.js"
 	hash = "f2f1991e1ead619af217cedc7a9989da7ca29438d02559f272fbd3151263e4fe"
 
@@ -78,7 +82,7 @@ hash-format = "sha256"
 
 [[files]]
 	file = "kubejs/server_scripts/ch3_aeronautics.js"
-	hash = "4e708d014d23918ffa801c71a1cb32dd1ae82fe355cef7dbcff58898b7826e4d"
+	hash = "f99a25b7180ca7084a42e433b58cdbc7813e1dfe78d4782fce604a3a7a1a093d"
 
 [[files]]
 	file = "kubejs/server_scripts/ch4_crossing.js"
@@ -90,7 +94,7 @@ hash-format = "sha256"
 
 [[files]]
 	file = "kubejs/startup_scripts/balance.js"
-	hash = "647c606cb86915cb059e55b2126c7286ffad2086e7c78617565fd806e95d9f0c"
+	hash = "d44a669a789c3b6dd46ff99ad1cfa6346f752f871fba006b6404027ce0f08456"
 
 [[files]]
 	file = "kubejs/startup_scripts/economy_balance.js"

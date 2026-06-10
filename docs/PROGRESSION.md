@@ -46,17 +46,21 @@ the pack — enough to make overbuilding lines feel right, not enough to be a ca
 | `simulated:red_portable_engine` | engine assembly + tempered casing + blast furnace |
 | `aeronautics:*_envelope` | deployer-only (grid recipes removed), 2 per wool+stick |
 | `aeronautics:levitite_blend` | 6 end stone powder + 4 zinc nuggets + 500mb water → 250mb (heated) |
-| `aeronautics:andesite_propeller` | 4 alloy + 1 calibrated shaft (conversion shortcut removed) |
+| `aeronautics:wooden_propeller` | plank + slab + shaft — cheap EARLY thrust, carries an experimental drag penalty (slower ships) |
+| `aeronautics:andesite_propeller` | create:propeller + slab + shaft (mod original) — early thrust, no drag penalty. Free 1:1 wooden↔andesite conversions removed |
+| `aeronautics:propeller_bearing` | slab + **calibrated shaft** + brass casing — the large-ship propulsion mount, deliberately later-tier than the propellers |
 | `aeronautics:smart_propeller` | propeller + gyroscopic mechanism + brass casing → **1** (was 2) |
 | `aeroworks:gyroscope` | flywheel + gimbal sensor + brass casing + 2 gyroscopic mechanisms |
 | `aeroworks:joystick` / servos | re-keyed onto calibrated shafts / resonant coils |
 | `simulated:physics_assembler` | now needs a precision mechanism + brass casing (shipbuilding starts in brass age) |
 
-**The budget hopper** (the intended first ship): wooden propellers, a plain
-propeller bearing (iron sheet, not gyro), ONE portable engine, steering wheel +
-throttle, ~30 envelopes. No gyroscope, no smart propellers — those are the
-*comfort* upgrades, priced accordingly. Bill ≈ 2 tempered casings, ≈ 4 resonant
-coils, ≈ 5 calibrated shafts, 1 precision mechanism (for the physics assembler).
+**The budget hopper** (the intended first ship): wooden propellers straight on
+shafts, ONE portable engine, steering wheel + throttle, ~30 envelopes. No
+propeller bearing, no gyroscope, no smart propellers — bearings are large-ship
+tech and the rest are comfort upgrades, priced accordingly. Bill ≈ 2 tempered
+casings, ≈ 3 resonant coils, ≈ 3 calibrated shafts, 1 precision mechanism (for
+the physics assembler). Wooden props fly slower (drag penalty); upgrading to
+andesite props is the first cheap performance win.
 
 Rough bill for a comfortable hopper (2 engines, 1 gyroscope, controls, ~30
 envelopes): ≈ 8 tempered casings, ≈ 35 resonant coils, ≈ 30 calibrated shafts,

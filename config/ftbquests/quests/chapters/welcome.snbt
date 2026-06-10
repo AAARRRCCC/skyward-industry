@@ -61,7 +61,7 @@
 		{
 			dependencies: ["0A00000000000001"]
 			description: [
-				"The map (FTB Chunks) claims land. Claim your base; leave the outposts alone — they're claimed by the server."
+				"The map (FTB Chunks) claims land. Claim your base; leave the outposts alone, they're claimed by the server."
 			]
 			id: "0A00000000000003"
 			rewards: [{
@@ -82,7 +82,7 @@
 		{
 			dependencies: ["0A00000000000001"]
 			description: [
-				"Spawn town has vendors. The brass ones BUY your bulk goods — that's your income. The others sell decor, books, and music. Nothing that matters for progression is for sale. Ever."
+				"Spawn town has vendors. The brass ones BUY your bulk goods. That's your income. The others sell decor, books, and music. Nothing that matters for progression is for sale. Ever."
 				""
 				"Open an account at the blaze banker if you want a card instead of a coin pouch."
 			]

@@ -84,7 +84,7 @@
 		{
 			dependencies: ["0C00000000000001"]
 			description: [
-				"Rose quartz, polish, electron tubes — then a deployer winds them onto golden sheets. The coil hums. That's normal."
+				"Rose quartz, polish, electron tubes. Then a deployer winds them onto golden sheets. The coil hums. That's normal."
 			]
 			icon: "kubejs:resonant_coil"
 			id: "0C00000000000004"
@@ -111,7 +111,7 @@
 				"0C00000000000004"
 			]
 			description: [
-				"The precision mechanism now starts from your calibrated shafts and runs three deployers deep. Eighty percent yield — overbuild and let the scrap shafts loop back."
+				"The precision mechanism now starts from your calibrated shafts and runs three deployers deep. Eighty percent yield, so overbuild and let the scrap shafts loop back."
 				""
 				"Four of these and the brass age answers to you."
 			]
@@ -138,7 +138,7 @@
 		{
 			dependencies: ["0C00000000000005"]
 			description: [
-				"The mechanical crafter assembles the big patterns — and the aeronautics chapter is nothing but big patterns."
+				"The mechanical crafter assembles the big patterns, and the aeronautics chapter is nothing but big patterns."
 			]
 			id: "0C00000000000006"
 			rewards: [{

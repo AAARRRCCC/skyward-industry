@@ -1,20 +1,44 @@
 # Placement runbook — shops & outposts without hand-building
 
-**Pivot (2026-06-10):** community schematics didn't meet the build-quality bar, so
-the plan inverted. Everything except ONE build is now generated infrastructure in
-the pack's own industrial vocabulary:
+**Pivot v2 (2026-06-10):** generic vanilla schematic sites and fully-generated
+architecture both failed the quality bar (mooring station verdict: "doesn't look
+very good"). The answer is **[CreateMod.com](https://createmod.com/schematics)** —
+the Create community's own schematic repository: builds made OF Create blocks IN
+Create's industrial style, so they look native to this pack. 482 airship builds
+alone, plus warehouses, factories, train yards, markets.
 
-- **Central market (spawn):** the one community/hand-sourced "nice build" Brady
-  curates himself. Generated stalls/kiosks slot into it for the actual vendors.
-- **Four outposts:** generated **mooring stations** (`mooring_station.schem`) —
-  girder mast with catwalk docking ring, signal smoke visible from the air, crane,
-  3 vendor positions, freight props. Themed per-outpost variants on request once
-  the prototype passes inspection.
-- **The Crossing:** natural far-out terrain + a generated **crashed survey
-  airship** as the centerpiece (queued — built from real envelope/girder/engine
-  blocks once the mooring station style is approved).
+The build plan:
 
-The community-schematic table further down is retained as a fallback/reference.
+- **Outposts = a moored trade airship + a flat dock.** Brady browses
+  [Top 10 Create Aeronautics Airships](https://createmod.com/collections/b6c88d77a02d7bb)
+  (or the [airship-dock category](https://createmod.com/search/airship-dock)) and
+  picks one mid-size ship per outpost — four different ships = four outposts with
+  personality. The ground level is just a dock platform + generated kiosks.
+- **Central market:** candidates on the same site (e.g.
+  [Simple Market](https://createmod.com/schematics/simple-market-vanillia),
+  [The Warehouse](https://createmod.com/schematics/the-warehouse)) or Brady's own
+  find elsewhere.
+- **The Crossing:** natural far-out terrain; centerpiece = a community airship
+  pasted as a wreck (tilt/bury it, knock holes with WorldEdit spheres of air).
+
+**Workflow for any CreateMod.com download** (.nbt, schematicannon format):
+
+```
+py tools/nbt2schem.py path\to\download.nbt     # writes download.schem beside it
+```
+
+drop the .schem in the WorldEdit schematics folder, paste as usual. Two caveats:
+chest contents / Create machine configs don't survive (static shell only — fine
+for landmarks), and blocks from mods we don't ship paste as air (prefer builds
+listing Create / Create Aeronautics / vanilla as their only deps; "Bits and Bobs"
+or "Framed Blocks" builds will have holes).
+
+Alternative placement that needs no conversion: Create's own schematic table +
+schematicannon work in-game with the raw .nbt (put it in `<instance>/minecraft/
+schematics/`) — thematically cute for spawn-town lore, slower for admin work.
+
+The older notes below (generated mooring station, vanilla-site landmark table)
+are retained as reference/fallback.
 
 ## 1. Generated stock (ready now)
 

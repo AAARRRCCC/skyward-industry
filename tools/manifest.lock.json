@@ -782,6 +782,42 @@
       }
     },
     {
+      "name": "Create: FlyHigher-\u76f4\u4e0a\u4e5d\u9704",
+      "slug": "flyhigher",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": "Configurable Aeronautics air-pressure curve; pairs with Tectonic y640 worlds",
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "cePRJjRZ",
+        "version_id": "OzpXNl6w",
+        "version_number": "1.0.2",
+        "filename": "flyhigher-1.21.1-1.0.2.jar",
+        "url": "https://cdn.modrinth.com/data/cePRJjRZ/versions/OzpXNl6w/flyhigher-1.21.1-1.0.2.jar",
+        "sha512": "902fede5c6154da1cff52bc85790dac8941ea7d33e927b3d305e7315ec838b4b8f1cb1f0c31970e906e2d8b64688d9f99f81d748004362c9d07cdf0fcdaa8f47",
+        "size": 16171
+      }
+    },
+    {
+      "name": "Cloth Config API",
+      "slug": "cloth-config",
+      "side": "client",
+      "optional": false,
+      "default": true,
+      "note": "Required client-side by flyhigher (undeclared on Modrinth; jar mods.toml)",
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "9s6osm5g",
+        "version_id": "izKINKFg",
+        "version_number": "15.0.140+neoforge",
+        "filename": "cloth-config-15.0.140-neoforge.jar",
+        "url": "https://cdn.modrinth.com/data/9s6osm5g/versions/izKINKFg/cloth-config-15.0.140-neoforge.jar",
+        "sha512": "aaf9b010955b8cd294e5a92f069985b18729fd5e2cf22d351f1dff9680f15488688803ec41e77e941cbde130ceb535014ca4c868047d80ab69c2d508e216654d",
+        "size": 1163890
+      }
+    },
+    {
       "name": "Sodium",
       "slug": "sodium",
       "side": "client",

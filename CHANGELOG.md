@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+### Atmosphere: Create FlyHigher (2026-06-10)
+- FlyHigher 1.0.2 + Cloth Config (client dep, undeclared on Modrinth — caught by
+  check_jar_deps again). 49 → 51 mods.
+- Exposes the Aeronautics/Sable air-pressure curve as config (multiplier +
+  altitude nodes), applied on /reload — resolves the Tectonic-y640 flight
+  ceiling question with a tuning loop instead of a risk (WORLD_SHAPE.md).
+
 ### Terrain: Tectonic (2026-06-10, spec amendment)
 - Tectonic 3.0.22 + Lithostitched 1.7.9 (47 → 49 mods). Spec's no-custom-worldgen
   rule amended by owner: established worldgen mods allowed; agent-authored

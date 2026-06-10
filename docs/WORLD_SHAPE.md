@@ -25,9 +25,18 @@ Height = max build/generation height y640**.
 Knock-on effects, already accounted for below: pregen is slower (Tectonic's
 density functions cost more per chunk — budget extra overnight time); DH vistas
 get better, not worse; the Crossing island schematic floats and pastes at any
-altitude. One open test: Aeronautics' atmosphere/lift model vs y640 terrain
-(does envelope lift or the 0%-pressure ceiling care about the taller world?) —
-check during the phase2 flight tests and log it in BALANCE_NOTES.
+altitude.
+
+**Atmosphere vs y640: solved by Create: FlyHigher** (in the pack). It exposes
+Aeronautics/Sable's air-pressure curve as config — a global multiplier plus
+editable altitude/pressure nodes — generated as a datapack at
+`config/flyhigher_datapack/` and applied on `/reload` (no restart, no
+world-creation deadline). Tuning procedure during flight tests: fly an envelope
+ship up over tall Tectonic terrain, watch the altitude sensor; if lift dies
+before the peaks make sense, raise the pressure nodes so the usable flight band
+sits comfortably above y640's mountains, `/reload`, re-fly. Once it feels right,
+copy the generated datapack config into the repo so it ships. Log the chosen
+curve in BALANCE_NOTES.
 
 ## The honest engineering correction
 

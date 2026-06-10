@@ -76,6 +76,10 @@ MODRINTH_PINS = [
     # Enable Tectonic's "Increased Height" (y640) BEFORE world creation.
     ("tectonic",          "both",   False, True, None),
     ("lithostitched",     "both",   False, True, "Required by tectonic"),
+    ("flyhigher",         "both",   False, True,
+     "Configurable Aeronautics air-pressure curve; pairs with Tectonic y640 worlds"),
+    ("cloth-config",      "client", False, True,
+     "Required client-side by flyhigher (undeclared on Modrinth; jar mods.toml)"),
 ]
 # slugs whose pinned version differs from the audit's newest, or weren't audited
 VERSION_OVERRIDES = {

@@ -42,7 +42,16 @@ Full tier map with costs and rationale: [`docs/PROGRESSION.md`](docs/PROGRESSION
    ```
    "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/AAARRRCCC/skyward-industry/main/pack/pack.toml
    ```
-4. Launch. Mods + scripts sync on every start, so pack updates are automatic.
+4. Instance → Edit → Settings → **Java** → tick *Memory*: **min 6144 / max 6144**
+   MiB (8192 if you have 32 GB+). Tick *Java arguments* and paste:
+   ```
+   -XX:+UseZGC -XX:+ZGenerational -XX:+AlwaysPreTouch
+   ```
+   (Java 21's Generational ZGC — near-zero GC pauses, which Distant Horizons'
+   background LOD work really wants. If anything misbehaves, remove the args to
+   fall back to the default G1 collector. The default 4 GB allocation is NOT
+   enough for this pack.)
+5. Launch. Mods + scripts sync on every start, so pack updates are automatic.
 
 **Server:**
 ```
@@ -50,6 +59,12 @@ java -jar packwiz-installer-bootstrap.jar -g -s server https://raw.githubusercon
 ```
 then install the NeoForge 21.1.233 server and start it. After world creation, copy
 `datapacks/skyward/` into `<world>/datapacks/` (see [`docs/CROSSING_RUNBOOK.md`](docs/CROSSING_RUNBOOK.md)).
+
+Server JVM (Java 21): **10–12 GB** heap with min=max and the same ZGC flags as
+the client, e.g. `-Xms10G -Xmx10G -XX:+UseZGC -XX:+ZGenerational -XX:+AlwaysPreTouch`.
+DH's LOD store and C2ME's worker threads use memory *outside* the heap, so on a
+dedicated box leave at least ~6 GB of system RAM unallocated for them and the OS
+file cache — don't hand the whole machine to -Xmx.
 
 Recommended `server.properties`:
 ```

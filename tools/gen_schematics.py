@@ -178,11 +178,71 @@ def vendor_kiosk():
     return g, 3, 4, 3
 
 
+def industrial_stall(metal, accent_floor):
+    """7w x 6l x 6h industrial stall (Create / Create Deco palette). Front faces
+    SOUTH. Gold block on the counter = vendor position.
+    metal: createdeco material prefix ('industrial_iron', 'copper', 'andesite')."""
+    g = {}
+    W, L = 7, 6
+    support = f"createdeco:{metal}_support"
+    hull = f"createdeco:{metal}_hull"
+    sheet = f"createdeco:{metal}_sheet_metal"
+    catwalk = f"createdeco:{metal}_catwalk"
+    # floor: industrial iron border, accent center
+    box(g, 0, 0, 0, W - 1, 0, L - 1, "create:industrial_iron_block")
+    box(g, 1, 0, 1, W - 2, 0, L - 2, accent_floor)
+    # corner posts
+    for (x, z) in [(0, 0), (W - 1, 0), (0, L - 1), (W - 1, L - 1)]:
+        box(g, x, 1, z, x, 4, z, support)
+    # counter across the front: hull blocks with a smooth stone work surface
+    box(g, 1, 1, 1, W - 2, 1, 1, hull)
+    for x in range(1, W - 1):
+        g[(x, 2, 1)] = "minecraft:smooth_stone_slab[type=bottom]"
+    g[(3, 2, 1)] = "minecraft:gold_block"          # vendor position
+    # back wall: sheet metal, barrels + crate shelf
+    box(g, 1, 1, L - 1, W - 2, 3, L - 1, sheet)
+    for x in (2, 3, 4):
+        g[(x, 1, L - 2)] = "minecraft:barrel[facing=up]"
+    g[(1, 1, L - 2)] = "create:andesite_casing"
+    g[(5, 1, L - 2)] = "create:andesite_casing"
+    # side rails: girders read as exposed steel frame
+    for z in (2, 3):
+        g[(0, 1, z)] = "create:metal_girder"
+        g[(W - 1, 1, z)] = "create:metal_girder"
+    # flat catwalk canopy with a one-block front overhang
+    for x in range(0, W):
+        for z in range(0, L):
+            g[(x, 5, z)] = catwalk
+    # hanging lanterns at the front corners
+    g[(1, 4, 0)] = "minecraft:lantern[hanging=true]"
+    g[(5, 4, 0)] = "minecraft:lantern[hanging=true]"
+    return g, W, 6, L
+
+
+def industrial_kiosk():
+    """3x3 single-vendor kiosk, industrial palette, front faces south."""
+    g = {}
+    box(g, 0, 0, 0, 2, 0, 2, "create:industrial_iron_block")
+    for (x, z) in [(0, 0), (2, 0), (0, 2), (2, 2)]:
+        box(g, x, 1, z, x, 2, z, "createdeco:industrial_iron_support")
+    g[(1, 1, 0)] = "createdeco:industrial_iron_hull"
+    g[(1, 2, 0)] = "minecraft:gold_block"          # vendor on the counter
+    g[(1, 1, 2)] = "minecraft:barrel[facing=up]"
+    box(g, 0, 3, 0, 2, 3, 2, "createdeco:industrial_iron_catwalk")
+    g[(1, 3, 1)] = "minecraft:lantern"
+    return g, 3, 4, 3
+
+
 AWNINGS = {
     "market_stall_red": "minecraft:red_wool",
     "market_stall_lime": "minecraft:lime_wool",
     "market_stall_blue": "minecraft:blue_wool",
     "market_stall_yellow": "minecraft:yellow_wool",
+}
+INDUSTRIAL = {
+    "industrial_stall_iron": ("industrial_iron", "minecraft:polished_andesite"),
+    "industrial_stall_copper": ("copper", "minecraft:oxidized_cut_copper"),
+    "industrial_stall_andesite": ("andesite", "minecraft:polished_andesite"),
 }
 
 
@@ -192,8 +252,17 @@ def main():
         p = OUT / f"{name}.schem"
         write_schem(p, g, w, h, l)
         validate(p, w, h, l)
+    for name, (metal, floor) in INDUSTRIAL.items():
+        g, w, h, l = industrial_stall(metal, floor)
+        p = OUT / f"{name}.schem"
+        write_schem(p, g, w, h, l)
+        validate(p, w, h, l)
     g, w, h, l = vendor_kiosk()
     p = OUT / "vendor_kiosk.schem"
+    write_schem(p, g, w, h, l)
+    validate(p, w, h, l)
+    g, w, h, l = industrial_kiosk()
+    p = OUT / "industrial_kiosk.schem"
     write_schem(p, g, w, h, l)
     validate(p, w, h, l)
     print("done")

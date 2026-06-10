@@ -8,8 +8,10 @@ for the four outpost landmark builds + the Crossing island.
 
 | File | Size | Use |
 |---|---|---|
-| `market_stall_red/lime/blue/yellow.schem` | 7x6 footprint | One vendor each. Spawn market = ~10 buy stalls + ~16 sell stalls; mix colors |
-| `vendor_kiosk.schem` | 3x3 footprint | Single vendor at outposts / tight spots |
+| `industrial_stall_iron/copper/andesite.schem` | 7x6 footprint | **The preferred set** (Brady: "more industrial"). Create/Create Deco palette: support pillars, catwalk canopy, hull counters, girder rails |
+| `industrial_kiosk.schem` | 3x3 footprint | Single vendor, industrial palette |
+| `market_stall_red/lime/blue/yellow.schem` | 7x6 footprint | Original wool-awning set; kept for outposts that want a softer look (Kelpwright?) |
+| `vendor_kiosk.schem` | 3x3 footprint | Wool-set kiosk |
 
 Conventions (same in every file):
 - **Gold block = vendor goes here.** Break it, place the creative vendor in its
@@ -54,15 +56,21 @@ credit/usage note; all three host free files):
 - [MineSchematic](https://www.mineschematic.com/) — smaller free library.
 - [Schemat.io](https://schemat.io/schematics) — community uploads, filterable.
 
-Per-outpost shopping list (one landmark each, ~60-120 block footprint):
+**Picked candidates (2026-06-10)** — all free downloads on Abfielder; pick the
+one that fits your seed's terrain. Download tip: each page offers format
+conversion — choose **.schem (WorldEdit)** when downloading.
 
-| Outpost | Search terms | The generated stalls then provide |
+| Location | First pick | Alternates |
 |---|---|---|
-| Kelpwright Docks | "dock", "fishing village", "harbor crane" | 2 buy + 3 sell vendors on the boardwalk |
-| Cinderfall Forge | "foundry", "blacksmith", "industrial factory" | vendors in the forge hall |
-| Glasswind Spires | "desert tower", "observatory", "sandstone temple" | vendors at the tower base |
-| Highmoor Terminus | "train station", "rail depot", "alpine station" | vendors on the platform |
-| Crossing island | "floating island", "sky island ruin", "airship wreck" | no vendors; loot chests per CROSSING_RUNBOOK |
+| Kelpwright Docks | [Fishing Dock by disruptive builds](https://abfielder.com/Products/ProductDetails.php?id=2706) | [Riverside Docks by Sir Silver](https://abfielder.com/schematicdetail/sir-silver/riverside-docks/2053); [Suspended Fishing House](https://abfielder.com/Products/ProductDetails.php?id=6259) as a flavor satellite |
+| Cinderfall Forge | [Industrial Factory by Randymix](https://abfielder.com/schematicdetail/randymix/industrial-factory/1064) | [Industrial Dockside Factory](https://abfielder.com/schematicdetail/randymix/industrial-dockside-factory/1066); [Steampunk Factory](https://abfielder.com/Products/ProductDetails.php?id=10175) |
+| Glasswind Spires | [The Desert Temple of Menhir by Eternal Dawn](https://abfielder.com/schematicdetail/eternal-dawn/the-desert-temple-of-menhir/647) | [Fantasy Desert Style Temple](https://abfielder.com/schematicdetail/eternal-dawn/fantasy-desert-style-temple/691); more under the [Desert tag](https://abfielder.com/browseSchematics?TagID=124) |
+| Highmoor Terminus | [Railway Station with Train by Randymix](https://abfielder.com/schematicdetail/randymix/railway-station-with-train/1067) | [Wild West Train Station](https://abfielder.com/schematicdetail/abfielder/wild-west-train-station/139); [Railroad Station](https://abfielder.com/Products/ProductDetails.php?id=6302) |
+| Crossing island | [Floating Island Mega Base by TIDZIMI](https://abfielder.com/schematicdetail/tidzimi/floating-island-mega-base/1463) | [Mossy Floating Island (small)](https://abfielder.com/Products/ProductDetails.php?id=10868) x2-3 as outlying cache islets |
+| Crossing landfall wreck | [Steampunk Airship](https://abfielder.com/Products/ProductDetails.php?id=3580) pasted half-buried at the island's edge = the crashed survey ship | — |
+
+Downloaded builds go in the same schematics folder but are NOT committed to the
+repo (they're other people's builds; we link, not re-host).
 
 Workflow: download `.schem` → drop in the schematics folder → paste at the
 outpost coordinates from `OUTPOSTS.md` → pad edges into the terrain by hand

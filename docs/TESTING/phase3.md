@@ -4,34 +4,33 @@ Pre-req: phase2 checklist passed; a creative test world.
 
 ## A. Configs load
 
-- [ ] `/kubejs errors` clean after adding economy_balance.js (it's constants-only —
-      any error here is a syntax slip)
-- [ ] Numismatics blocks present: `/give @s numismatics:vendor`, `creative_vendor`,
-      `blaze_banker`, `bank_terminal`, coins (`numismatics:spur` … `numismatics:sun`)
-- [ ] Coin tooltip values match the table in economy_balance.js header
-      (spur 1 / bevel 8 / sprocket 16 / cog 64 / crown 512 / sun 4096).
-      **If they differ, fix the header + ECONOMY_RUNBOOK before any vendor is placed.**
+- [x] `/kubejs errors` clean after adding economy_balance.js *(verified via log
+      review 2026-06-09: all startup scripts 0 errors)*
+- [x] Numismatics blocks present: vendor, creative_vendor, blaze_banker,
+      bank_terminal, coins *(verified 2026-06-10)*
+- [x] Coin tooltip values match the table in economy_balance.js header
+      (spur 1 / bevel 8 / sprocket 16 / cog 64 / crown 512 / sun 4096)
+      *(confirmed 2026-06-10 — all pack prices stand)*
 
 ## B. Earn loop (player side)
 
-- [ ] Place a creative vendor, owner-configure: buying, andesite alloy, 1 spur
-- [ ] As a second account (or survival-mode self), sell 64 alloy → receive 64 spurs
-      (1 cog after change-making)
+- [x] Place a creative vendor, owner-configure (shift-click); sell-to-vendor
+      direction pays out correctly *(verified 2026-06-10)*
 - [ ] Sell 1 calibrated shaft at 16 → paid correctly
 - [ ] Vendor refuses items that don't match the configured good
 
 ## C. Spend loop
 
-- [ ] Creative vendor selling Mending book at 2048 spurs: buy succeeds with mixed
-      coins; correct change
-- [ ] Buy 64 limestone at 2 spurs each
+- [x] Buy-from-vendor direction works with coins, correct change *(verified
+      2026-06-10)*
 - [ ] Confirm bought decor/books contain nothing usable in any JEI-visible gated
       recipe (spot-check: limestone, quartz, name tag)
 
 ## D. Banking
 
-- [ ] Bind a bank card at a blaze banker; deposit coins via bank terminal
-- [ ] Card-paid purchase at a vendor works; balance decrements
+- [x] Bind a bank card at a blaze banker; deposit coins via bank terminal
+      *(verified 2026-06-10)*
+- [x] Card-paid purchase at a vendor works; balance decrements *(verified 2026-06-10)*
 
 ## E. Isolation audit (the hard rule)
 

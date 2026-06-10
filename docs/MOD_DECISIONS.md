@@ -51,7 +51,42 @@ pinned down deliberately), Mouse Tweaks 2.26.1, Inventory Profiles Next 2.2.5 +
 libIPN 6.6.3 + Kotlin for Forge 5.11.0 (IPN's hard deps — enable/disable the trio
 together).
 
-**Total: 25 mods** (18 required + 2 server admin + 5 optional client). Under the ~40 cap.
+**Total: 38 mods** (28 required + 2 server admin + 8 optional client). At the ~40 cap;
+nothing else goes in without something coming out. (Originally 25; see the manifest
+expansion section below.)
+
+## Manifest expansion — 2026-06-09 review (post-Phase-6)
+
+Added after Brady asked for the big Create addons + Aeronautics extras + the standard
+performance suite. All verified for 1.21.1 NeoForge + dependency-checked against the
+pack (no new transitive requirements).
+
+**Build/QoL Create addons (both sides):**
+
+| Mod | Version | Why |
+|---|---|---|
+| Create: Connected | 1.2.2-mc1.21.1 | Kinetics QoL parts; no gating bypass |
+| Copycats+ | 3.0.4 | Hull/building blocks for ships |
+| Copycats+ aeronautics weight | 1.1.1 | Proper mass values for copycat blocks on ships |
+| Create Deco | 2.1.3 | Outpost/ship aesthetics |
+| Sable: Weighted — Create: Deco | 1.0.2 | Mass tags for Deco blocks on ships |
+
+**Aeronautics extras (both sides):** FTB Chunks: Sable Aerospace 1.0.1 (claims vs.
+flying-ship interplay — closes a real jank source since we ship FTB Chunks),
+Sable Schematic Tool 0.2.6 (players save ships to files; doubles as admin ship backup).
+
+**Performance suite:** ModernFix 5.27.12, Clumps 19.0.0.1, Spark 1.10.124 (both sides);
+Entity Culling 1.10.2, ImmediatelyFast 1.6.10, Dynamic FPS 3.11.4 (client, optional).
+⚠ Entity Culling is the first thing to disable if Sable ships flicker or vanish at
+angles — culling vs. moving sub-level structures is a known category of weirdness.
+
+**Considered in the same review and still excluded:**
+- **Create: Steam 'n' Rails** — no 1.21.1 NeoForge build exists (checked Modrinth AND
+  CurseForge). Re-audit if/when they port.
+- **Crafts & Additions** — electricity sidesteps "rotation is infrastructure".
+- **Enchantment Industry** — automated enchanting would gut the vendor enchanted-book
+  coin sink (our largest money drain). Revisit only with a replacement sink designed.
+- **Diesel Generators, Interiors, Create: Trimmed** — nice-to-have tier; cap pressure.
 
 ## Excluded, with reasons
 
@@ -66,14 +101,10 @@ together).
   performance bothers anyone.
 - **Create Aeronautics: Compatability** (sic, 1.1.2) — band-aid mod for specific mod
   conflicts we don't currently have. Add only if a real incompatibility shows up in testing.
-- **Copycats+ aeronautics weight** — we don't ship Copycats+; out of scope.
 - **InventorySorter (cpw)** — no 1.21.1 NeoForge build on Modrinth. IPN trio covers it
   client-side.
-- **FTB Chunks: Sable Aerospace** (`ftbchunksaerospace`) — compat layer between FTB Chunks
-  claims and Sable ships. Tempting, but third-party and young; flagged as a **candidate
-  for a later revision** if claim/ship interactions misbehave in playtests.
-- **ModernFix etc.** — keeping the perf stack to Lithium + FerriteCore until a measured
-  need appears.
+- ~~Copycats+ aeronautics weight~~, ~~FTB Chunks: Sable Aerospace~~, ~~ModernFix etc.~~ —
+  originally excluded for leanness; **added in the 2026-06-09 manifest expansion** (above).
 
 ## License / distribution flags
 

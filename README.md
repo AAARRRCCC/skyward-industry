@@ -1,7 +1,7 @@
 # Skyward Industry
 
 A Create + Create: Aeronautics progression modpack for a small friends server.
-**Minecraft 1.21.1 · NeoForge 21.1.233 · 25 mods · packwiz format.**
+**Minecraft 1.21.1 · NeoForge 21.1.233 · 38 mods · packwiz format.**
 
 The pitch: vanilla Create never makes you automate. Here, every tier's core part is
 machine-made (gated recipes), airships eat your production (resource sink), vendors

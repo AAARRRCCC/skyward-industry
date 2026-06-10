@@ -291,5 +291,5 @@ hash-format = "sha256"
 
 [[files]]
 	file = "mods/worldedit.pw.toml"
-	hash = "cdd6956e45ad93aa056691a6208854d6b58f3c761d34b008bd012390fa9cdb75"
+	hash = "669ef6372357eacfd86ec4a927b09a142c7a748ec8f6693aab156cde1b5073cc"
 	metafile = true

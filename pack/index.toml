@@ -127,6 +127,11 @@ hash-format = "sha256"
 	metafile = true
 
 [[files]]
+	file = "mods/c2me-neoforge.pw.toml"
+	hash = "7d655e0e2482b6c234147b522fcc558ec2fc3b4aa5df4fddea65c0952e506991"
+	metafile = true
+
+[[files]]
 	file = "mods/cc-sable.pw.toml"
 	hash = "2e7aaadf3e9839d44cf1be49fd1201b4b8f014b60a29a4103d1b4ecc059bceaf"
 	metafile = true
@@ -344,6 +349,11 @@ hash-format = "sha256"
 [[files]]
 	file = "mods/sable.pw.toml"
 	hash = "2374d2275bbfc265d1c11f6b71bfb3248deb01f8d11e180573ec79f004ad8626"
+	metafile = true
+
+[[files]]
+	file = "mods/scalablelux.pw.toml"
+	hash = "1447212ca56ed4a8e5c06ef009f8a47bde672ce89011043d4b16a7832b0545b5"
 	metafile = true
 
 [[files]]

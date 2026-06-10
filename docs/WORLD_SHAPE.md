@@ -81,6 +81,14 @@ something.
    ```
    (ChunkyBorder uses the current Chunky selection. Set AFTER pregen tasks so
    you don't clobber the selection mid-run; `chunky border list` to confirm.)
+Throughput note: the pack ships **C2ME (NeoForge port, alpha)** + **ScalableLux**
+because DH warns "slow world gen, C2ME missing" without them — parallel chunk
+generation typically multiplies pregen speed several-fold on real cores. C2ME's
+NeoForge build is alpha-channel: if worldgen ever crashes or chunks look wrong,
+remove `c2me-neoforge` first and re-run; Chunky/DH work fine without it, just
+slower. Order also matters: run Chunky's terrain pregen BEFORE DH's LOD pregen —
+DH builds LODs from existing chunks far faster than it can generate fresh ones.
+
 3. **LOD pregen** (Distant Horizons, server-side; slower than chunk pregen —
    budget a day or two of background time):
    ```

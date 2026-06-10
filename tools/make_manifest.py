@@ -80,6 +80,10 @@ MODRINTH_PINS = [
      "Configurable Aeronautics air-pressure curve; pairs with Tectonic y640 worlds"),
     ("cloth-config",      "client", False, True,
      "Required client-side by flyhigher (undeclared on Modrinth; jar mods.toml)"),
+    # Chunk-gen throughput for pregen + DH (DH warns when C2ME is absent).
+    # c2me-neoforge is ALPHA: first suspect on any worldgen crash/weirdness.
+    ("c2me-neoforge",     "both",   False, True, None),
+    ("scalablelux",       "both",   False, True, "Starlight-style lighting; pairs with C2ME/DH"),
 ]
 # slugs whose pinned version differs from the audit's newest, or weren't audited
 VERSION_OVERRIDES = {

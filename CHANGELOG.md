@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+### Chunk-gen throughput: C2ME + ScalableLux (2026-06-10)
+- DH warned "slow world gen, C2ME missing" during Brady's LOD test. Added
+  c2me-neoforge 0.3.0-alpha (parallel chunk gen; first suspect on any worldgen
+  weirdness — removal-safe) + ScalableLux (lighting). 51 → 53 mods.
+- WORLD_SHAPE: pregen order guidance (Chunky terrain before DH LODs).
+
 ### Atmosphere: Create FlyHigher (2026-06-10)
 - FlyHigher 1.0.2 + Cloth Config (client dep, undeclared on Modrinth — caught by
   check_jar_deps again). 49 → 51 mods.

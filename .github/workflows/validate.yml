@@ -1,0 +1,55 @@
+name: validate
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Reference validator (items, advancements, quest deps)
+        run: python tools/validate_refs.py
+
+      - name: Quest book audit (rewards, layout, cycles)
+        run: python tools/audit_questbook.py
+
+      - name: KubeJS script syntax
+        run: |
+          set -e
+          for f in $(find kubejs -name '*.js'); do node --check "$f"; done
+
+      - name: TOML / JSON / mcfunction parse
+        run: |
+          python - <<'EOF'
+          import json, pathlib, tomllib
+          n = 0
+          for f in pathlib.Path("pack").rglob("*.toml"):
+              tomllib.loads(f.read_text(encoding="utf-8")); n += 1
+          for d in ("datapacks", "kubejs"):
+              for f in pathlib.Path(d).rglob("*.json"):
+                  json.loads(f.read_text(encoding="utf-8")); n += 1
+              for f in pathlib.Path(d).rglob("*.mcmeta"):
+                  json.loads(f.read_text(encoding="utf-8")); n += 1
+          for f in pathlib.Path("datapacks").rglob("*.mcfunction"):
+              assert f.read_text(encoding="utf-8").strip(), f"empty function {f}"; n += 1
+          print(f"{n} data files parse OK")
+          EOF
+
+      - name: Pack tree drift (build_pack must be a no-op on a clean commit)
+        run: |
+          python tools/build_pack.py
+          git diff --exit-code -- pack || {
+            echo '::error::pack/ is out of date — run `py tools/build_pack.py` and commit the result'
+            exit 1
+          }

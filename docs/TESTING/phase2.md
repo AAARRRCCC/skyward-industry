@@ -40,13 +40,9 @@ In JEI, look up Andesite Alloy (recipes FOR it):
 - [ ] Wooden Propeller: shaft ringed by 4 wooden slabs
 - [ ] Andesite Propeller: create:propeller + slab + shaft (mod-original restored)
 - [ ] Propeller Bearing: slab + calibrated shaft + brass casing (was iron sheet)
-- [ ] EXPERIMENTAL drag penalty, round 3: calibrated from flight data
-      (scale 300 ≈ 169pN, immobilized a one-prop ship with 80pN hull drag;
-      scale 2 ≈ 0.25pN). Now floating_scale = 65.0 targeting ~37pN ≈ 15% of one
-      prop's thrust. Verify the wooden-prop ship MOVES and is modestly slower
-      than the andesite twin; tune in kubejs/data/skyward/
-      physics_block_properties/wooden_propeller_drag.json, or delete the file
-      to drop the whole idea
+- [x] Wooden-prop drag penalty: floating_scale 65.0 (~37pN, ~15% of one prop's
+      thrust), calibrated across three flight tests. *(verified 2026-06-10:
+      "drag values feel fine now" — no longer experimental)*
 - [ ] Smart Propeller crafts 1 (not 2)
 - [ ] Portable Engine (red): tempered casing on top (not iron sheet)
 - [ ] Physics Assembler needs precision mechanism + brass casing

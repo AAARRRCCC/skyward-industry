@@ -56,3 +56,5 @@ One entry per session. Don't editorialize less — "felt bad" is data.
   thrust and the ship did not move. Effective rate ≈ 0.56pN/unit in flight (the
   2.0→0.25pN idle reading was not representative). Scale set to 65.0 → expect
   ~37pN ≈ 15% of one prop's thrust. Verify ship moves + feels like a tier gap.
+- 2026-06-10 (Brady): scale 65.0 confirmed in flight, "drag values feel fine
+  now". Wooden-prop drag is no longer experimental; settled at 65.0.

@@ -94,7 +94,7 @@ hash-format = "sha256"
 
 [[files]]
 	file = "kubejs/startup_scripts/balance.js"
-	hash = "2a65a876b597c82dfe5b6a7fd43093423f4b1ec809aa75a3f355ef9bf9f358c0"
+	hash = "ac422900238d94c96b62e487bbaa2f014987f15e768ec596806283869b1e7506"
 
 [[files]]
 	file = "kubejs/startup_scripts/economy_balance.js"

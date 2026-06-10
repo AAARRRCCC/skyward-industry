@@ -58,8 +58,34 @@ Premium prices below are `ECON.buy x 1.5`, rounded up.
 - [ ] 1–3 creative vendors in **sell** mode (themed stock above)
 - [ ] 1 item frame per vendor showing the traded good
 - [ ] Lectern with a book: outpost name + what it buys (one paragraph, in-world voice)
-- [ ] FTB Chunks: claim a 3x3 chunk area around the outpost as server-team so shops
-      can't be griefed
+
+## Anti-theft (the moored ships are decor, not loot)
+
+Two layers, both already in the pack:
+
+1. **FTB Chunks server-team claim** over the whole outpost INCLUDING the full
+   footprint of the moored ship plus a 1-chunk margin (map `M` → admin panel →
+   claim as Server team). This blocks breaking, placing, and interacting — so no
+   honey glue, no merging glue, no assembler placement by players.
+2. **FTB Chunks: Sable Aerospace** (shipped) explicitly denies Sable assembly on
+   structures inside claimed territory ("Closed airspace — this Sable structure
+   is inside claimed territory") and enforces claimed airspace against incoming
+   ships, with approach warnings. Players can't fly their own ship in and merge
+   the parked one into it either.
+
+Verification (run once, second account, at the first finished outpost):
+- [ ] Can't break ship or shop blocks
+- [ ] Can't place merging glue / apply honey glue on the ship
+- [ ] Physics assembler aimed at the ship refuses ("closed airspace" message)
+- [ ] Flying your own ship at the outpost produces the airspace warning and
+      doesn't let you park inside/merge
+- [ ] Vendors still tradeable (claims must not block right-click trading — if
+      they do, loosen the claim's interaction settings to allow block use, or
+      keep vendors on unclaimed border chunks and re-test griefability)
+
+Paranoia fallback if anything above fails in testing: hide 2–3 bedrock blocks
+inside the ship's hull interior — even a successful assembly attempt can't take
+unbreakable blocks, and WorldEdit places them invisibly.
 
 ## Quest hooks (wired in Phase 4)
 

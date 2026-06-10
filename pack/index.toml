@@ -6,11 +6,11 @@ hash-format = "sha256"
 
 [[files]]
 	file = "config/ftbquests/quests/chapters/andesite_age.snbt"
-	hash = "a3f4ddafb4fb5bfbe9002d801a1c3e6ef4368fda3012b14f9d681fdb466a123e"
+	hash = "99887b55a75d0281136569a81a98dccbdc8bc5f4e3e8287d24cd8845620fb99a"
 
 [[files]]
 	file = "config/ftbquests/quests/chapters/brass_age.snbt"
-	hash = "2a0fce0bac6a5c5909d1e8263b00327f9d3d752e109deb547402c8b3f84513e2"
+	hash = "d86b36bebf0f52843e91c5480d5cb3d3a0c79382fd5aae8e326c08d8a522bbc5"
 
 [[files]]
 	file = "config/ftbquests/quests/chapters/crossing_tier.snbt"
@@ -22,7 +22,7 @@ hash-format = "sha256"
 
 [[files]]
 	file = "config/ftbquests/quests/chapters/welcome.snbt"
-	hash = "a6cce0c120e0a9d367689141031d91846a5128b26b6cb99d4b33b3d3ed692d78"
+	hash = "2885817a466ecfd8bcbea49590d62c6055c668791791cf93d741d55118ec11d4"
 
 [[files]]
 	file = "config/ftbquests/quests/data.snbt"

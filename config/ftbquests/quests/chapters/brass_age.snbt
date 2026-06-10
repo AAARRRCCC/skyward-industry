@@ -10,7 +10,35 @@
 		{
 			dependencies: ["0B00000000000006"]
 			description: [
-				"Copper, zinc, a blaze burner, and a mixer. Brass unlocks casings, tunnels, and the machines that build machines."
+				"A blaze, in a burner, fed like a houseplant. It heats basins hot enough for real metallurgy."
+				""
+				"Yes, you have to go get the blaze yourself. Industry has always involved a field trip to somewhere terrible."
+			]
+			icon: "create:blaze_burner"
+			id: "0C00000000000008"
+			rewards: [{
+				count: 1
+				id: "1C00000000000008"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				advancement: "create:burner"
+				criterion: ""
+				id: "2C00000000000008"
+				title: "Obtain a blaze burner"
+				type: "advancement"
+			}]
+			title: "Chapter 2: sentient fireplace"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0C00000000000008"]
+			description: [
+				"Copper, zinc, and a blaze-heated mixer. Brass unlocks casings, tunnels, and the machines that build machines."
 			]
 			icon: "create:brass_ingot"
 			id: "0C00000000000001"
@@ -28,12 +56,230 @@
 				item: "create:brass_ingot"
 				type: "item"
 			}]
-			title: "Chapter 2: hot metal"
+			title: "Hot metal"
 			x: 0.0d
-			y: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0C00000000000001"]
+			description: [
+				"Brass on stripped wood, same trick as andesite. Sturdier chassis, smarter machines."
+			]
+			id: "0C00000000000009"
+			rewards: [{
+				count: 1
+				id: "1C00000000000009"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:brass_casing"
+				criterion: ""
+				id: "2C00000000000009"
+				title: "Make a brass casing"
+				type: "advancement"
+			}]
+			title: "The Brass Age"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0C00000000000001"]
+			description: [
+				"Copper casings keep water out and fluids in. Everything plumbed starts here."
+			]
+			id: "0C0000000000000A"
+			rewards: [{
+				count: 8
+				id: "1C0000000000000A"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:copper_casing"
+				criterion: ""
+				id: "2C0000000000000A"
+				title: "Make a copper casing"
+				type: "advancement"
+			}]
+			title: "The Copper Age"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0C0000000000000A"]
+			description: [
+				"A mechanical pump moves fluid with conviction. Pipes alone just gossip about it."
+			]
+			id: "0C0000000000000B"
+			rewards: [{
+				count: 8
+				id: "1C0000000000000B"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:mechanical_pump_0"
+				criterion: ""
+				id: "2C0000000000000B"
+				title: "Place and power a mechanical pump"
+				type: "advancement"
+			}]
+			title: "Under pressure"
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0C0000000000000B"]
+			description: [
+				"Find a lava lake big enough to count as infinite and drop a hose pulley in. The quench line drinks lava forever; this is its water bill, paid once."
+			]
+			icon: "create:hose_pulley"
+			id: "0C0000000000000C"
+			rewards: [{
+				count: 1
+				id: "1C0000000000000C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				advancement: "create:hose_pulley_lava"
+				criterion: ""
+				id: "2C0000000000000C"
+				title: "Tap an infinite lava pool"
+				type: "advancement"
+			}]
+			title: "Tapping the mantle"
+			x: -3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0C0000000000000B"]
+			description: [
+				"A spout fills things from above. Bottles, buckets, and shortly, brass casings full of lava. Sploosh."
+			]
+			id: "0C0000000000000D"
+			rewards: [{
+				count: 8
+				id: "1C0000000000000D"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:spout"
+				criterion: ""
+				id: "2C0000000000000D"
+				title: "Fill something with a spout"
+				type: "advancement"
+			}]
+			title: "Sploosh"
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0C0000000000000B"]
+			description: [
+				"Water in, heat under, torque out. A boiler scales with your ambition and your fluid network's ability to keep up."
+				""
+				"Water wheels got you here. Steam gets you to the sky."
+			]
+			id: "0C00000000000013"
+			rewards: [{
+				count: 1
+				id: "1C00000000000013"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:steam_engine"
+				criterion: ""
+				id: "2C00000000000013"
+				title: "Generate torque with a steam engine"
+				type: "advancement"
+			}]
+			title: "The powerhouse"
+			x: -3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0C00000000000009"
+				"0C0000000000000D"
+			]
+			description: [
+				"A spout quenches brass casings in lava, 250mb each. Pipes, pumps, a tank, and the mantle tap you just built. The casing comes out tempered and the recipe book calls it yours."
+			]
+			icon: "kubejs:tempered_casing"
+			id: "0C00000000000003"
+			rewards: [{
+				count: 1
+				id: "1C00000000000003"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "2C00000000000003"
+				item: "kubejs:tempered_casing"
+				type: "item"
+			}]
+			title: "Line two: the quench"
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0C00000000000009"]
+			description: [
+				"Polish rose quartz into something that holds a charge. Electron tubes follow, and every smart machine wants them."
+			]
+			id: "0C0000000000000E"
+			rewards: [{
+				count: 8
+				id: "1C0000000000000E"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:rose_quartz"
+				criterion: ""
+				id: "2C0000000000000E"
+				title: "Polish rose quartz"
+				type: "advancement"
+			}]
+			title: "Supercharged"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0C0000000000000E"]
+			description: [
+				"The deployer repeats one right-click forever, without complaint or lunch breaks. The perfect reflection of yourself."
+				""
+				"All three production lines below run on these."
+			]
+			icon: "create:deployer"
+			id: "0C0000000000000F"
+			rewards: [{
+				count: 1
+				id: "1C0000000000000F"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				advancement: "create:deployer"
+				criterion: ""
+				id: "2C0000000000000F"
+				title: "Place and power a deployer"
+				type: "advancement"
+			}]
+			title: "Artificial intelligence"
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0C0000000000000F"]
 			description: [
 				"The calibrated shaft cannot be crafted by hand. At all. A press trues it, a deployer plates it with alloy, three passes."
 				""
@@ -55,34 +301,14 @@
 				type: "item"
 			}]
 			title: "Line one: calibration"
-			x: -1.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["0C00000000000001"]
-			description: [
-				"A spout quenches brass casings in lava. Pipes, pumps, a tank, a lava supply. The casing comes out tempered and the recipe book calls it yours."
-			]
-			icon: "kubejs:tempered_casing"
-			id: "0C00000000000003"
-			rewards: [{
-				count: 1
-				id: "1C00000000000003"
-				item: "numismatics:crown"
-				type: "item"
-			}]
-			tasks: [{
-				count: 8L
-				id: "2C00000000000003"
-				item: "kubejs:tempered_casing"
-				type: "item"
-			}]
-			title: "Line two: the quench"
 			x: 0.0d
-			y: 1.5d
+			y: 6.0d
 		}
 		{
-			dependencies: ["0C00000000000001"]
+			dependencies: [
+				"0C0000000000000E"
+				"0C0000000000000F"
+			]
 			description: [
 				"Rose quartz, polish, electron tubes. Then a deployer winds them onto golden sheets. The coil hums. That's normal."
 			]
@@ -101,8 +327,8 @@
 				type: "item"
 			}]
 			title: "Line three: resonance"
-			x: 1.5d
-			y: 1.5d
+			x: 2.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -133,12 +359,12 @@
 			}]
 			title: "The mechanism"
 			x: 0.0d
-			y: 3.0d
+			y: 7.5d
 		}
 		{
-			dependencies: ["0C00000000000005"]
+			dependencies: ["0C0000000000000E"]
 			description: [
-				"The mechanical crafter assembles the big patterns, and the aeronautics chapter is nothing but big patterns."
+				"Mechanical crafters bolt together into one big programmable grid. The aeronautics chapter is nothing but big patterns, so make friends now."
 			]
 			id: "0C00000000000006"
 			rewards: [{
@@ -148,22 +374,138 @@
 				type: "item"
 			}]
 			tasks: [{
-				count: 4L
+				advancement: "create:mechanical_crafter"
+				criterion: ""
 				id: "2C00000000000006"
-				item: "create:mechanical_crafter"
-				type: "item"
+				title: "Place and power mechanical crafters"
+				type: "advancement"
 			}]
 			title: "Crafters in series"
-			x: -1.5d
-			y: 4.5d
+			x: 3.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0C00000000000006"]
+			description: [
+				"A pair of crushing wheels turns ores into more and cobble into gravel into sand into dust. Also the only road to powdered obsidian, which the train tier wants badly."
+			]
+			id: "0C00000000000010"
+			rewards: [{
+				count: 1
+				id: "1C00000000000010"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:crushing_wheel"
+				criterion: ""
+				id: "2C00000000000010"
+				title: "Place and power crushing wheels"
+				type: "advancement"
+			}]
+			title: "Wheels of destruction"
+			x: 3.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0C00000000000010"]
+			description: [
+				"Crushers at maximum RPM. Gear it up until the stress meter sweats. Entirely optional. Extremely satisfying."
+			]
+			id: "0C00000000000011"
+			optional: true
+			rewards: [{
+				count: 1
+				id: "1C00000000000011"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:crusher_maxed_0000"
+				criterion: ""
+				id: "2C00000000000011"
+				title: "Run crushing wheels at max speed"
+				type: "advancement"
+			}]
+			title: "Crushing it (optional)"
+			x: 3.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["0C00000000000005"]
 			description: [
-				"Optional, recommended: rails move bulk goods to the outposts before you have ships. The Cinderfall and Glasswind premiums pay for the track."
+				"The mechanical arm moves items between any inputs and outputs you show it. It costs a precision mechanism, which you now manufacture. Funny how that works."
+			]
+			id: "0C00000000000012"
+			rewards: [{
+				count: 1
+				id: "1C00000000000012"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:mechanical_arm"
+				criterion: ""
+				id: "2C00000000000012"
+				title: "Watch a mechanical arm work"
+				type: "advancement"
+			}]
+			title: "Busy hands"
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0C00000000000010"]
+			description: [
+				"Powdered obsidian, refined into the sturdy sheet. The recipe chain is long on purpose. Trains and ship instruments both sit on top of it."
+			]
+			id: "0C00000000000014"
+			rewards: [{
+				count: 1
+				id: "1C00000000000014"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:sturdy_sheet"
+				criterion: ""
+				id: "2C00000000000014"
+				title: "Assemble a sturdy sheet"
+				type: "advancement"
+			}]
+			title: "The sturdiest rocks"
+			x: 5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0C00000000000014"]
+			description: [
+				"Sturdy sheets around a casing: railway grade. The Locomotive Age arrives wearing safety orange."
+			]
+			id: "0C00000000000015"
+			rewards: [{
+				count: 1
+				id: "1C00000000000015"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:train_casing_00"
+				criterion: ""
+				id: "2C00000000000015"
+				title: "Make a railway casing"
+				type: "advancement"
+			}]
+			title: "The locomotive age"
+			x: 5.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0C00000000000015"]
+			description: [
+				"Rails move bulk goods to the outposts before you have ships. The Cinderfall and Glasswind premiums pay for the track."
 			]
 			id: "0C00000000000007"
-			optional: true
 			rewards: [{
 				count: 1
 				id: "1C00000000000007"
@@ -176,9 +518,105 @@
 				item: "create:track"
 				type: "item"
 			}]
-			title: "Iron roads (optional)"
-			x: 1.5d
-			y: 4.5d
+			title: "Iron roads"
+			x: 6.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0C00000000000007"]
+			description: [
+				"Controls on a contraption, contraption on a bogey, bogey on the rails. Assemble it at a station and the map gets smaller."
+			]
+			id: "0C00000000000016"
+			rewards: [{
+				count: 1
+				id: "1C00000000000016"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:train"
+				criterion: ""
+				id: "2C00000000000016"
+				title: "Assemble your first train"
+				type: "advancement"
+			}]
+			title: "All aboard"
+			x: 8.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0C00000000000016"]
+			description: [
+				"A train schedule turns your locomotive into an employee. Set the stops, hand it over, walk away. Management."
+			]
+			id: "0C00000000000017"
+			rewards: [{
+				count: 1
+				id: "1C00000000000017"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:conductor"
+				criterion: ""
+				id: "2C00000000000017"
+				title: "Hand a driver a schedule"
+				type: "advancement"
+			}]
+			title: "Conductor instructor"
+			x: 8.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0C00000000000017"]
+			description: [
+				"Ride your own rails 5,000 blocks from where you boarded. Highmoor Terminus is 8,000 out and pays premium for precision mechanisms. Just saying."
+			]
+			icon: "create:track_station"
+			id: "0C00000000000018"
+			rewards: [{
+				count: 1
+				id: "1C00000000000018"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				advancement: "create:long_travel"
+				criterion: ""
+				id: "2C00000000000018"
+				title: "Travel 5,000 blocks by train"
+				type: "advancement"
+			}]
+			title: "Field trip"
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0C0000000000000F"]
+			description: [
+				"Two deployers. Face to face. You know what to do."
+			]
+			id: "0C00000000000019"
+			invisible: true
+			rewards: [{
+				count: 1
+				id: "1C00000000000019"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				advancement: "create:fist_bump"
+				criterion: ""
+				id: "2C00000000000019"
+				title: "Pound it"
+				type: "advancement"
+			}]
+			title: "Secret: respect"
+			x: 3.5d
+			y: 3.0d
 		}
 	]
 	title: "Chapter 2: Brass Age"

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+### Placement tooling (2026-06-10)
+- tools/gen_schematics.py: generates WorldEdit .schem files (Sponge v2, hand-
+  rolled NBT, self-validating). First set: 4 market stall variants + vendor
+  kiosk in admin_assets/schematics/; gold block = vendor position convention.
+- WorldEdit side server -> both so single-player build prep works.
+- docs/PLACEMENT.md: paste workflow, market layout guidance, curated community
+  schematic sources per outpost landmark.
+
 ### Fix: placard override via virtual datapack (2026-06-09)
 - The KubeJS-side remove couldn't suppress Create Deco's malformed placard
   recipe (unparseable recipes pass through to vanilla). Now overridden at the

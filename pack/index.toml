@@ -13,12 +13,20 @@ hash-format = "sha256"
 	hash = "d86b36bebf0f52843e91c5480d5cb3d3a0c79382fd5aae8e326c08d8a522bbc5"
 
 [[files]]
+	file = "config/ftbquests/quests/chapters/company_town.snbt"
+	hash = "c6e8163e72fcd4e9228db4d12f6cb9f7dc249f557923859f5d2e469daaa880ac"
+
+[[files]]
 	file = "config/ftbquests/quests/chapters/crossing_tier.snbt"
-	hash = "cd6eccef83aafbfbf6846017574355d4120ef5c6e6e22aef6482755816fe294a"
+	hash = "4ec2bb0adc9cad2da8248bc5036a5277cee7d0a19dc47351bbbd91459aeb6fb6"
 
 [[files]]
 	file = "config/ftbquests/quests/chapters/the_crossing.snbt"
-	hash = "a35a63bd394a7dd27457c013d07f5db8c7fbaa52f60a24b005d931ffe3371051"
+	hash = "8052248a5cf391393423027c8ce9d42a97c760c3a50bba038807a1be6247faba"
+
+[[files]]
+	file = "config/ftbquests/quests/chapters/the_ledger.snbt"
+	hash = "8aca2c1b0f1a339528cd1dd361986acf4438da441d89f7d02d924f7c6633ac9d"
 
 [[files]]
 	file = "config/ftbquests/quests/chapters/welcome.snbt"

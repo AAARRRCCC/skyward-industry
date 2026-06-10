@@ -1,0 +1,294 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_ledger"
+	group: ""
+	icon: "numismatics:crown"
+	id: "4A00000000000000"
+	order_index: 6
+	quests: [
+		{
+			dependencies: ["0A00000000000004"]
+			description: [
+				"One spur. The smallest coin there is. Sell an alloy at the market, finish a quest, find one in a couch. The ledger opens either way."
+			]
+			icon: "numismatics:spur"
+			id: "4A00000000000001"
+			rewards: [{
+				id: "5A00000000000001"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				count: 1L
+				id: "6A00000000000001"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			title: "First coin"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4A00000000000001"]
+			description: [
+				"Vendors also trade coins for coins. Change-making, denominating, light financial crime. The mod calls this advancement what it calls it. We don't make the rules."
+			]
+			id: "4A00000000000002"
+			rewards: [{
+				id: "5A00000000000002"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			tasks: [{
+				advancement: "numismatics:money_laundering"
+				criterion: ""
+				id: "6A00000000000002"
+				title: "Buy coins at a vendor"
+				type: "advancement"
+			}]
+			title: "Exchange rate"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4A00000000000001"]
+			description: [
+				"Sixty-four spurs make a cog. A cog means a production line ran while you did something else. That's the whole philosophy in one coin."
+			]
+			icon: "numismatics:cog"
+			id: "4A00000000000003"
+			rewards: [{
+				id: "5A00000000000003"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				count: 1L
+				id: "6A00000000000003"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			title: "First cog"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4A00000000000003"]
+			description: [
+				"Five hundred twelve spurs. Crown money is factory money; nobody hand-crafts their way to one. The Glasswind book vendors start making eye contact."
+			]
+			icon: "numismatics:crown"
+			id: "4A00000000000004"
+			rewards: [{
+				id: "5A00000000000004"
+				type: "xp_levels"
+				xp_levels: 8
+			}]
+			tasks: [{
+				count: 1L
+				id: "6A00000000000004"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			title: "First crown"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4A00000000000004"]
+			description: [
+				"Four thousand and ninety-six. A sun is what a freight empire looks like when it fits in your pocket."
+			]
+			icon: "numismatics:sun"
+			id: "4A00000000000005"
+			rewards: [{
+				count: 8
+				id: "5A00000000000005"
+				item: "minecraft:firework_rocket"
+				type: "item"
+			}, {
+				id: "5A00000000000015"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				count: 1L
+				id: "6A00000000000005"
+				item: "numismatics:sun"
+				type: "item"
+			}]
+			title: "Sun chaser"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4A00000000000003"]
+			description: [
+				"A blaze banker holds a shared account: town funds, crew dues, the group's airship budget. Coins in a chest are savings. Coins in a banker are infrastructure."
+			]
+			id: "4A00000000000006"
+			rewards: [{
+				id: "5A00000000000006"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				count: 1L
+				id: "6A00000000000006"
+				item: "numismatics:blaze_banker"
+				type: "item"
+			}]
+			title: "Town bank"
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4A00000000000001"]
+			description: [
+				"Throw a table cloth over a surface, set your wares, name your price. The admin market buys bulk; players sell each other everything else."
+			]
+			id: "4A00000000000007"
+			rewards: [{
+				id: "5A00000000000007"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				advancement: "create:table_cloth_shop"
+				criterion: ""
+				id: "6A00000000000007"
+				title: "Open a table cloth shop"
+				type: "advancement"
+			}]
+			title: "Open for business"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4A00000000000001"]
+			description: [
+				"Cardboard: the pulp line's gift to commerce. The Kelpwright Docks pay a premium for it, and everything in the parcel economy below is wrapped in it."
+			]
+			id: "4A00000000000008"
+			rewards: [{
+				count: 1
+				id: "5A00000000000008"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:cardboard"
+				criterion: ""
+				id: "6A00000000000008"
+				title: "Produce cardboard"
+				type: "advancement"
+			}]
+			title: "Part and parcel"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4A00000000000008"]
+			description: [
+				"The packager boxes inventory into parcels, addressed and stackable. Your warehouse learns to mail things."
+			]
+			id: "4A00000000000009"
+			rewards: [{
+				count: 1
+				id: "5A00000000000009"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:packager"
+				criterion: ""
+				id: "6A00000000000009"
+				title: "Package items"
+				type: "advancement"
+			}]
+			title: "Post production"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4A00000000000009"]
+			description: [
+				"Employ a mob at a stock ticker and place your first request. You now have a procurement department. It has one employee. It is doing its best."
+			]
+			id: "4A0000000000000A"
+			rewards: [{
+				count: 1
+				id: "5A0000000000000A"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:stock_ticker"
+				criterion: ""
+				id: "6A0000000000000A"
+				title: "Make a stock ticker request"
+				type: "advancement"
+			}]
+			title: "Order up"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4A0000000000000A"]
+			description: [
+				"Chain conveyors fling packages across the yard; a frogport catches yours. It is exactly as undignified and exactly as efficient as it sounds."
+			]
+			id: "4A0000000000000B"
+			rewards: [{
+				count: 1
+				id: "5A0000000000000B"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:frogport"
+				criterion: ""
+				id: "6A0000000000000B"
+				title: "Catch a package with a frogport"
+				type: "advancement"
+			}]
+			title: "Hungry hoppers"
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4A0000000000000B"]
+			description: [
+				"Factory gauges watch stock levels and file restock orders without you. The day this ticks is the day your factory stops needing a manager."
+				""
+				"Somewhere, an early-game version of you is still punching alloy into a log. Pour one out."
+			]
+			icon: "create:stock_ticker"
+			id: "4A0000000000000C"
+			rewards: [{
+				count: 1
+				id: "5A0000000000000C"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				advancement: "create:factory_gauge"
+				criterion: ""
+				id: "6A0000000000000C"
+				title: "Trigger an automatic restock request"
+				type: "advancement"
+			}]
+			title: "High logistics"
+			x: 0.0d
+			y: 6.0d
+		}
+	]
+	title: "The Ledger"
+}

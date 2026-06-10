@@ -43,22 +43,44 @@
 				"0D00000000000009"
 			]
 			description: [
-				"25k blocks, no friendly ports past Highmoor. You want: redundant engines, levitite reserves, spare envelopes, food, and a bed bolted down."
+				"25k blocks, no friendly ports past Highmoor. The yard won't sign off until the hold carries: ten hours of fuel in an engine, levitite reserve, spare envelopes, and rations."
 				""
 				"Pack like the return trip is twice as long. It will feel like it."
 			]
 			id: "0F00000000000002"
 			rewards: [{
-				count: 16
+				count: 1
 				id: "1F00000000000002"
-				item: "minecraft:golden_carrot"
+				item: "numismatics:crown"
 				type: "item"
 			}]
-			tasks: [{
-				id: "2F00000000000002"
-				title: "Fit out an expedition ship"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					advancement: "simulated:that_should_do_for_now"
+					criterion: ""
+					id: "2F00000000000002"
+					title: "Load 10+ hours of fuel into a portable engine"
+					type: "advancement"
+				}
+				{
+					count: 2L
+					id: "2F000000000000A2"
+					item: "aeronautics:levitite_blend_bucket"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "2F000000000000B2"
+					item: "aeronautics:white_envelope"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "2F000000000000C2"
+					item: "minecraft:golden_carrot"
+					type: "item"
+				}
+			]
 			title: "Fit for the long water"
 			x: 0.0d
 			y: 1.5d
@@ -112,6 +134,59 @@
 		{
 			dependencies: ["0F00000000000004"]
 			description: [
+				"Entries two and three are scattered in caches across the site. The crew split up. Find out why."
+			]
+			id: "0F00000000000007"
+			rewards: [{
+				count: 1
+				id: "1F00000000000007"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 1L
+					id: "2F00000000000007"
+					item: "kubejs:ships_log_2"
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "2F000000000000A7"
+					item: "kubejs:ships_log_3"
+					type: "item"
+				}
+			]
+			title: "What happened here"
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0F00000000000004"]
+			description: [
+				"The final entry isn't with the others. Somewhere on this island the crew put one room out of the weather and shut the door. Find the vault."
+			]
+			icon: "kubejs:ships_log_4"
+			id: "0F00000000000008"
+			rewards: [{
+				count: 1
+				id: "1F00000000000008"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			tasks: [{
+				count: 1L
+				id: "2F00000000000008"
+				item: "kubejs:ships_log_4"
+				type: "item"
+			}]
+			title: "The vault"
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0F00000000000004"]
+			description: [
 				"There it is. Teal, humming, faintly wrong. Fill your hold."
 			]
 			icon: "kubejs:aetherium"
@@ -136,7 +211,7 @@
 		{
 			dependencies: ["0F00000000000005"]
 			description: [
-				"The trip back, with cargo worth more than the ship. When you unload at your own dock, this chapter is done and the last tier opens."
+				"The trip back, with cargo worth more than the ship. Twelve aetherium is one creative motor's worth. When that much is in your hold at your own dock, this chapter is done and the last tier opens."
 				""
 				"The survey crew would have liked to see this."
 			]
@@ -149,13 +224,65 @@
 			}]
 			shape: "gear"
 			tasks: [{
+				count: 12L
 				id: "2F00000000000006"
-				title: "Bring it home"
-				type: "checkmark"
+				item: "kubejs:aetherium"
+				type: "item"
 			}]
 			title: "Homecoming"
 			x: 0.0d
 			y: 7.5d
+		}
+		{
+			dependencies: ["0F00000000000006"]
+			description: [
+				"The island doesn't move. The route only gets easier. Sixteen aetherium per run, and the post-game set funds itself."
+				""
+				"This one repeats. The coins are the freight fee."
+			]
+			id: "0F00000000000009"
+			repeatable: true
+			rewards: [{
+				count: 1
+				id: "1F00000000000009"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "2F00000000000009"
+				item: "kubejs:aetherium"
+				type: "item"
+			}]
+			title: "The trade route"
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0F00000000000003"]
+			description: [
+				"Some crews report a glimmering sea past the edge of everything. The ones who've seen it don't describe it the same way twice."
+			]
+			id: "0F0000000000000A"
+			invisible: true
+			rewards: [{
+				count: 1
+				id: "1F0000000000000A"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				advancement: "simulated:call_of_the_void"
+				criterion: ""
+				id: "2F0000000000000A"
+				title: "Call of the void"
+				type: "advancement"
+			}]
+			title: "Secret: the glimmering sea"
+			x: 1.5d
+			y: 3.0d
 		}
 	]
 	title: "Chapter 5: The Crossing"

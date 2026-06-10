@@ -32,6 +32,72 @@
 		{
 			dependencies: ["0F00000000000006"]
 			description: [
+				"The survey crew kept four logs. You have read at least one. The other three are still out there in caches and the vault."
+				""
+				"Shelve the full set somewhere visible. Every shipyard needs a founding myth."
+			]
+			icon: "kubejs:ships_log_4"
+			id: "0E00000000000008"
+			rewards: [{
+				id: "1E00000000000008"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			tasks: [
+				{
+					count: 1L
+					id: "2E00000000000008"
+					item: "kubejs:ships_log_1"
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "2E000000000000A8"
+					item: "kubejs:ships_log_2"
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "2E000000000000B8"
+					item: "kubejs:ships_log_3"
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "2E000000000000C8"
+					item: "kubejs:ships_log_4"
+					type: "item"
+				}
+			]
+			title: "The full archive"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F00000000000006"]
+			description: [
+				"Throw a music disc into the clouds and see what the sky gives back."
+			]
+			id: "0E00000000000007"
+			rewards: [{
+				id: "1E00000000000007"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				advancement: "aeronautics:song_of_the_sky"
+				criterion: ""
+				id: "2E00000000000007"
+				title: "Song of the sky"
+				type: "advancement"
+			}]
+			title: "Cloud skipping"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F00000000000006"]
+			description: [
 				"Twelve aetherium, four engine assemblies, four gyroscopic mechanisms, sturdy sheets, one precision mechanism, one mechanical crafter array big enough to be embarrassing."
 				""
 				"Infinite rotation. No fuel, no water wheel farms, no excuses. The factory built the thing that retires the factory's hardest problem."
@@ -75,7 +141,7 @@
 				type: "item"
 			}]
 			title: "Post-game logistics, dry"
-			x: -1.0d
+			x: -1.5d
 			y: 3.0d
 		}
 		{
@@ -97,8 +163,32 @@
 				type: "item"
 			}]
 			title: "Post-game logistics, wet"
-			x: 1.0d
+			x: 1.5d
 			y: 3.0d
+		}
+		{
+			dependencies: ["0F00000000000006"]
+			description: [
+				"The blend has one more trick, if you treat it differently."
+			]
+			id: "0E00000000000006"
+			invisible: true
+			rewards: [{
+				id: "1E00000000000006"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			shape: "diamond"
+			tasks: [{
+				advancement: "aeronautics:now_available_in_pink"
+				criterion: ""
+				id: "2E00000000000006"
+				title: "Crystallize pearlescent levitite"
+				type: "advancement"
+			}]
+			title: "Secret: in pink"
+			x: 3.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0E00000000000002"]

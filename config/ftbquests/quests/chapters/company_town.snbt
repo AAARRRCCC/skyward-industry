@@ -1,0 +1,337 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "company_town"
+	group: ""
+	icon: "createdeco:yellow_brass_lamp"
+	id: "4B00000000000000"
+	order_index: 7
+	quests: [
+		{
+			dependencies: ["0A00000000000001"]
+			description: [
+				"A factory you can't stand to look at is a factory you stop improving. This chapter pays coins for making the place worth living in."
+				""
+				"Eight brass lamps. Light the yard. Insurance loves it; so do we."
+			]
+			icon: "createdeco:yellow_brass_lamp"
+			id: "4B00000000000001"
+			rewards: [{
+				count: 1
+				id: "5B00000000000001"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				count: 8L
+				id: "6B00000000000001"
+				item: "createdeco:yellow_brass_lamp"
+				type: "item"
+			}]
+			title: "Lamplighter"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4B00000000000001"]
+			description: [
+				"Sixteen catwalks. Real factories route people OVER the machines, not through them. Your shins agree."
+			]
+			id: "4B00000000000002"
+			rewards: [{
+				count: 1
+				id: "5B00000000000002"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "6B00000000000002"
+				item: "createdeco:iron_catwalk"
+				type: "item"
+			}]
+			title: "Catwalk king"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4B00000000000001"]
+			description: [
+				"Four shipping containers. Nothing says 'goods move through here' like a stack of corrugated rectangles in company colors."
+			]
+			id: "4B00000000000003"
+			rewards: [{
+				count: 1
+				id: "5B00000000000003"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "6B00000000000003"
+				item: "createdeco:red_shipping_container"
+				type: "item"
+			}]
+			title: "Containerized"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4B00000000000001"]
+			description: [
+				"Eight placards. Label the levers. Future-you, at 3am, mid-malfunction, sends thanks."
+			]
+			id: "4B00000000000004"
+			rewards: [{
+				count: 1
+				id: "5B00000000000004"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "6B00000000000004"
+				item: "create:placard"
+				type: "item"
+			}]
+			title: "Signage department"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4B00000000000001"]
+			description: [
+				"Thirty-two hull blocks. Riveted plating for ships that look like they're FROM somewhere. Bare wool envelopes are a phase; hulls are a fleet."
+			]
+			id: "4B00000000000005"
+			rewards: [{
+				count: 1
+				id: "5B00000000000005"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			tasks: [{
+				count: 32L
+				id: "6B00000000000005"
+				item: "createdeco:brass_hull"
+				type: "item"
+			}]
+			title: "Hull integrity"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4B00000000000002"]
+			description: [
+				"Sixteen mesh fence. See-through, climb-proof, and it reads 'authorized personnel' in every language."
+			]
+			id: "4B00000000000006"
+			rewards: [{
+				count: 1
+				id: "5B00000000000006"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "6B00000000000006"
+				item: "createdeco:iron_mesh_fence"
+				type: "item"
+			}]
+			title: "Perimeter"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4B00000000000002"]
+			description: [
+				"Sixteen brass bars. For windows that need to say 'no' politely."
+			]
+			id: "4B00000000000007"
+			rewards: [{
+				count: 1
+				id: "5B00000000000007"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "6B00000000000007"
+				item: "createdeco:brass_bars"
+				type: "item"
+			}]
+			title: "Bars and bolts"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4B00000000000001"]
+			description: [
+				"Sixteen copycat blocks. They wear any block's face and keep their own physics. The shipwright's drywall."
+			]
+			id: "4B00000000000008"
+			rewards: [{
+				count: 1
+				id: "5B00000000000008"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "6B00000000000008"
+				item: "copycats:copycat_block"
+				type: "item"
+			}]
+			title: "The imitation game"
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4B00000000000008"]
+			description: [
+				"Sixteen copycat stairs and slabs, mixed to taste. Curves are a lie we tell with right angles."
+			]
+			id: "4B00000000000009"
+			rewards: [{
+				count: 1
+				id: "5B00000000000009"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 8L
+					id: "6B00000000000009"
+					item: "copycats:copycat_stairs"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6B000000000000A9"
+					item: "copycats:copycat_slab"
+					type: "item"
+				}
+			]
+			title: "Finish carpentry"
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4B00000000000004"]
+			description: [
+				"Four nameplates. Every vessel, every depot, every suspiciously load-bearing water wheel deserves a name."
+			]
+			id: "4B0000000000000A"
+			rewards: [{
+				count: 1
+				id: "5B0000000000000A"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "6B0000000000000A"
+				item: "simulated:white_nameplate"
+				type: "item"
+			}]
+			title: "Nameplate works"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4B00000000000005"]
+			description: [
+				"Sixteen sails. For windmills, for show, for the one crew member who insists the cargo hauler needs to look 'fast'."
+			]
+			id: "4B0000000000000B"
+			rewards: [{
+				count: 1
+				id: "5B0000000000000B"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "6B0000000000000B"
+				item: "simulated:white_symmetric_sail"
+				type: "item"
+			}]
+			title: "Sail loft"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4B00000000000003"]
+			description: [
+				"Eight framed windows. The difference between a wall with holes and architecture."
+			]
+			id: "4B0000000000000C"
+			rewards: [{
+				count: 1
+				id: "5B0000000000000C"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "6B0000000000000C"
+				item: "createdeco:brass_window"
+				type: "item"
+			}]
+			title: "Window shopping"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4B00000000000001"]
+			description: [
+				"Build a cuckoo clock and let it announce bedtime to the whole yard. Morale infrastructure."
+			]
+			id: "4B0000000000000D"
+			rewards: [{
+				count: 1
+				id: "5B0000000000000D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:cuckoo_clock"
+				criterion: ""
+				id: "6B0000000000000D"
+				title: "Hear a cuckoo clock call bedtime"
+				type: "advancement"
+			}]
+			title: "Interior design"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4B0000000000000D"]
+			description: [
+				"A mechanical arm. A jukebox. A request line."
+			]
+			id: "4B0000000000000E"
+			invisible: true
+			rewards: [{
+				count: 1
+				id: "5B0000000000000E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				advancement: "create:musical_arm"
+				criterion: ""
+				id: "6B0000000000000E"
+				title: "DJ Mechanico"
+				type: "advancement"
+			}]
+			title: "Secret: request line"
+			x: 4.5d
+			y: 0.0d
+		}
+	]
+	title: "Company Town"
+}

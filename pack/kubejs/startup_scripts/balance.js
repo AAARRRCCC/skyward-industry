@@ -50,9 +50,10 @@ global.BAL = {
 		// are EARLY game; the propeller bearing eats a calibrated shaft
 		// (pattern-encoded in ch3_aeronautics.js). Wooden's drag penalty is
 		// EXPERIMENTAL, tuned in kubejs/data/skyward/physics_block_properties/
-		// wooden_propeller_drag.json. Measured: scale 2.0 = 0.25pN drag vs
-		// 249.45pN prop thrust (negligible) -> now 300.0, targeting ~15% of one
-		// prop's thrust assuming linear scaling. Delete the file to remove.
+		// wooden_propeller_drag.json. Calibration: scale 300 added ~169pN drag
+		// in flight (cancelled a 249.45pN prop against an 80pN hull -> ship
+		// didn't move), i.e. ~0.56pN per scale unit. Now 65.0 targeting ~37pN,
+		// ~15% of one prop's thrust. Delete the file to remove the penalty.
 		// Smart propeller output count (mod default 2).
 		smartPropellerCount: 1,
 		// Aeroworks gyroscope: gyroscopic mechanisms per unit.

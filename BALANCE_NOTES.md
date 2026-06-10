@@ -51,3 +51,8 @@ One entry per session. Don't editorialize less — "felt bad" is data.
   confirms wooden/andesite thrust is identical in the mod. Raised scale to 300.0
   (~37pN ≈ 15% of one prop's thrust if linear). Wooden recipe reshaped to shaft
   ringed by 4 slabs per Brady. Re-measure next session.
+- Flight data round 2 (Brady): basic one-prop ship has ~80pN hull/balloon drag;
+  at scale 300 the wooden prop's added drag cancelled the remaining ~169pN of
+  thrust and the ship did not move. Effective rate ≈ 0.56pN/unit in flight (the
+  2.0→0.25pN idle reading was not representative). Scale set to 65.0 → expect
+  ~37pN ≈ 15% of one prop's thrust. Verify ship moves + feels like a tier gap.

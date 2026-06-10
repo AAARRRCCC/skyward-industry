@@ -70,7 +70,7 @@ hash-format = "sha256"
 
 [[files]]
 	file = "kubejs/data/skyward/physics_block_properties/wooden_propeller_drag.json"
-	hash = "13711c9f269e02e51958fa7d663c9cd95efc9939c0fa0ddb38a4506f90fe710f"
+	hash = "d7b28e686e95d9d0d8619ad4f34c1c93cf173f7967877298f50a552378ca04c4"
 
 [[files]]
 	file = "kubejs/server_scripts/ch1_andesite.js"
@@ -94,7 +94,7 @@ hash-format = "sha256"
 
 [[files]]
 	file = "kubejs/startup_scripts/balance.js"
-	hash = "a44a73fa1c151670a612ae13b26362e2e13f40922253f2459294804d4f7ec72c"
+	hash = "2a65a876b597c82dfe5b6a7fd43093423f4b1ec809aa75a3f355ef9bf9f358c0"
 
 [[files]]
 	file = "kubejs/startup_scripts/economy_balance.js"

@@ -21,6 +21,10 @@ hash-format = "sha256"
 	hash = "4ec2bb0adc9cad2da8248bc5036a5277cee7d0a19dc47351bbbd91459aeb6fb6"
 
 [[files]]
+	file = "config/ftbquests/quests/chapters/flight_computer.snbt"
+	hash = "c779ebde95fcd7e218348ebee0227a0c86af3fc77ed09fdd20a6eb9cbb939a9b"
+
+[[files]]
 	file = "config/ftbquests/quests/chapters/the_crossing.snbt"
 	hash = "8052248a5cf391393423027c8ce9d42a97c760c3a50bba038807a1be6247faba"
 
@@ -138,6 +142,11 @@ hash-format = "sha256"
 	metafile = true
 
 [[files]]
+	file = "mods/chunkyborder.pw.toml"
+	hash = "85791c60a68e4bb300d04c78a35bd4607289d72ce6c27e89055c90d9eb6763dd"
+	metafile = true
+
+[[files]]
 	file = "mods/clumps.pw.toml"
 	hash = "bb949acf20801f1d5794ed1e95e1a6bc35c4a6995437246bbfdf52b78f0a3bc2"
 	metafile = true
@@ -175,6 +184,11 @@ hash-format = "sha256"
 [[files]]
 	file = "mods/create.pw.toml"
 	hash = "1ab83aacbfe2cebf524391d0e5497a8024fcc58400b579792ffc612bed6aeb8b"
+	metafile = true
+
+[[files]]
+	file = "mods/distanthorizons.pw.toml"
+	hash = "2e82f97c0dbcf669622c9bbdd2b21d70e6cb97f6925a5f8af913f9653fee9517"
 	metafile = true
 
 [[files]]

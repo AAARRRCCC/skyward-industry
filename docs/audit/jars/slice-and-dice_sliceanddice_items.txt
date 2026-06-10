@@ -1,0 +1,5 @@
+block.sliceanddice.fertilizer
+block.sliceanddice.slicer
+block.sliceanddice.sprinkler
+block.sliceanddice.wet_air
+item.sliceanddice.fertilizer_bucket

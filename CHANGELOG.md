@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+### CI + world shape + Flight Computer chapter (2026-06-10)
+- GitHub Actions: validators, quest audits, script syntax, data parse, and
+  pack-drift check on every push/PR.
+- World shape (docs/WORLD_SHAPE.md): ChunkyBorder 26k circular wall + Distant
+  Horizons server-side LOD pregen of the 20k charted disk — instant whole-world
+  vista for every player; the 20k→26k ring stays unrendered fog ("the long
+  water"); the Crossing island fades in mid-voyage. True void rejected with
+  reasons (no datapack primitive; spec bans worldgen; border can't except).
+  Pack 45 → 47 mods.
+- Quest book: "The Flight Computer" chapter — 6 visibly-optional CC: Tweaked
+  quests (130 quests / 9 chapters total). Per Brady: optional, not secret.
+
 ### Optional-content tier (2026-06-10)
 - +7 mods (38 → 45), progression-neutral by construction: CC: Tweaked + CC: Sable
   (programmable airships) + Advanced Peripherals, Farmer's Delight + Slice & Dice,

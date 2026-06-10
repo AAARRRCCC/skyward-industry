@@ -67,6 +67,10 @@ MODRINTH_PINS = [
     ("slice-and-dice",    "both",   False, True, None),
     ("interiors",         "both",   False, True, None),
     ("framedblocks",      "both",   False, True, None),
+    # --- world shape 2026-06-10: 26k hard border, 20k charted disk (WORLD_SHAPE.md) ---
+    ("chunkyborder",      "server", False, True, None),
+    ("distanthorizons",   "both",   True,  True,
+     "Whole-world LODs (server-side pregen + sharing). Disable client-side if FPS suffers."),
 ]
 # slugs whose pinned version differs from the audit's newest, or weren't audited
 VERSION_OVERRIDES = {

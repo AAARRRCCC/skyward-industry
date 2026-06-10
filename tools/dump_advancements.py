@@ -16,8 +16,12 @@ CACHE = Path(os.environ["TEMP"]) / "skyward-jarcache"
 OUT = ROOT / "docs/audit"
 
 ADV_SLUGS = ["create", "create-aeronautics", "create-aeroworks", "numismatics",
-             "create-deco", "copycats", "create-connected"]
-ITEM_SLUGS = ["create-deco", "copycats", "create-connected"]
+             "create-deco", "copycats", "create-connected",
+             "cc-tweaked", "cc-sable", "advancedperipherals",
+             "farmers-delight", "slice-and-dice", "interiors", "framedblocks"]
+ITEM_SLUGS = ["create-deco", "copycats", "create-connected",
+              "cc-tweaked", "cc-sable", "advancedperipherals",
+              "farmers-delight", "slice-and-dice", "interiors", "framedblocks"]
 
 
 def jar_for(slug, lock):

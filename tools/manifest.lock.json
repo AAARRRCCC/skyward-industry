@@ -710,6 +710,42 @@
       }
     },
     {
+      "name": "Chunky Border",
+      "slug": "chunkyborder",
+      "side": "server",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "s86X568j",
+        "version_id": "Pj0tqKnE",
+        "version_number": "1.2.18",
+        "filename": "ChunkyBorder-1.2.18.jar",
+        "url": "https://cdn.modrinth.com/data/s86X568j/versions/Pj0tqKnE/ChunkyBorder-1.2.18.jar",
+        "sha512": "796fa11d0f481b0af9adea76ea2c494086d63adca4650571f94e610ead1af3ba5d88db1d7a177266588fd0647a34d607bf45a75ebbb9639e8d6888035723934d",
+        "size": 155772
+      }
+    },
+    {
+      "name": "Distant Horizons",
+      "slug": "distanthorizons",
+      "side": "both",
+      "optional": true,
+      "default": true,
+      "note": "Whole-world LODs (server-side pregen + sharing). Disable client-side if FPS suffers.",
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "uCdwusMi",
+        "version_id": "oYXIfeus",
+        "version_number": "3.0.3-b-1.21.1",
+        "filename": "DistantHorizons-3.0.3-b-1.21.1-fabric-neoforge.jar",
+        "url": "https://cdn.modrinth.com/data/uCdwusMi/versions/oYXIfeus/DistantHorizons-3.0.3-b-1.21.1-fabric-neoforge.jar",
+        "sha512": "8b39994ee6c5d71b8afacc80c2d13dd92fad10281374392c0049d1b6aebc823d7e137125268dee7383d3ff753eacf708fbe87d773cf0087d7b6057a05cf18ad3",
+        "size": 30113661
+      }
+    },
+    {
       "name": "Sodium",
       "slug": "sodium",
       "side": "client",

@@ -1,8 +1,8 @@
 # Quest book design — Skyward Industry
 
-Expansion of 2026-06-10. Shipped: **124 quests across 8 chapters**
+Expansion of 2026-06-10. Shipped: **130 quests across 9 chapters**
 (Welcome 6 · Andesite 22 · Brass 25 · Aeronautics 27 · Crossing Tier 8 ·
-The Crossing 10 · The Ledger 12 · Company Town 14).
+The Crossing 10 · The Ledger 12 · Company Town 14 · The Flight Computer 6).
 
 ## Gating philosophy (the no-spam rule)
 
@@ -89,6 +89,12 @@ play). Vendor exchange (adv `money_laundering`), town bank (blaze banker item),
 player shop (adv `table_cloth_shop`), then Create 6's logistics-economy chain:
 cardboard (adv) → packager (adv) → stock ticker (adv) → frogport (adv) → factory
 gauge (adv, capstone).
+
+### 8 The Flight Computer (6) — CC: Tweaked, visibly optional
+Every quest carries `optional: true` and the chapter says so in its first
+description: computers are a parallel toy, never required. Item-gated on CC
+hardware (computer → turtle/monitors/modems → advanced computer + cable into a
+christened ship → pocket remote). Quest IDs `4C`/`5C`/`6C`.
 
 ### 7 Company Town (14) — decor sidequests that feed the coin sink
 Item milestones in Create Deco (lamps, catwalks, containers, hulls, mesh, bars,

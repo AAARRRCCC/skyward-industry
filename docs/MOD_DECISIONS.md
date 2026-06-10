@@ -100,8 +100,14 @@ with — content mods must still be installed by server + all clients.
 | Interiors | 0.6.1 | Seats/furniture for ships + trains |
 | Framed Blocks | 10.6.0 | Copycat-style shapes. ⚠ No Sable mass tags: default physics weight on ships — fine on land, use sparingly aloft |
 
-This formally retires the "~40 mods" lean target (now 45); the constraint going
+This formally retires the "~40 mods" lean target; the constraint going
 forward is server performance, measured with Spark, not a count.
+
+**World shape additions (same day):** ChunkyBorder 1.2.18 (server-only; the 26k
+circular wall) and Distant Horizons 3.0.3-b (both sides, optional default-on;
+server-side LOD pregen + sharing so the whole 20k charted disk renders instantly
+for every player). Architecture, commands, and the void-isn't-possible honesty:
+`docs/WORLD_SHAPE.md`. Pack now 47 mods.
 
 **Considered for this tier and excluded:** Create Jetpack (personal flight before
 airships guts the "ships matter" pillar), Create Big Cannons (ship-to-ship combat vs

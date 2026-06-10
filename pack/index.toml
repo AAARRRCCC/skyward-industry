@@ -107,6 +107,21 @@ hash-format = "sha256"
 	metafile = true
 
 [[files]]
+	file = "mods/clumps.pw.toml"
+	hash = "bb949acf20801f1d5794ed1e95e1a6bc35c4a6995437246bbfdf52b78f0a3bc2"
+	metafile = true
+
+[[files]]
+	file = "mods/copycats+-aeronautics-weight.pw.toml"
+	hash = "55bb55cb4afafb78cc04a3db0196663ce4adfb624ed98d7829ca9e6ee372b0f9"
+	metafile = true
+
+[[files]]
+	file = "mods/copycats.pw.toml"
+	hash = "0d12c94030b84dffec450d4b1b58e6d04e71ac8b7a481618193c9398a46120ef"
+	metafile = true
+
+[[files]]
 	file = "mods/create-aeronautics.pw.toml"
 	hash = "5f9e7643dd414b106c5fbe433fe4ba18149fc1aa03b9bb41f4bd50b0eb52186e"
 	metafile = true
@@ -117,8 +132,28 @@ hash-format = "sha256"
 	metafile = true
 
 [[files]]
+	file = "mods/create-connected.pw.toml"
+	hash = "04d9992115ec816bb093238f2f8644bca82988a20372c0f102efd731da35660e"
+	metafile = true
+
+[[files]]
+	file = "mods/create-deco.pw.toml"
+	hash = "146ef11e383a0ccc22e480fda477d4ab883f023bd9c4541229b91adae791a1da"
+	metafile = true
+
+[[files]]
 	file = "mods/create.pw.toml"
 	hash = "1ab83aacbfe2cebf524391d0e5497a8024fcc58400b579792ffc612bed6aeb8b"
+	metafile = true
+
+[[files]]
+	file = "mods/dynamic-fps.pw.toml"
+	hash = "5aedcebe8f9a8ea0514d3f82a903a7846667f3f4c22a909ec44724953812ca62"
+	metafile = true
+
+[[files]]
+	file = "mods/entityculling.pw.toml"
+	hash = "c91bbd06e02aa7dbf0cdbafd84bacb667d36e7d4abc15edcb75813ead9cfa932"
 	metafile = true
 
 [[files]]
@@ -149,6 +184,16 @@ hash-format = "sha256"
 [[files]]
 	file = "mods/ftb-xmod-compat.pw.toml"
 	hash = "6d35d979c13249cf9b364407da1a1db084eaa5673083ed19f3bc95872803a1bc"
+	metafile = true
+
+[[files]]
+	file = "mods/ftbchunksaerospace.pw.toml"
+	hash = "310766995d4a1b92367f309d3cb7a46e8ea7cd397ab53a85ccb3bf9e79345dbd"
+	metafile = true
+
+[[files]]
+	file = "mods/immediatelyfast.pw.toml"
+	hash = "64503e57e779d10b2e7a498928dbcad1bc628b5854abd57f6e0ddd9cbe16ed4e"
 	metafile = true
 
 [[files]]
@@ -187,6 +232,11 @@ hash-format = "sha256"
 	metafile = true
 
 [[files]]
+	file = "mods/modernfix.pw.toml"
+	hash = "38ca401cb2bdd83a5f91712b6375f0ba11371b863e8c63ba8fafb110515b3b38"
+	metafile = true
+
+[[files]]
 	file = "mods/mouse-tweaks.pw.toml"
 	hash = "93108d7926a456a6c8944bc80010ebeca71e3c63575c2170b0118d732161db11"
 	metafile = true
@@ -202,6 +252,16 @@ hash-format = "sha256"
 	metafile = true
 
 [[files]]
+	file = "mods/sable-schematic-tool.pw.toml"
+	hash = "b8d46a9063f07f1a27591f30667ca7a92dd2dcc306f814cf8a886db3c293169e"
+	metafile = true
+
+[[files]]
+	file = "mods/sable-weighted-create-deco.pw.toml"
+	hash = "6dc40cb24422d54437515070ad783a31c649dc3ac74c297130566ff0704910df"
+	metafile = true
+
+[[files]]
 	file = "mods/sable.pw.toml"
 	hash = "2374d2275bbfc265d1c11f6b71bfb3248deb01f8d11e180573ec79f004ad8626"
 	metafile = true
@@ -214,6 +274,11 @@ hash-format = "sha256"
 [[files]]
 	file = "mods/sodium.pw.toml"
 	hash = "b0a8abf5b98c9e389e645e9fcdabee74054c413bfcbd58fe055ca0a3799f2538"
+	metafile = true
+
+[[files]]
+	file = "mods/spark.pw.toml"
+	hash = "287e9897fa366a78ac53138d39ee529a436e8fcde6fce39f6f3379ef7dc93525"
 	metafile = true
 
 [[files]]

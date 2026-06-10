@@ -350,6 +350,240 @@
       }
     },
     {
+      "name": "Create: Connected",
+      "slug": "create-connected",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "Vg5TIO6d",
+        "version_id": "iUFG9osW",
+        "version_number": "1.2.2-mc1.21.1",
+        "filename": "create_connected-1.2.2-mc1.21.1.jar",
+        "url": "https://cdn.modrinth.com/data/Vg5TIO6d/versions/iUFG9osW/create_connected-1.2.2-mc1.21.1.jar",
+        "sha512": "26af7e18f3e045b24a9504e0394563714bb19823552a4633a1662cf10eeb60eb36ebef7243f3d1294db1ce58f510e2f8372bdfaa63cc424214466f6abce2fc2a",
+        "size": 6643731
+      }
+    },
+    {
+      "name": "Create: Copycats+",
+      "slug": "copycats",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "UT2M39wf",
+        "version_id": "kecZ0sl7",
+        "version_number": "3.0.4+mc.1.21.1-neoforge",
+        "filename": "copycats-3.0.4+mc.1.21.1-neoforge.jar",
+        "url": "https://cdn.modrinth.com/data/UT2M39wf/versions/kecZ0sl7/copycats-3.0.4%2Bmc.1.21.1-neoforge.jar",
+        "sha512": "ecc98e659be66a71af0aee66a9f4c7c8838f4f0101402644929079ce7280a572a000e7e417905e1869a51d6e49ebbd601008f54585e07ee4ed01f2c4bc752bfe",
+        "size": 1791747
+      }
+    },
+    {
+      "name": "Copycats+ aeronautics weight",
+      "slug": "copycats+-aeronautics-weight",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "wjpmYU1u",
+        "version_id": "wsXjRa7l",
+        "version_number": "1.1.1",
+        "filename": "aerocopycats-1.1.1.jar",
+        "url": "https://cdn.modrinth.com/data/wjpmYU1u/versions/wsXjRa7l/aerocopycats-1.1.1.jar",
+        "sha512": "4f48c03a25a6f4ec022398cece20e5aa8d51f00951a0f568980e6e5419c1af2f12c8bb652500721afef119ecc455e4c5b1bc4bb7bef38d88846759f0e4c39e8c",
+        "size": 14702
+      }
+    },
+    {
+      "name": "Create Deco",
+      "slug": "create-deco",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "sMvUb4Rb",
+        "version_id": "qrcMVoBD",
+        "version_number": "2.1.3",
+        "filename": "createdeco-2.1.3.jar",
+        "url": "https://cdn.modrinth.com/data/sMvUb4Rb/versions/qrcMVoBD/createdeco-2.1.3.jar",
+        "sha512": "c536662f9d47ad57a37419165ded14835b23ad6c3e82a920298ecd7ee074244b0b6062ef9cc7ea4501ddd35919a840faccd7fc64e43eb8df31e12076681c3c0d",
+        "size": 3328498
+      }
+    },
+    {
+      "name": "Sable: Weighted - Create: Deco",
+      "slug": "sable-weighted-create-deco",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "kHIRKdOE",
+        "version_id": "VvftnDNF",
+        "version_number": "1.0.2",
+        "filename": "sable-weighted_createdeco-1.0.2.jar",
+        "url": "https://cdn.modrinth.com/data/kHIRKdOE/versions/VvftnDNF/sable-weighted_createdeco-1.0.2.jar",
+        "sha512": "df4215a14bfc05bd09a20d7b353c919cb0c4149957ce3fc94337ddbd350b260a2853b47febce87f6f2b1cc74d741b4962f8dc9688b45c0b529406db81c2196d9",
+        "size": 239590
+      }
+    },
+    {
+      "name": "FTB Chunks: Sable Aerospace",
+      "slug": "ftbchunksaerospace",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "aDOJNNsW",
+        "version_id": "zy8ymgWP",
+        "version_number": "1.0.1",
+        "filename": "ftbchunksaerospace-1.0.1.jar",
+        "url": "https://cdn.modrinth.com/data/aDOJNNsW/versions/zy8ymgWP/ftbchunksaerospace-1.0.1.jar",
+        "sha512": "09311c87c644bfede11b28d69389c296468a2281eb8f1097424d82d1ae7aa25dc30cbeb568b27e8d493ad12cb64b32e2958b6e3269202d26481ee15b64633003",
+        "size": 378309
+      }
+    },
+    {
+      "name": "Sable Schematic Tool",
+      "slug": "sable-schematic-tool",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "hNGBYvQN",
+        "version_id": "iJvX7nRZ",
+        "version_number": "0.2.6",
+        "filename": "sable-schematic-api-0.2.6.jar",
+        "url": "https://cdn.modrinth.com/data/hNGBYvQN/versions/iJvX7nRZ/sable-schematic-api-0.2.6.jar",
+        "sha512": "98f18c6c0d39b3def00f74865ed9db7c5a234cabbfbd1aab87592ace90c12c201337e69c6fe08cb3e4a3b77ef91ef92adfea2d70701cc3008993701d50a6fbdf",
+        "size": 923983
+      }
+    },
+    {
+      "name": "ModernFix",
+      "slug": "modernfix",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "nmDcB62a",
+        "version_id": "iFmzYK6q",
+        "version_number": "5.27.12+mc1.21.1",
+        "filename": "modernfix-neoforge-5.27.12+mc1.21.1.jar",
+        "url": "https://cdn.modrinth.com/data/nmDcB62a/versions/iFmzYK6q/modernfix-neoforge-5.27.12%2Bmc1.21.1.jar",
+        "sha512": "864ce0d12f67444adb932a1ffb54c2f66e567aef39104661273d6e05a914bace6624d541bcf98a477df4f495f0841301ac46908cd15449352ef38ba42d3724d4",
+        "size": 589533
+      }
+    },
+    {
+      "name": "Clumps",
+      "slug": "clumps",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "Wnxd13zP",
+        "version_id": "jo7lDoK4",
+        "version_number": "19.0.0.1",
+        "filename": "Clumps-neoforge-1.21.1-19.0.0.1.jar",
+        "url": "https://cdn.modrinth.com/data/Wnxd13zP/versions/jo7lDoK4/Clumps-neoforge-1.21.1-19.0.0.1.jar",
+        "sha512": "314d8d8e640d73041f27e0f3f2cad7aad8b4c77dbd7fb31700ef7760362261f77085eed5289555c725d99c3f47a114e7290cd608f39c9f0f12ef74958463bdcc",
+        "size": 18382
+      }
+    },
+    {
+      "name": "spark",
+      "slug": "spark",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "l6YH9Als",
+        "version_id": "v5qtqRQi",
+        "version_number": "1.10.124-neoforge-1.21.1",
+        "filename": "spark-1.10.124-neoforge.jar",
+        "url": "https://cdn.modrinth.com/data/l6YH9Als/versions/v5qtqRQi/spark-1.10.124-neoforge.jar",
+        "sha512": "f86ce34f2759c69df82578c397ff55b666c84626229a98f598458b960c21b38c95d6bfef4772af7f963c4f4868e5e2d9aef6b99c1d51bab55bf45e0e6e6b5ed4",
+        "size": 3642581
+      }
+    },
+    {
+      "name": "Entity Culling",
+      "slug": "entityculling",
+      "side": "client",
+      "optional": true,
+      "default": true,
+      "note": "Client perf: skip hidden entities (disable first if ships flicker)",
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "NNAgCjsB",
+        "version_id": "2tOn8XA2",
+        "version_number": "1.10.2",
+        "filename": "entityculling-neoforge-1.10.2-mc1.21.1.jar",
+        "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/2tOn8XA2/entityculling-neoforge-1.10.2-mc1.21.1.jar",
+        "sha512": "237b9cb0df379341d27e22d20f9c87d1ec5bab571131df5d481da7f19450e0dd9eb42c0a5d6cccc913975f72ff4acf2af356765ff07383b20f3357b07db4bb2d",
+        "size": 1582824
+      }
+    },
+    {
+      "name": "ImmediatelyFast",
+      "slug": "immediatelyfast",
+      "side": "client",
+      "optional": true,
+      "default": true,
+      "note": "Client perf: batched immediate-mode rendering",
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "5ZwdcRci",
+        "version_id": "PhxY0iHw",
+        "version_number": "1.6.10+1.21.1-neoforge",
+        "filename": "ImmediatelyFast-NeoForge-1.6.10+1.21.1.jar",
+        "url": "https://cdn.modrinth.com/data/5ZwdcRci/versions/PhxY0iHw/ImmediatelyFast-NeoForge-1.6.10%2B1.21.1.jar",
+        "sha512": "93fb2685547f1c7d95b558b3b24efd53551b8ab6978b52483d2924a03de044e992669f83e2ee73f9ad1308035b932de431f4f662a971f496c7fdc55195aebd7b",
+        "size": 368598
+      }
+    },
+    {
+      "name": "Dynamic FPS",
+      "slug": "dynamic-fps",
+      "side": "client",
+      "optional": true,
+      "default": true,
+      "note": "Client perf: throttle FPS when unfocused",
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "LQ3K71Q1",
+        "version_id": "T238FZpQ",
+        "version_number": "3.11.4",
+        "filename": "dynamic-fps-3.11.4+minecraft-1.21.0-neoforge.jar",
+        "url": "https://cdn.modrinth.com/data/LQ3K71Q1/versions/T238FZpQ/dynamic-fps-3.11.4%2Bminecraft-1.21.0-neoforge.jar",
+        "sha512": "8eb18a280b265e598540306275b51a165836f4b14c6c703b6ced11fcac50bfab439e4deb69e222f62614a9f15fa0ef58e5bd84e20e37ae57755d9c2f8b134057",
+        "size": 220193
+      }
+    },
+    {
       "name": "Sodium",
       "slug": "sodium",
       "side": "client",

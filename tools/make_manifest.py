@@ -38,6 +38,22 @@ MODRINTH_PINS = [
      "Client QoL: inventory sorting (needs libipn + kotlin-for-forge)"),
     ("libipn",            "client", True,  True, "Dep of inventory-profiles-next"),
     ("kotlin-for-forge",  "client", True,  True, "Dep of libipn"),
+    # --- manifest expansion 2026-06-09: build/QoL Create addons ---
+    ("create-connected",  "both",   False, True, None),
+    ("copycats",          "both",   False, True, None),
+    ("copycats+-aeronautics-weight", "both", False, True, None),
+    ("create-deco",       "both",   False, True, None),
+    ("sable-weighted-create-deco", "both", False, True, None),
+    # --- aeronautics extras ---
+    ("ftbchunksaerospace", "both",  False, True, None),
+    ("sable-schematic-tool", "both", False, True, None),
+    # --- performance suite ---
+    ("modernfix",         "both",   False, True, None),
+    ("clumps",            "both",   False, True, None),
+    ("spark",             "both",   False, True, None),
+    ("entityculling",     "client", True,  True, "Client perf: skip hidden entities (disable first if ships flicker)"),
+    ("immediatelyfast",   "client", True,  True, "Client perf: batched immediate-mode rendering"),
+    ("dynamic-fps",       "client", True,  True, "Client perf: throttle FPS when unfocused"),
 ]
 # slugs whose pinned version differs from the audit's newest, or weren't audited
 VERSION_OVERRIDES = {

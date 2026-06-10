@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+### Manifest expansion (2026-06-09, post-review)
+- +13 mods (25 → 38): Create: Connected, Copycats+ (+weight compat), Create Deco
+  (+weight compat), FTB Chunks: Sable Aerospace, Sable Schematic Tool, ModernFix,
+  Clumps, Spark, Entity Culling / ImmediatelyFast / Dynamic FPS (client optional).
+- Dependency-checked: no new transitive requirements.
+- Still excluded with reasons (MOD_DECISIONS.md): Steam 'n' Rails (no 1.21.1 NeoForge
+  build anywhere), Crafts & Additions, Enchantment Industry, Diesel Generators.
+
 ### Phase 6 — polish & balance support (2026-06-09)
 - README.md: friend-facing install (packwiz-installer pre-launch command), server
   install, server.properties recommendations, repo map, tuning loop.

@@ -104,11 +104,10 @@ ServerEvents.recipes(event => {
 
 	// Wooden: dirt cheap, draggy. The first-flight propeller.
 	event.shaped(Item.of('aeronautics:wooden_propeller', 1), [
-		'P',
-		'C',
-		'S'
+		' C ',
+		'CSC',
+		' C '
 	], {
-		P: '#minecraft:planks',
 		C: '#minecraft:wooden_slabs',
 		S: 'create:shaft'
 	}).id('skyward:ch3/wooden_propeller')

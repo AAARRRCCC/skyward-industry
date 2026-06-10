@@ -43,7 +43,11 @@ One entry per session. Don't editorialize less — "felt bad" is data.
   2 → 1. Also documented the "budget hopper" path (wooden propellers + 1 portable
   engine, no gyroscope) in PROGRESSION.md
 - Follow-up same day (Brady): propellers re-tiered. Wooden = new cheap recipe
-  (plank/slab/shaft) + EXPERIMENTAL drag penalty (floating_scale 2.0, needs A/B
-  flight test); andesite = mod-original recipe restored; free 1:1 conversions
-  removed; propeller bearing re-keyed onto calibrated shaft (large-ship tech).
-  Em dashes stripped from all quest text (12 instances).
+  + EXPERIMENTAL drag penalty (needs A/B flight test); andesite = mod-original
+  recipe restored; free 1:1 conversions removed; propeller bearing re-keyed onto
+  calibrated shaft (large-ship tech). Em dashes stripped from all quest text
+  (12 instances).
+- A/B data (Brady): scale 2.0 → 0.25pN drag vs 249.45pN prop thrust — negligible,
+  confirms wooden/andesite thrust is identical in the mod. Raised scale to 300.0
+  (~37pN ≈ 15% of one prop's thrust if linear). Wooden recipe reshaped to shaft
+  ringed by 4 slabs per Brady. Re-measure next session.

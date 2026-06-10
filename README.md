@@ -1,73 +1,84 @@
 # Skyward Industry
 
-A Create + Create: Aeronautics progression modpack for a small friends server.
-**Minecraft 1.21.1 · NeoForge 21.1.233 · 38 mods · packwiz format.**
+**A Create + Create: Aeronautics progression pack where the factory finally has a customer.**
 
-The pitch: vanilla Create never makes you automate. Here, every tier's core part is
-machine-made (gated recipes), airships eat your production (resource sink), vendors
-pay for bulk goods but never sell progression (economy), the good markets are far
-away (geography), and 25,000 blocks out there is an island that ends the pack
-(The Crossing).
+![Minecraft 1.21.1](https://img.shields.io/badge/Minecraft-1.21.1-44aa44)
+![NeoForge 21.1.233](https://img.shields.io/badge/NeoForge-21.1.233-e68a3a)
+![Mods 38](https://img.shields.io/badge/mods-38-4a8fd4)
+![Format packwiz](https://img.shields.io/badge/format-packwiz-8a8a8a)
+![Status playtesting](https://img.shields.io/badge/status-private_playtesting-c4a000)
 
-## Install — players (Prism Launcher)
+Vanilla Create has a problem: you never actually *need* the factory. You can
+hand-craft your way to everything, so automation is scenery. This pack fixes that
+with five interlocking systems:
 
-1. New instance → Minecraft **1.21.1** → NeoForge **21.1.233**.
-2. Drop [`packwiz-installer-bootstrap.jar`](https://github.com/packwiz/packwiz-installer-bootstrap/releases)
-   into the instance's `minecraft/` folder.
+| Pillar | How |
+|---|---|
+| **Gating** | Each tier's core part is machine-made. Hand routes exist, but they're punishing on purpose |
+| **Sink** | Airships eat bulk intermediates. The factory's customer is the shipyard |
+| **Geography** | The good markets are 3–8k blocks out. Distance is why ships exist |
+| **Economy** | Admin vendors buy your bulk goods and sell *only* progression-neutral things. Money never buys progress |
+| **The Crossing** | 25,000 blocks out there's an island with the only material that gates the Creative Motor. The last chapter of the quest book is visible from day one |
+
+## Progression at a glance
+
+1. **Andesite Age** — andesite alloy moves to the mechanical mixer; your first lines pay rent at the spawn market
+2. **Brass Age** — three custom intermediates (calibrated shaft, tempered casing, resonant coil) that *cannot* be hand-crafted, and a precision mechanism rebuilt on top of them
+3. **Aeronautics Age** — engines, gyros, envelopes, and propellers re-priced to eat your production; first flight, then a cargo hauler
+4. **Crossing Tier** — aetherium-gated creative-tier endgame
+5. **The Crossing** — the voyage itself. Fit out a ship, cross the long water, come home heavier
+
+Full tier map with costs and rationale: [`docs/PROGRESSION.md`](docs/PROGRESSION.md).
+
+## Install
+
+> **Status:** private playtesting. If you're reading this you're probably Brady or
+> one of his friends and the server isn't open yet.
+
+**Players (Prism Launcher):**
+1. New instance → Minecraft **1.21.1** → NeoForge **21.1.233**
+2. Drop [`packwiz-installer-bootstrap.jar`](https://github.com/packwiz/packwiz-installer-bootstrap/releases) into the instance's `minecraft/` folder
 3. Instance → Edit → Settings → Custom commands → **Pre-launch command**:
-
    ```
-   "$INST_JAVA" -jar packwiz-installer-bootstrap.jar <PACK_TOML_URL>
+   "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/AAARRRCCC/skyward-industry/main/pack/pack.toml
    ```
+4. Launch. Mods + scripts sync on every start, so pack updates are automatic.
 
-   where `<PACK_TOML_URL>` is the raw URL of `pack/pack.toml` (once this repo is on
-   GitHub: `https://raw.githubusercontent.com/<user>/skyward-industry/main/pack/pack.toml`;
-   for local testing: `file:///C:/Users/rbrad/IndieProj/skyward-industry/pack/pack.toml`).
-4. Launch. The installer syncs mods + scripts on every start, so updates are automatic.
-
-## Install — server
-
+**Server:**
 ```
-java -jar packwiz-installer-bootstrap.jar -g -s server <PACK_TOML_URL>
+java -jar packwiz-installer-bootstrap.jar -g -s server https://raw.githubusercontent.com/AAARRRCCC/skyward-industry/main/pack/pack.toml
 ```
+then install the NeoForge 21.1.233 server and start it. After world creation, copy
+`datapacks/skyward/` into `<world>/datapacks/` (see [`docs/CROSSING_RUNBOOK.md`](docs/CROSSING_RUNBOOK.md)).
 
-then install the NeoForge 21.1.233 server and start. After world creation, copy
-`datapacks/skyward/` into `<world>/datapacks/` (see docs/CROSSING_RUNBOOK.md).
-
-### server.properties recommendations
-
+Recommended `server.properties`:
 ```
 view-distance=10          # Sable ships + Create render cost; raise only after profiling
-simulation-distance=8     # contraptions tick — this is the expensive knob
+simulation-distance=8     # contraptions tick; this is the expensive knob
 sync-chunk-writes=false   # large pregen worlds stall with sync writes
 max-tick-time=180000      # physics assembly spikes shouldn't watchdog-kill the server
 ```
-
-Plus: pregen before launch day (docs/CROSSING_RUNBOOK.md §1), claim outposts as
-server team (docs/OUTPOSTS.md).
 
 ## Repo map
 
 | Path | What |
 |---|---|
 | `pack/` | packwiz root — **generated**, rebuild with `py tools/build_pack.py` |
-| `kubejs/` | gating scripts; all numbers in `startup_scripts/balance.js` + `economy_balance.js` |
-| `config/ftbquests/quests/` | quest book (6 chapters) |
+| `kubejs/` | gating scripts; every tunable number lives in `startup_scripts/balance.js` + `economy_balance.js` |
+| `config/ftbquests/quests/` | the quest book |
 | `datapacks/skyward/` | Crossing loot tables (per-world install) |
-| `docs/` | MOD_DECISIONS, PROGRESSION, ECONOMY_RUNBOOK, OUTPOSTS, CROSSING_RUNBOOK |
-| `docs/TESTING/` | per-phase manual test checklists (phase2–phase6) |
-| `tools/` | manifest lock/build, texture gen, reference validator |
+| `admin_assets/schematics/` | generated WorldEdit schematics (market stalls, kiosks) |
+| `docs/` | design + runbooks: mod decisions, progression, economy, outposts, placement, the Crossing |
+| `docs/TESTING/` | per-phase manual test checklists with live verification status |
+| `tools/` | manifest lock/build, jar inspection, texture + schematic generators, reference validators |
 
-## Tuning loop
+## How this pack is maintained
 
-Play → log friction in `BALANCE_NOTES.md` → adjust `balance.js`/`economy_balance.js`
-→ `py tools/build_pack.py` → commit → **restart** the game/server (they're startup
-scripts; `/reload` won't pick them up). Constants only; never edit chapter scripts
-for quantity changes.
-
-## Validation without a game client
-
-- `py tools/validate_refs.py` — every item id in quests/scripts exists in the
-  registries extracted from the pinned jars; quest dependency graph resolves.
-- `node --check kubejs/**/*.js` — script syntax.
-- `packwiz refresh` in `pack/` — manifest hash integrity (no-op when clean).
+- **Constants over magic numbers.** Playtest friction goes in [`BALANCE_NOTES.md`](BALANCE_NOTES.md);
+  fixes are one-line edits to the balance files, never to chapter scripts.
+- **Verified against the jars, not memory.** Item IDs, recipe shapes, and advancement
+  triggers are extracted from the pinned mod jars into `docs/audit/`;
+  `tools/validate_refs.py` cross-checks every reference in quests and scripts.
+- **No file redistribution.** packwiz ships metadata + hashes; players download mods
+  directly from Modrinth/CurseForge at install time. Inclusion reasoning per mod,
+  including rejected alternatives, lives in [`docs/MOD_DECISIONS.md`](docs/MOD_DECISIONS.md).

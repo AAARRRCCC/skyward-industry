@@ -142,8 +142,9 @@ Version bumps later: edit/re-run `tools/make_manifest.py`, then `tools/build_pac
 2. Download [`packwiz-installer-bootstrap.jar`](https://github.com/packwiz/packwiz-installer-bootstrap/releases) into the instance's `minecraft/` folder.
 3. Instance → Edit → Settings → Custom commands → Pre-launch command:
    `"$INST_JAVA" -jar packwiz-installer-bootstrap.jar file:///C:/Users/rbrad/IndieProj/skyward-industry/pack/pack.toml`
-4. Launch. (For friends: push this repo to GitHub and swap the file:/// URL for
-   `https://raw.githubusercontent.com/<you>/skyward-industry/main/pack/pack.toml`.)
+4. Launch. (Published URL:
+   `https://raw.githubusercontent.com/AAARRRCCC/skyward-industry/main/pack/pack.toml`
+   — the local file:/// form still works for offline testing.)
 
 **Server:**
 ```

@@ -22,7 +22,8 @@ MODRINTH_PINS = [
     ("create-aeronautics","both",   False, True, None),
     ("sable",             "both",   False, True, None),
     ("create-aeroworks",  "both",   False, True, None),
-    ("sablecompat",       "both",   False, True, None),
+    # sablecompat removed 2026-06-09: 1.3.0 targets a newer Sable data format than
+    # 1.2.2 (parse errors on load) and only tags blocks from mods we don't ship.
     ("kubejs",            "both",   False, True, None),
     ("rhino",             "both",   False, True, None),
     ("architectury-api",  "both",   False, True, None),

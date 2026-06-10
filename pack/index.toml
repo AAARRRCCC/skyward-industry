@@ -82,7 +82,7 @@ hash-format = "sha256"
 
 [[files]]
 	file = "kubejs/server_scripts/compat_cleanup.js"
-	hash = "de4ffaec7ee99eaefb347e1031a5f9f7432474c02a706a9b0288a20d26f2d51d"
+	hash = "3893023166e8fee9b1b34758f57da3f538bac3a4799f166555ac8f4e26d0e3cd"
 
 [[files]]
 	file = "kubejs/startup_scripts/balance.js"
@@ -269,11 +269,6 @@ hash-format = "sha256"
 [[files]]
 	file = "mods/sable.pw.toml"
 	hash = "2374d2275bbfc265d1c11f6b71bfb3248deb01f8d11e180573ec79f004ad8626"
-	metafile = true
-
-[[files]]
-	file = "mods/sablecompat.pw.toml"
-	hash = "7595ed92ca1c5a1f9c25661a190cee1839c34b3a3e23d29a7b769a4f20e4c3c1"
 	metafile = true
 
 [[files]]

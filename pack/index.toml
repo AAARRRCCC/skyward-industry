@@ -222,6 +222,11 @@ hash-format = "sha256"
 	metafile = true
 
 [[files]]
+	file = "mods/ldlib.pw.toml"
+	hash = "0e2f3b26c97fbaa9e97b9f8b4e48738e57fd7408beae8184c9cd987b39913c7e"
+	metafile = true
+
+[[files]]
 	file = "mods/libipn.pw.toml"
 	hash = "3672c11b48c9428deab55024b25aabed680c4dfd3a74d6cec0c0b805ff5021a3"
 	metafile = true

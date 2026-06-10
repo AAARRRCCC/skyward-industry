@@ -73,7 +73,10 @@ pack (no new transitive requirements).
 
 **Aeronautics extras (both sides):** FTB Chunks: Sable Aerospace 1.0.1 (claims vs.
 flying-ship interplay — closes a real jank source since we ship FTB Chunks),
-Sable Schematic Tool 0.2.6 (players save ships to files; doubles as admin ship backup).
+Sable Schematic Tool 0.2.6 (players save ships to files; doubles as admin ship backup)
++ **LDLib 2.2.18** — hard dep of Schematic Tool's UI that its Modrinth metadata fails
+to declare (caught on first boot; `tools/check_jar_deps.py` now verifies deps from
+the jars' own mods.toml so this class of miss can't recur).
 
 **Performance suite:** ModernFix 5.27.12, Clumps 19.0.0.1, Spark 1.10.124 (both sides);
 Entity Culling 1.10.2, ImmediatelyFast 1.6.10, Dynamic FPS 3.11.4 (client, optional).

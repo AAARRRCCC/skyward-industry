@@ -47,6 +47,7 @@ MODRINTH_PINS = [
     # --- aeronautics extras ---
     ("ftbchunksaerospace", "both",  False, True, None),
     ("sable-schematic-tool", "both", False, True, None),
+    ("ldlib",             "both",   False, True, "Required by sable-schematic-tool (modid ldlib2; undeclared on Modrinth)"),
     # --- performance suite ---
     ("modernfix",         "both",   False, True, None),
     ("clumps",            "both",   False, True, None),

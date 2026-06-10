@@ -38,52 +38,60 @@ Notes: run one task at a time (`chunky pause` / `chunky continue`); corridor at 
 1024 is plenty — players straying further generate chunks live, which is fine in ones
 and twos. Total is roughly 360k chunks; expect hours, not minutes — overnight it.
 
-## 2. The build
+## 2. The build (one paste)
 
-You need, minimum:
-1. **Landfall point** — a wrecked survey ship or dock at the island's edge.
-2. **The site** — a sky-island / ruin / observatory, your call. 60–100 block footprint
-   reads well from a ship.
-3. **The vault** — one enclosed room, slightly hidden (under the ruin, behind a
-   waterfall, top of the spire), holding the single vault chest.
+**The site is pre-built**: `admin_assets/schematics/crossing_island.schem` is a
+generated 128x128 floating island — landfall wreck on the east rim (hold chest
+inside), gravel breadcrumb path, ruined observatory, a vault chamber 12 blocks under
+it (stairwell down the tower's center), 8 cache barrels, oxidized-copper "teal vein"
+cliffs, warped flora, and 4 mineable aetherium blocks hidden in the rock. All ten
+loot containers are already placed; their offsets are baked into a bind function.
+Regenerate or restyle anytime: `py tools/gen_crossing_site.py` (deterministic seed).
 
-Schematic sourcing (free, paste-ready): search "sky island", "floating ruin",
-"airship wreck" on minecraft-schematics.com, Planet Minecraft (filter: schematic
-downloads), or GrabCraft. Anything `.schem`/`.schematic` loads in WorldEdit. Prefer
-builds under ~150x150; you can terraform edges by hand faster than fixing a megabuild.
+Paste workflow (in-game, OP):
 
-WorldEdit paste workflow (in-game, OP):
+1. Copy the .schem into `config/worldedit/schematics/` (server side).
+2. Fly to the site center, then position yourself at the intended **min corner**:
+   roughly site-center minus (64, ~40, 64). The island's ground sits ~40-50 blocks
+   above schematic bottom, so stand where y ≈ cruise altitude - 45. **Write down
+   your block coords — this is the ANCHOR (ax, ay, az).**
+3. `//schem load crossing_island` then `//paste -a` (skips air; the island floats,
+   so anything under it stays untouched).
+4. Check the lodestone: it pastes at the anchor itself, marking local (0,0,0).
+   Wrong spot? `//undo`, reposition, re-paste.
+5. Prefer a hand-made or community build instead? The old sourcing notes live in
+   docs/PLACEMENT.md; if you swap the island out, you place + bind chests manually
+   per §3's table instead of using the function.
+
+## 3. Loot binding (1 command)
+
+Every container offset was recorded at generation time into
+`skyward:bind_loot` (ships with the datapack). After §4's datapack install, run
+ONCE with the anchor coords from step 2:
 
 ```
-//schem load <filename>        (file goes in config/worldedit/schematics/)
-//paste -a                     (-a skips air; stand where the build's origin should be)
-//undo                         (if the anchor was wrong; reposition and re-paste)
+/execute positioned <ax> <ay> <az> run function skyward:bind_loot
 ```
 
-If the schematic origin is awkward: paste in a throwaway superflat first, `//copy`
-from a corner you choose (stand there, select with //pos1 //pos2), save your own
-version with `//schem save skyward_site`.
+You'll get an aqua confirmation: `[Skyward] Crossing loot bound: 10 containers.`
+Then open nothing — verify with a spot-check as a second account, or trust the
+walk-through in §6. Manual fallback (or for extra chests you add):
 
-## 3. Loot chests (15 min)
-
-Place plain chests (or barrels) by hand, then bind loot tables — each chest rolls its
-table on first open:
-
-| Where | How many | Command (look at the chest, use its coords) |
-|---|---|---|
-| Landfall wreck | exactly 1 | `/data merge block <x> <y> <z> {LootTable:"skyward:chests/crossing_landfall"}` |
-| Scattered around the site | 6–10 | `/data merge block <x> <y> <z> {LootTable:"skyward:chests/crossing_cache"}` |
-| The vault | exactly 1 | `/data merge block <x> <y> <z> {LootTable:"skyward:chests/crossing_vault"}` |
+| Where | Table |
+|---|---|
+| Landfall wreck hold | `skyward:chests/crossing_landfall` |
+| Cache barrels (8 placed) | `skyward:chests/crossing_cache` |
+| Vault dais chest | `skyward:chests/crossing_vault` |
 
 Stock math: landfall (2–4) + 8 caches (1–3 each) + vault (6–10) ≈ **16–34 aetherium
-per full clear**. A creative motor needs 12. One expedition = one motor with change,
-two visits for the post-game set — tune by adding/removing cache chests, not by
-editing recipes. Chests do NOT refill; if the server wants repeat visits to matter,
-place a second ring of caches deeper into the island or re-merge the NBT on looted
-chests during a maintenance window.
+per full clear**, vs 12 for a creative motor. One expedition = one motor with change.
+Containers do NOT refill; for repeat-visit servers, add barrels and bind them
+manually during maintenance. Four aetherium BLOCKS (36 aetherium) are also minable —
+one under the vault chest, three hidden in the cliffs. Finding the furniture
+valuable is intended post-game greed; it's capped so loot stays the main source.
 
-Optional flavor: drop extra `kubejs:ships_log_2/3` items in item frames along a
-breadcrumb path from landfall to vault (`/give` yourself; they're normal items).
+Optional flavor: drop extra `kubejs:ships_log_2/3` items in item frames along the
+breadcrumb path (`/give` yourself; they're normal items).
 
 ## 4. Datapack install (2 min, once)
 

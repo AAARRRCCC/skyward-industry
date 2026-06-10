@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+### Crossing destination package (2026-06-10)
+- tools/gen_crossing_site.py: deterministic 128x72x128 floating-island schematic
+  (landfall wreck, breadcrumb path, ruined observatory, buried vault, 8 cache
+  barrels, teal copper-vein cliffs, warped flora, 4 minable aetherium blocks).
+- All 10 loot containers pre-placed; offsets baked into the new
+  skyward:bind_loot function — site setup is now: paste once, run one command.
+- CROSSING_RUNBOOK §2-3 rewritten to the one-paste workflow; phase5.md B2 added.
+
 ### Quest book expansion (2026-06-10)
 - 33 → 124 quests across 8 chapters (new: The Ledger economy arc, Company Town
   decor arc). Design + gating map: docs/QUESTBOOK.md.

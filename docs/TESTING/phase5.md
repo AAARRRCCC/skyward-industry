@@ -18,6 +18,18 @@ Pre-req: datapack copied into the test world (`<world>/datapacks/skyward/`), `/r
       open it as a NON-op second account → loot rolls
 - [ ] Once opened, loot does not re-roll
 
+## B2. Site paste + one-command binding (new workflow)
+
+- [ ] In a creative test world: paste `crossing_island.schem` (note your anchor
+      coords first), confirm the lodestone lands at the anchor
+- [ ] Island reads right from a ship: wreck on the east rim, path to the broken
+      tower, stairwell down the tower center reaches the vault
+- [ ] `/execute positioned <ax> <ay> <az> run function skyward:bind_loot` →
+      aqua "10 containers" message
+- [ ] Spot-open 3 containers (wreck chest, one barrel, vault chest) → correct
+      tables roll (log I in wreck, log IV + 6-10 aetherium in vault)
+- [ ] Exactly 4 aetherium blocks minable on site (1 under vault chest, 3 in cliffs)
+
 ## C. End-to-end Ch.4 (creative)
 
 - [ ] With looted aetherium: craft aetherium block ↔ 9 aetherium

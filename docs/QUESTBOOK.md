@@ -1,6 +1,8 @@
 # Quest book design — Skyward Industry
 
-Expansion of 2026-06-10. Target shipped: **121 quests across 8 chapters.**
+Expansion of 2026-06-10. Shipped: **124 quests across 8 chapters**
+(Welcome 6 · Andesite 22 · Brass 25 · Aeronautics 27 · Crossing Tier 8 ·
+The Crossing 10 · The Ledger 12 · Company Town 14).
 
 ## Gating philosophy (the no-spam rule)
 
@@ -15,10 +17,11 @@ task types, with the full advancement inventory in `docs/audit/advancements.md`:
    (16 calibrated shafts) or loot collection (ship's logs). ~55 quests.
 3. **Observation tasks** — "stand at an admin market" gates on looking at a
    `numismatics:creative_vendor`, which only admins can place. 1 quest.
-4. **Checkmarks** — exactly **4** of 121, all either ceremonial (read the brief, roll
-   credits), undetectable-by-design (claim a chunk), or admin-wireable (the 20k mark,
-   which is bracketed by real gates on both sides so clicking it early gains nothing —
-   Landfall still requires physically looting the site).
+4. **Checkmarks** — exactly **5** of 124: two chapter-opening reads (Welcome, the
+   survey brief), roll credits (ceremonial), claim-a-chunk (undetectable by design),
+   and the 20k mark (admin-wireable to a location task; bracketed by real gates on
+   both sides, so clicking it early gains nothing — Landfall still requires
+   physically looting the site). None pays more than a token.
 
 Hidden/secret quests use `hide_until_deps_complete` so the book doesn't spoil the
 mod's hidden advancements; they pay better than their neighbors.
@@ -95,9 +98,11 @@ this chapter pays for paint.
 
 ## ID allocation
 
-Existing prefixes kept (quests `0A`–`0F`, rewards `1X`, tasks `2X`, multi-task
-`2Xnn..16+`). New chapters: The Ledger quests `4A...`, rewards `5A...`, tasks
-`6A...`; Company Town `4B`/`5B`/`6B`. Never renumber a shipped ID.
+Existing prefixes kept (quests `0A`–`0F`, rewards `1X`, tasks `2X`). New chapters:
+The Ledger quests `4A...`, rewards `5A...`, tasks `6A...`; Company Town `4B`/`5B`/`6B`.
+Additional tasks/rewards on a quest use a high-nibble offset from the quest number:
+second = +0xA0, third = +0xB0, fourth = +0xC0 (e.g. quest `..09` → tasks `..09`,
+`..A9`, `..B9`). Never renumber a shipped ID.
 
 ## Flow invariants (checked in the review pass)
 

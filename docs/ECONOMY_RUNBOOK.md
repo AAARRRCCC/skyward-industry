@@ -29,8 +29,12 @@ first, then update the vendor.
    the vendor as the trade item — one vendor per book.
 4. Put a **Bank Terminal** + a stack of blank **bank cards** in a chest labeled "open
    your account here" next to a **Blaze Banker**.
+5. One **change machine**: a creative vendor in sell mode offering **1 cog for 64
+   spurs** (fair exchange). This is what fires the `numismatics:money_laundering`
+   advancement behind the quest book's "Exchange rate" quest — without this vendor
+   that quest is uncompletable, so it's required, not flavor.
 
-Time estimate: ~45 minutes for all ~26 vendors.
+Time estimate: ~45 minutes for all ~27 vendors.
 
 ## Outpost shops
 

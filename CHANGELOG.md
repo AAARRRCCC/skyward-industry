@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+### Quest book expansion (2026-06-10)
+- 33 → 124 quests across 8 chapters (new: The Ledger economy arc, Company Town
+  decor arc). Design + gating map: docs/QUESTBOOK.md.
+- Honor-system checkmarks eliminated except 5 ceremonial/admin-wireable ones:
+  gates are mod advancements (~55, fired by real behavior — christening a ship,
+  filling an envelope with hot air, 10h fuel load), item milestones (~60),
+  and one observation gate (admin market). 8 hidden secret quests.
+- Advancement inventory mined from jars: docs/audit/advancements.md (155 hooks);
+  validator now checks advancement ids + observation targets.
+- Economy runbook: added required change-machine vendor (fires money_laundering
+  for the Exchange Rate quest).
+- docs/TESTING/phase4.md rewritten around gate-firing verification.
+
 ### Placement tooling (2026-06-10)
 - tools/gen_schematics.py: generates WorldEdit .schem files (Sponge v2, hand-
   rolled NBT, self-validating). First set: 4 market stall variants + vendor

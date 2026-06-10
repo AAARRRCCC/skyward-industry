@@ -233,6 +233,70 @@ def industrial_kiosk():
     return g, 3, 4, 3
 
 
+def merge(g, sub, ox, oy, oz):
+    for (x, y, z), state in sub.items():
+        g[(x + ox, y + oy, z + oz)] = state
+
+
+def mooring_station():
+    """19x19 outpost: airship mooring mast (girder spire, catwalk docking ring,
+    signal smoke), crane arm, 3 vendor positions (2 kiosks + mast counter),
+    shipping containers, corner lamps. Front faces SOUTH. ~Visible from the air,
+    which is the point. Gold blocks = vendors."""
+    g = {}
+    W, L, H = 19, 19, 24
+    # plaza: andesite with industrial iron border
+    box(g, 0, 0, 0, W - 1, 0, L - 1, "create:industrial_iron_block")
+    box(g, 1, 0, 1, W - 2, 0, L - 2, "minecraft:polished_andesite")
+    # mooring mast: 2x2 girder spire toward the back
+    box(g, 9, 1, 13, 10, 21, 14, "create:metal_girder")
+    # docking ring at y18 (6x6 catwalk outline) + smaller ring at y10
+    for x in range(7, 13):
+        for z in range(11, 17):
+            if x in (7, 12) or z in (11, 16):
+                g[(x, 18, z)] = "createdeco:industrial_iron_catwalk"
+    for x in range(8, 12):
+        for z in range(12, 16):
+            if x in (8, 11) or z in (12, 15):
+                g[(x, 10, z)] = "createdeco:industrial_iron_catwalk"
+    for (x, z) in [(7, 11), (12, 11), (7, 16), (12, 16)]:
+        g[(x, 19, z)] = "minecraft:lantern"
+    # mast cap + signal smoke (hay under campfire = tall signal column)
+    box(g, 9, 22, 13, 10, 22, 14, "create:industrial_iron_block")
+    g[(9, 22, 13)] = "minecraft:hay_block"
+    g[(9, 23, 13)] = "minecraft:campfire"
+    # crane arm reaching over the plaza, chain + light at the hook
+    for z in range(6, 13):
+        g[(9, 16, z)] = "create:metal_girder"
+    for y in (13, 14, 15):
+        g[(9, y, 6)] = "minecraft:chain"
+    g[(9, 12, 6)] = "minecraft:lantern[hanging=true]"
+    # flag pole, front-left
+    box(g, 2, 1, 2, 2, 3, 2, "createdeco:industrial_iron_support")
+    g[(2, 4, 2)] = "create:industrial_iron_block"
+    g[(2, 4, 1)] = "minecraft:white_wall_banner[facing=south]"
+    # two vendor kiosks flanking the approach (premium buy vendors)
+    kiosk, _, _, _ = industrial_kiosk()
+    merge(g, kiosk, 3, 0, 4)
+    merge(g, kiosk, 13, 0, 4)
+    # sell counter at the mast's front face
+    box(g, 8, 1, 12, 11, 1, 12, "createdeco:industrial_iron_hull")
+    for x in range(8, 12):
+        g[(x, 2, 12)] = "minecraft:smooth_stone_slab[type=bottom]"
+    g[(10, 2, 12)] = "minecraft:gold_block"
+    # freight: shipping containers + barrels, back-left
+    box(g, 2, 1, 14, 3, 1, 16, "createdeco:red_shipping_container")
+    box(g, 2, 2, 14, 2, 2, 16, "createdeco:yellow_shipping_container")
+    g[(16, 1, 15)] = "minecraft:barrel[facing=up]"
+    g[(16, 1, 16)] = "minecraft:barrel[facing=up]"
+    g[(16, 2, 15)] = "minecraft:barrel[facing=up]"
+    # corner lamp posts
+    for (x, z) in [(0, 0), (W - 1, 0), (0, L - 1), (W - 1, L - 1)]:
+        box(g, x, 1, z, x, 2, z, "createdeco:industrial_iron_support")
+        g[(x, 3, z)] = "minecraft:lantern"
+    return g, W, H, L
+
+
 AWNINGS = {
     "market_stall_red": "minecraft:red_wool",
     "market_stall_lime": "minecraft:lime_wool",
@@ -263,6 +327,10 @@ def main():
     validate(p, w, h, l)
     g, w, h, l = industrial_kiosk()
     p = OUT / "industrial_kiosk.schem"
+    write_schem(p, g, w, h, l)
+    validate(p, w, h, l)
+    g, w, h, l = mooring_station()
+    p = OUT / "mooring_station.schem"
     write_schem(p, g, w, h, l)
     validate(p, w, h, l)
     print("done")

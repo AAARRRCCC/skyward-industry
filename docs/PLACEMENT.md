@@ -1,14 +1,27 @@
 # Placement runbook — shops & outposts without hand-building
 
-Two supply lines: **generated schematics** (repo-made, in `admin_assets/schematics/`)
-for everything commercial and repeatable, and **community schematics** (downloaded)
-for the four outpost landmark builds + the Crossing island.
+**Pivot (2026-06-10):** community schematics didn't meet the build-quality bar, so
+the plan inverted. Everything except ONE build is now generated infrastructure in
+the pack's own industrial vocabulary:
+
+- **Central market (spawn):** the one community/hand-sourced "nice build" Brady
+  curates himself. Generated stalls/kiosks slot into it for the actual vendors.
+- **Four outposts:** generated **mooring stations** (`mooring_station.schem`) —
+  girder mast with catwalk docking ring, signal smoke visible from the air, crane,
+  3 vendor positions, freight props. Themed per-outpost variants on request once
+  the prototype passes inspection.
+- **The Crossing:** natural far-out terrain + a generated **crashed survey
+  airship** as the centerpiece (queued — built from real envelope/girder/engine
+  blocks once the mooring station style is approved).
+
+The community-schematic table further down is retained as a fallback/reference.
 
 ## 1. Generated stock (ready now)
 
 | File | Size | Use |
 |---|---|---|
-| `industrial_stall_iron/copper/andesite.schem` | 7x6 footprint | **The preferred set** (Brady: "more industrial"). Create/Create Deco palette: support pillars, catwalk canopy, hull counters, girder rails |
+| `mooring_station.schem` | 19x19, 24 tall | **A complete outpost.** Mooring mast + docking ring + crane + 2 kiosks + mast counter (3 gold vendor markers) + containers. Paste once per outpost site |
+| `industrial_stall_iron/copper/andesite.schem` | 7x6 footprint | **The preferred stall set** (Brady: "more industrial"). Create/Create Deco palette: support pillars, catwalk canopy, hull counters, girder rails |
 | `industrial_kiosk.schem` | 3x3 footprint | Single vendor, industrial palette |
 | `market_stall_red/lime/blue/yellow.schem` | 7x6 footprint | Original wool-awning set; kept for outposts that want a softer look (Kelpwright?) |
 | `vendor_kiosk.schem` | 3x3 footprint | Wool-set kiosk |

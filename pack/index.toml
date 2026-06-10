@@ -352,11 +352,6 @@ hash-format = "sha256"
 	metafile = true
 
 [[files]]
-	file = "mods/scalablelux.pw.toml"
-	hash = "1447212ca56ed4a8e5c06ef009f8a47bde672ce89011043d4b16a7832b0545b5"
-	metafile = true
-
-[[files]]
 	file = "mods/slice-and-dice.pw.toml"
 	hash = "08d9f90c68fc8a10a95260b546f677506bf91635ad4e1cb5b6bd851ccbdb3d7e"
 	metafile = true

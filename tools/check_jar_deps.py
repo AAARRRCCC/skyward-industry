@@ -31,7 +31,7 @@ def fetch(url, filename):
     return data
 
 
-def scan_jar(data, source, provided, required):
+def scan_jar(data, source, provided, required, incompatible):
     z = zipfile.ZipFile(io.BytesIO(data))
     names = z.namelist()
     for toml_name in ("META-INF/neoforge.mods.toml", "META-INF/mods.toml"):
@@ -49,15 +49,18 @@ def scan_jar(data, source, provided, required):
                     if dtype == "required":
                         required.append((dep_modid, d["modId"], d.get("versionRange", ""),
                                          d.get("side", "BOTH"), source))
+                    elif dtype in ("incompatible", "discouraged"):
+                        incompatible.append((dep_modid, d["modId"], dtype,
+                                             d.get("versionRange", ""), source))
             break
     for nested in [n for n in names if n.startswith("META-INF/jarjar/") and n.endswith(".jar")]:
-        scan_jar(z.read(nested), f"{source}!{Path(nested).name}", provided, required)
+        scan_jar(z.read(nested), f"{source}!{Path(nested).name}", provided, required, incompatible)
 
 
 def main():
     lock = json.loads((ROOT / "tools/manifest.lock.json").read_text(encoding="utf-8"))
     cf = json.loads((ROOT / "docs/audit/curseforge_audit.json").read_text(encoding="utf-8"))
-    provided, required = {}, []
+    provided, required, incompatible = {}, [], []
     for m in lock["mods"]:
         if "modrinth" in m:
             url, fn = m["modrinth"]["url"], m["modrinth"]["filename"]
@@ -68,21 +71,32 @@ def main():
                 print(f"  skip {m['slug']} (no CF download url)")
                 continue
         try:
-            scan_jar(fetch(url, fn), m["slug"], provided, required)
+            scan_jar(fetch(url, fn), m["slug"], provided, required, incompatible)
         except Exception as e:  # noqa: BLE001
             print(f"  ERROR {m['slug']}: {e}")
     print(f"provided mod ids: {len(provided)}")
 
-    missing = []
+    failures = []
     for owner, dep, ver, side, source in required:
         if dep not in provided and dep not in BUILTIN:
-            missing.append((owner, dep, ver, side, source))
-    if missing:
-        print("\nMISSING REQUIRED DEPENDENCIES:")
-        for owner, dep, ver, side, source in sorted(set(missing)):
-            print(f"  {source} (mod '{owner}') requires '{dep}' {ver} side={side}")
+            failures.append(f"{source} (mod '{owner}') requires '{dep}' {ver} side={side}")
+    for owner, target, dtype, vrange, source in incompatible:
+        if target in provided:
+            unbounded = vrange in ("", "[0,)")
+            msg = (f"{source} (mod '{owner}') declares '{target}' {dtype} "
+                   f"(range: {vrange or 'any'}; provided by {provided[target]})")
+            if dtype == "incompatible" and unbounded:
+                failures.append(msg)
+            else:
+                # ranged declaration: can't evaluate maven ranges offline — the
+                # pinned version may be fine (the pack boots), so warn only.
+                print(f"  WARN {msg}")
+    if failures:
+        print("\nDEPENDENCY FAILURES:")
+        for f in sorted(set(failures)):
+            print(f"  {f}")
         raise SystemExit(1)
-    print("all required dependencies satisfied")
+    print("all required dependencies satisfied; no declared incompatibilities")
 
 
 if __name__ == "__main__":

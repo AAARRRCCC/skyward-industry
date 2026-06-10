@@ -4,7 +4,7 @@
 
 ![Minecraft 1.21.1](https://img.shields.io/badge/Minecraft-1.21.1-44aa44)
 ![NeoForge 21.1.233](https://img.shields.io/badge/NeoForge-21.1.233-e68a3a)
-![Mods 53](https://img.shields.io/badge/mods-53-4a8fd4)
+![Mods 52](https://img.shields.io/badge/mods-52-4a8fd4)
 ![Format packwiz](https://img.shields.io/badge/format-packwiz-8a8a8a)
 ![Status playtesting](https://img.shields.io/badge/status-private_playtesting-c4a000)
 

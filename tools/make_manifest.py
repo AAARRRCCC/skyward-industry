@@ -83,7 +83,9 @@ MODRINTH_PINS = [
     # Chunk-gen throughput for pregen + DH (DH warns when C2ME is absent).
     # c2me-neoforge is ALPHA: first suspect on any worldgen crash/weirdness.
     ("c2me-neoforge",     "both",   False, True, None),
-    ("scalablelux",       "both",   False, True, "Starlight-style lighting; pairs with C2ME/DH"),
+    # scalablelux removed 2026-06-10: Sable declares it hard-incompatible
+    # (crash at mod loading). check_jar_deps now screens declared
+    # incompatibilities so this class of conflict is caught offline.
 ]
 # slugs whose pinned version differs from the audit's newest, or weren't audited
 VERSION_OVERRIDES = {

@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+### Fix: ScalableLux crash (2026-06-10)
+- Sable hard-declares ScalableLux incompatible (crash at mod load on Brady's
+  machine). Removed (53 → 52 mods); C2ME stays — it passed the gate and is the
+  actual parallel-generation win.
+- check_jar_deps.py now screens DECLARED incompatibilities from every jar's
+  mods.toml: unbounded "incompatible" = build failure; version-ranged = warning
+  (current benign warnings: sable vs future sablecompanion; veil vs sodium
+  <0.6.9, ours is 0.6.13).
+
 ### Chunk-gen throughput: C2ME + ScalableLux (2026-06-10)
 - DH warned "slow world gen, C2ME missing" during Brady's LOD test. Added
   c2me-neoforge 0.3.0-alpha (parallel chunk gen; first suspect on any worldgen

@@ -4,15 +4,14 @@
 // ends — see docs/CONVENTIONS.md). This file holds playtest-discovered recipe
 // conflicts and third-party data fixes, so the chapter files stay pure
 // progression.
+//
+// NOTE: data-file-level fixes live in kubejs/data/ (KubeJS virtual datapack,
+// overrides mod data before the vanilla parser sees it). Current overrides:
+//   - kubejs/data/createdeco/recipe/placard.json — Create Deco 2.1.3 ships this
+//     recipe with a typo'd ingredient ({"id": ...} instead of {"item": ...})
+//     that errors on every load. Delete the override when fixed upstream.
 // =============================================================================
 
 ServerEvents.recipes(event => {
-	// Create Deco 2.1.3 ships `createdeco:placard` with a typo'd ingredient
-	// ({"id": "minecraft:white_dye"} where the codec wants {"item": ...}), which
-	// errors in the log on every world load / reload. Replace it with what the
-	// mod meant: un-dye any colored placard back to the plain create:placard.
-	// Drop both when Create Deco fixes it upstream.
-	event.remove({ id: 'createdeco:placard' })
-	event.shapeless(Item.of('create:placard', 1), ['#createdeco:placards', 'minecraft:white_dye'])
-		.id('skyward:compat/placard_undye')
+	// (nothing yet — script-level conflicts go here)
 })

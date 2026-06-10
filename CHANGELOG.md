@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+### Fix: placard override via virtual datapack (2026-06-09)
+- The KubeJS-side remove couldn't suppress Create Deco's malformed placard
+  recipe (unparseable recipes pass through to vanilla). Now overridden at the
+  data level: kubejs/data/createdeco/recipe/placard.json ships the corrected
+  JSON, so the vanilla parser never sees the broken file.
+
 ### Fix: first-boot log triage (2026-06-09)
 - KubeJS loaded 0 errors (3/3 startup, 5/5 server) — script-load acceptance met.
 - Removed Sable: Physics Compat (39 → 38 mods): 1.3.0 data format incompatible

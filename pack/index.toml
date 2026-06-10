@@ -65,6 +65,10 @@ hash-format = "sha256"
 	hash = "4b6c528a7d857fef1bcfefef16abda157155686d256c55d7b18b20a176546df3"
 
 [[files]]
+	file = "kubejs/data/createdeco/recipe/placard.json"
+	hash = "1b00a8f4458aa070e35af5b1339f6c86b2d0d7b37a05c443212b693c7c7928e0"
+
+[[files]]
 	file = "kubejs/server_scripts/ch1_andesite.js"
 	hash = "f2f1991e1ead619af217cedc7a9989da7ca29438d02559f272fbd3151263e4fe"
 
@@ -82,7 +86,7 @@ hash-format = "sha256"
 
 [[files]]
 	file = "kubejs/server_scripts/compat_cleanup.js"
-	hash = "3893023166e8fee9b1b34758f57da3f538bac3a4799f166555ac8f4e26d0e3cd"
+	hash = "7029f0f2f4aeecfa2c3d0fc3cabfa81a5426bed34bad5d446d82696dbad2f351"
 
 [[files]]
 	file = "kubejs/startup_scripts/balance.js"

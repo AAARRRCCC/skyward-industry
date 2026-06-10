@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 	file = "config/ftbquests/quests/chapters/aeronautics_age.snbt"
-	hash = "8601c770312c2fc391efae17be32ea39a431aae3e029d6d6d9cab15fe26e083c"
+	hash = "7fcda94b61a6e1bef4524ca3a0153c12069cd86ae22c2a96a06d93398f24060f"
 
 [[files]]
 	file = "config/ftbquests/quests/chapters/andesite_age.snbt"

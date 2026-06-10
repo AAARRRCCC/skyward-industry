@@ -35,6 +35,75 @@
 		{
 			dependencies: ["0D00000000000001"]
 			description: [
+				"Honey glue marks which blocks the assembler should take. Iron sheet, honey, dreams. Paint it on everything that's coming with you."
+			]
+			id: "0D0000000000000A"
+			rewards: [{
+				count: 8
+				id: "1D0000000000000A"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "simulated:not_gonna_sugarcoat_it"
+				criterion: ""
+				id: "2D0000000000000A"
+				title: "Mark blocks with honey glue"
+				type: "advancement"
+			}]
+			title: "Not gonna sugarcoat it"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0D00000000000001"]
+			description: [
+				"A handle, bolted to a hull, is the difference between riding your ship and watching it leave. Grab one."
+			]
+			id: "0D0000000000000B"
+			rewards: [{
+				count: 8
+				id: "1D0000000000000B"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "simulated:get_a_grip"
+				criterion: ""
+				id: "2D0000000000000B"
+				title: "Grab onto a handle"
+				type: "advancement"
+			}]
+			title: "Get a grip"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0D0000000000000B"]
+			description: [
+				"Mount a steering wheel and give it a spin. No engine yet, no problem. Every captain starts by playing pretend at the helm."
+			]
+			id: "0D0000000000000C"
+			rewards: [{
+				count: 8
+				id: "1D0000000000000C"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "simulated:unpowered_steering"
+				criterion: ""
+				id: "2D0000000000000C"
+				title: "Spin a steering wheel"
+				type: "advancement"
+			}]
+			title: "Unpowered steering"
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0D00000000000001"]
+			description: [
 				"Envelopes hold the sky up. Grid recipes are gone: a deployer wraps wool onto sticks, two at a time. A hopper-sized hull wants about thirty; haulers want hundreds."
 				""
 				"Yes, this is a wool farm quest wearing a flight suit."
@@ -53,13 +122,112 @@
 				type: "item"
 			}]
 			title: "Hull plant"
-			x: -1.5d
+			x: 0.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["0D00000000000002"]
+			description: [
+				"Seal an envelope structure airtight, light a burner under a vent, and watch the whole thing strain against gravity."
+				""
+				"This ticks when the mod sees hot air actually fill your hull. The first lift is the one you remember."
+			]
+			icon: "aeronautics:adjustable_burner"
+			id: "0D0000000000000D"
+			rewards: [{
+				count: 1
+				id: "1D0000000000000D"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				advancement: "aeronautics:head_in_the_clouds"
+				criterion: ""
+				id: "2D0000000000000D"
+				title: "Fill an envelope with hot air"
+				type: "advancement"
+			}]
+			title: "Head in the clouds"
+			x: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["0D00000000000001"]
 			description: [
-				"One engine assembly: a tempered casing, sawn, pressed, then fed four resonant coils and four calibrated shafts. Your three brass lines all feed this one machine cell."
+				"Place a propeller, power it, and feel the room disagree with you. Thrust is just rotation with somewhere to be."
+			]
+			id: "0D0000000000000E"
+			rewards: [{
+				count: 1
+				id: "1D0000000000000E"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "aeronautics:for_every_action"
+				criterion: ""
+				id: "2D0000000000000E"
+				title: "Generate thrust with a propeller"
+				type: "advancement"
+			}]
+			title: "For every action"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0D0000000000000D"]
+			description: [
+				"End stone, crushed to powder. The End is a flight risk assessment you administer to yourself."
+				""
+				"Hot air lifts a hopper. Levitite lifts a fleet. This is the first ingredient."
+			]
+			id: "0D0000000000000F"
+			rewards: [{
+				count: 1
+				id: "1D0000000000000F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			tasks: [{
+				count: 32L
+				id: "2D0000000000000F"
+				item: "aeronautics:end_stone_powder"
+				type: "item"
+			}]
+			title: "The far stone"
+			x: 2.25d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0D0000000000000F"]
+			description: [
+				"Mix the blend, crystallize it, and hold a block that refuses to be heavy. Physics files a complaint; nobody reads it."
+			]
+			icon: "aeronautics:levitite"
+			id: "0D00000000000010"
+			rewards: [{
+				count: 1
+				id: "1D00000000000010"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "aeronautics:unidentified_floating_object"
+				criterion: ""
+				id: "2D00000000000010"
+				title: "Crystallize levitite"
+				type: "advancement"
+			}]
+			title: "Unidentified floating object"
+			x: 2.25d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0D00000000000001"]
+			description: [
+				"One engine assembly: a tempered casing, sawn, pressed, then fed resonant coils and calibrated shafts. Your three brass lines all feed this one machine cell."
 				""
 				"The first one is a milestone. The fourth one is a business."
 			]
@@ -79,7 +247,7 @@
 				type: "item"
 			}]
 			title: "Engine works"
-			x: 0.0d
+			x: 3.0d
 			y: 1.5d
 		}
 		{
@@ -101,7 +269,30 @@
 				type: "item"
 			}]
 			title: "Series production"
-			x: 0.0d
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0D00000000000003"]
+			description: [
+				"Jacket the assembly, mount it, fuel it, and power something with it. The portable engine is the heart your ship beats with."
+			]
+			id: "0D00000000000011"
+			rewards: [{
+				count: 1
+				id: "1D00000000000011"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "simulated:steamless_engine"
+				criterion: ""
+				id: "2D00000000000011"
+				title: "Place and power a portable engine"
+				type: "advancement"
+			}]
+			title: "Steamless engine"
+			x: 4.5d
 			y: 3.0d
 		}
 		{
@@ -124,13 +315,85 @@
 				type: "item"
 			}]
 			title: "Spin control"
-			x: 1.5d
-			y: 1.5d
+			x: -3.75d
+			y: 4.5d
 		}
 		{
-			dependencies: ["0D00000000000005"]
+			dependencies: ["0D0000000000000D"]
 			description: [
-				"Gyroscope for stability, joystick for command, servos for the control surfaces. The bridge of your ship, in parts."
+				"The gimbal sensor knows which way is down even when you've made that complicated. Place one."
+			]
+			id: "0D00000000000012"
+			rewards: [{
+				count: 8
+				id: "1D00000000000012"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "simulated:the_definition_of_up"
+				criterion: ""
+				id: "2D00000000000012"
+				title: "Place a gimbal sensor"
+				type: "advancement"
+			}]
+			title: "The definition of up"
+			x: -2.25d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0D0000000000000D"]
+			description: [
+				"An altitude sensor, so your autopilot ideas can know how bad they are. Required reading for envelope ships: lift thins with height."
+			]
+			id: "0D00000000000013"
+			rewards: [{
+				count: 8
+				id: "1D00000000000013"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "simulated:no_pressure"
+				criterion: ""
+				id: "2D00000000000013"
+				title: "Place an altitude sensor"
+				type: "advancement"
+			}]
+			title: "No pressure"
+			x: -0.75d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0D0000000000000D"]
+			description: [
+				"The navigation table points your ship at a coordinate and means it. Outposts, expeditions, home. Mostly home."
+			]
+			id: "0D00000000000014"
+			rewards: [{
+				count: 8
+				id: "1D00000000000014"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "simulated:thataway"
+				criterion: ""
+				id: "2D00000000000014"
+				title: "Place a navigation table"
+				type: "advancement"
+			}]
+			title: "Thataway"
+			x: 0.75d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"0D00000000000005"
+				"0D00000000000012"
+			]
+			description: [
+				"Gyroscope for stability, joystick for command. The bridge of your ship, in parts."
 			]
 			icon: "aeroworks:gyroscope"
 			id: "0D00000000000006"
@@ -149,26 +412,27 @@
 				}
 				{
 					count: 1L
-					id: "2D00000000000016"
+					id: "2D000000000000A6"
 					item: "aeroworks:joystick"
 					type: "item"
 				}
 			]
 			title: "The bridge"
-			x: 3.0d
-			y: 1.5d
+			x: -2.25d
+			y: 6.0d
 		}
 		{
 			dependencies: [
-				"0D00000000000002"
-				"0D00000000000003"
+				"0D0000000000000C"
+				"0D0000000000000D"
+				"0D0000000000000E"
 			]
 			description: [
-				"Hull, engine, propeller, controls. Assemble it, launch it, and fly a lap around your base."
+				"Hull, lift, thrust, helm. Assemble her, fly a lap, then put a nameplate on her."
 				""
-				"Check this off when she holds altitude. Name her. That part is mandatory and we will not be taking questions."
+				"This quest completes when the ship is christened. Name her. That part is mandatory, and now it's enforced."
 			]
-			icon: "aeronautics:wooden_propeller"
+			icon: "simulated:white_nameplate"
 			id: "0D00000000000007"
 			rewards: [{
 				count: 3
@@ -179,19 +443,94 @@
 			shape: "gear"
 			size: 2.0d
 			tasks: [{
+				advancement: "simulated:i_declare_thee"
+				criterion: ""
 				id: "2D00000000000007"
-				title: "Launch your first hopper"
-				type: "checkmark"
+				title: "Christen a ship with a nameplate"
+				type: "advancement"
 			}]
 			title: "First flight"
 			x: 0.0d
-			y: 4.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["0D00000000000007"]
 			description: [
-				"Visit any trade outpost BY AIR and sell a hold full of premium goods. Kelpwright is closest; Highmoor pays best."
+				"Assemble a propeller bearing and let it swing a real prop disc. Propeller blocks got you flying; bearings are how the big hulls stay fed."
 			]
+			id: "0D00000000000015"
+			rewards: [{
+				count: 1
+				id: "1D00000000000015"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "aeronautics:in_thrust_we_trust"
+				criterion: ""
+				id: "2D00000000000015"
+				title: "Assemble a propeller bearing"
+				type: "advancement"
+			}]
+			title: "In thrust we trust"
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0D00000000000007"]
+			description: [
+				"Rope, winch, connector. For mooring, towing, and lowering things you'd rather not carry down a ladder."
+			]
+			id: "0D00000000000016"
+			rewards: [{
+				count: 1
+				id: "1D00000000000016"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "simulated:learning_the_ropes"
+				criterion: ""
+				id: "2D00000000000016"
+				title: "Connect something with rope"
+				type: "advancement"
+			}]
+			title: "Learning the ropes"
+			x: -1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0D00000000000007"]
+			description: [
+				"Two docking connectors, aligned and engaged. Ship to ship, ship to dock. Cargo doesn't jump; it transfers with dignity."
+			]
+			id: "0D00000000000017"
+			rewards: [{
+				count: 1
+				id: "1D00000000000017"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "simulated:a_calculated_connection"
+				criterion: ""
+				id: "2D00000000000017"
+				title: "Connect two docking connectors"
+				type: "advancement"
+			}]
+			title: "A calculated connection"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"0D00000000000007"
+				"0D00000000000014"
+			]
+			description: [
+				"Set your navigation table to a target more than 5,000 blocks out and commit. Kelpwright is a warm-up; Glasswind and Highmoor are the real money."
+			]
+			icon: "simulated:navigation_table"
 			id: "0D00000000000008"
 			rewards: [{
 				count: 2
@@ -200,23 +539,26 @@
 				type: "item"
 			}]
 			tasks: [{
+				advancement: "simulated:far_from_home"
+				criterion: ""
 				id: "2D00000000000008"
-				title: "Dock at an outpost"
-				type: "checkmark"
+				title: "Set course for somewhere far"
+				type: "advancement"
 			}]
 			title: "Trade winds"
-			x: -1.5d
-			y: 6.0d
+			x: 3.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
 				"0D00000000000004"
-				"0D00000000000007"
+				"0D00000000000008"
+				"0D00000000000017"
 			]
 			description: [
-				"A cargo hauler: multiple engines, a real hold, range enough for the Highmoor run with capacity to spare."
+				"A cargo hauler: multiple engines, a real hold, docking gear, range to spare. Hold the commission kit below at once and the yard signs off."
 				""
-				"Check it off when you've delivered 8 engine assemblies to Highmoor Terminus in one trip. The Crossing wants a ship exactly like this."
+				"The Crossing wants a ship exactly like this."
 			]
 			icon: "simulated:docking_connector"
 			id: "0D00000000000009"
@@ -228,14 +570,133 @@
 			}]
 			shape: "gear"
 			size: 1.5d
-			tasks: [{
-				id: "2D00000000000009"
-				title: "Commission a cargo hauler"
-				type: "checkmark"
+			tasks: [
+				{
+					count: 8L
+					id: "2D00000000000009"
+					item: "simulated:engine_assembly"
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "2D000000000000A9"
+					item: "simulated:docking_connector"
+					type: "item"
+				}
+			]
+			title: "Commission a cargo hauler"
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0D00000000000001"]
+			description: [
+				"Tires and wheel mounts. The ground game: cheaper than airships, allergic to canyons. Every shipyard keeps a truck."
+			]
+			id: "0D00000000000018"
+			rewards: [{
+				count: 1
+				id: "1D00000000000018"
+				item: "numismatics:sprocket"
+				type: "item"
 			}]
-			title: "The hauler"
-			x: 1.5d
-			y: 6.0d
+			tasks: [
+				{
+					count: 4L
+					id: "2D00000000000018"
+					item: "offroad:tire"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2D000000000000B8"
+					item: "offroad:wheel_mount"
+					type: "item"
+				}
+			]
+			title: "The ground game"
+			x: -4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0D00000000000018"]
+			description: [
+				"A borehead bearing and a rockcutting wheel: the parts list of a machine that eats mountains. Build the tunneler. Apologize to no one."
+			]
+			id: "0D00000000000019"
+			rewards: [{
+				count: 1
+				id: "1D00000000000019"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 1L
+					id: "2D00000000000019"
+					item: "offroad:borehead_bearing"
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "2D000000000000B9"
+					item: "offroad:rockcutting_wheel"
+					type: "item"
+				}
+			]
+			title: "Through, not over"
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0D0000000000000D"]
+			description: [
+				"There's a height where the altitude sensor reads zero and the sky stops pushing back."
+			]
+			id: "0D0000000000001A"
+			invisible: true
+			rewards: [{
+				count: 1
+				id: "1D0000000000001A"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				advancement: "simulated:can_we_get_much_higher"
+				criterion: ""
+				id: "2D0000000000001A"
+				title: "Read 0% atmosphere"
+				type: "advancement"
+			}]
+			title: "Secret: the ceiling"
+			x: 3.75d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0D0000000000000E"]
+			description: [
+				"A phantom, a mounted potato cannon, and a grudge about your sleep schedule."
+			]
+			id: "0D0000000000001B"
+			invisible: true
+			rewards: [{
+				count: 1
+				id: "1D0000000000001B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				advancement: "aeronautics:ghostbuster"
+				criterion: ""
+				id: "2D0000000000001B"
+				title: "Ghostbuster"
+				type: "advancement"
+			}]
+			title: "Secret: pest control"
+			x: 4.5d
+			y: 1.5d
 		}
 	]
 	title: "Chapter 3: Aeronautics Age"

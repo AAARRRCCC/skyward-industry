@@ -33,7 +33,9 @@ MODRINTH_PINS = [
     ("lithium",           "both",   False, True, None),
     ("ferrite-core",      "both",   False, True, None),
     ("chunky",            "server", False, True, None),
-    ("worldedit",         "server", False, True, None),
+    # worldedit side=both (2026-06-10): Brady preps builds in single-player too;
+    # it's OP-gated on servers so client-side install is harmless.
+    ("worldedit",         "both",   False, True, None),
     ("mouse-tweaks",      "client", True,  True, "Client QoL: drag-stacking"),
     ("inventory-profiles-next", "client", True, True,
      "Client QoL: inventory sorting (needs libipn + kotlin-for-forge)"),

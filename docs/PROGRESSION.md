@@ -3,7 +3,7 @@
 Why this pack exists: vanilla Create lets you hand-craft everything, so factories are
 optional scenery. Here every tier's core material requires automated processes from the
 previous tier, the airship eats the factory's output, and the factory's customer is the
-shipyard. All quantities live in `kubejs/server_scripts/balance.js` (`global.BAL`).
+shipyard. All quantities live in `kubejs/startup_scripts/balance.js` (`global.BAL`).
 
 ## Chapter 1 — Andesite Age (expected: 3–6 hours)
 

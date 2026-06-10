@@ -3,6 +3,8 @@
 // Vendors are physical Numismatics blocks configured in-game; this file is the
 // single source of truth the admin configures them FROM (see
 // docs/ECONOMY_RUNBOOK.md and docs/OUTPOSTS.md). All prices in SPURS.
+// STARTUP script: KubeJS 2101 only allows assigning `global` here; edits need
+// a restart, not /reload.
 //
 // Coin denominations (verify against in-game coin tooltips on first boot):
 //   spur 1 | bevel 8 | sprocket 16 | cog 64 | crown 512 | sun 4096

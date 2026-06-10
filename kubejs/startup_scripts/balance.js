@@ -2,6 +2,9 @@
 // SKYWARD INDUSTRY — PROGRESSION BALANCE CONSTANTS
 // Every gating quantity in the pack lives here. Playtest tuning = edit this
 // file only. See docs/PROGRESSION.md for the intent behind each number.
+//
+// STARTUP script on purpose: KubeJS 2101 only allows assigning `global` here
+// (server scripts read it). Edits need a full game/server restart, not /reload.
 // =============================================================================
 
 global.BAL = {

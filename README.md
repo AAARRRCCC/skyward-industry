@@ -51,7 +51,7 @@ server team (docs/OUTPOSTS.md).
 | Path | What |
 |---|---|
 | `pack/` | packwiz root — **generated**, rebuild with `py tools/build_pack.py` |
-| `kubejs/` | gating scripts; all numbers in `server_scripts/balance.js` + `economy_balance.js` |
+| `kubejs/` | gating scripts; all numbers in `startup_scripts/balance.js` + `economy_balance.js` |
 | `config/ftbquests/quests/` | quest book (6 chapters) |
 | `datapacks/skyward/` | Crossing loot tables (per-world install) |
 | `docs/` | MOD_DECISIONS, PROGRESSION, ECONOMY_RUNBOOK, OUTPOSTS, CROSSING_RUNBOOK |
@@ -61,8 +61,9 @@ server team (docs/OUTPOSTS.md).
 ## Tuning loop
 
 Play → log friction in `BALANCE_NOTES.md` → adjust `balance.js`/`economy_balance.js`
-→ `py tools/build_pack.py` → commit. Constants only; never edit chapter scripts for
-quantity changes.
+→ `py tools/build_pack.py` → commit → **restart** the game/server (they're startup
+scripts; `/reload` won't pick them up). Constants only; never edit chapter scripts
+for quantity changes.
 
 ## Validation without a game client
 

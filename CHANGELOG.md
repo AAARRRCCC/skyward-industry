@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+### Fix: global assignment in server scripts (2026-06-09, first boot)
+- KubeJS 2101 forbids assigning `global` outside startup scripts. Moved
+  balance.js + economy_balance.js to kubejs/startup_scripts/ (contents
+  unchanged; server scripts still read global.BAL/global.ECON).
+- Tuning consequence documented everywhere: balance edits need a restart,
+  /kubejs reload is not enough.
+
 ### Fix: LDLib dependency (2026-06-09, first boot)
 - First boot caught: Sable Schematic Tool requires LDLib (modid `ldlib2`) ≥ 2.2.6
   but does not declare it on Modrinth. Added ldlib 2.2.18 (38 → 39 mods).

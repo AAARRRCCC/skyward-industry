@@ -78,8 +78,9 @@ def main():
         if kind == "dep" and val[0] in "12":
             errors.append(f"{fname}: dependency {val} points at a task/reward id")
 
-    # --- server scripts ---
-    for js in sorted((ROOT / "kubejs/server_scripts").glob("*.js")):
+    # --- server + startup scripts ---
+    for js in sorted(list((ROOT / "kubejs/server_scripts").glob("*.js"))
+                     + list((ROOT / "kubejs/startup_scripts").glob("*.js"))):
         text = js.read_text(encoding="utf-8")
         for m in re.finditer(r"(?<!id: )'([a-z_]+:[a-z0-9_/]+)'", text):
             val = m.group(1)

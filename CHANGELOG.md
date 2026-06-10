@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+### Fix: LDLib dependency (2026-06-09, first boot)
+- First boot caught: Sable Schematic Tool requires LDLib (modid `ldlib2`) ≥ 2.2.6
+  but does not declare it on Modrinth. Added ldlib 2.2.18 (38 → 39 mods).
+- New tools/check_jar_deps.py: reads neoforge.mods.toml inside every jar
+  (jar-in-jar aware) and verifies all required modids are provided — the
+  registry-metadata dep check is no longer trusted on its own.
+
 ### Manifest expansion (2026-06-09, post-review)
 - +13 mods (25 → 38): Create: Connected, Copycats+ (+weight compat), Create Deco
   (+weight compat), FTB Chunks: Sable Aerospace, Sable Schematic Tool, ModernFix,

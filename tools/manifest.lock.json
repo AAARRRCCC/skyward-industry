@@ -476,6 +476,24 @@
       }
     },
     {
+      "name": "LDLib",
+      "slug": "ldlib",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": "Required by sable-schematic-tool (modid ldlib2; undeclared on Modrinth)",
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "B1CBVXHX",
+        "version_id": "Kco2rucy",
+        "version_number": "mc1.21.1-2.2.18-neoforge",
+        "filename": "ldlib2-neoforge-1.21.1-2.2.18-all.jar",
+        "url": "https://cdn.modrinth.com/data/B1CBVXHX/versions/Kco2rucy/ldlib2-neoforge-1.21.1-2.2.18-all.jar",
+        "sha512": "b7aeffa552fba593c16e5664caa751986174e3f9e865fdb178c0686f05aae95db07a3d4a2f16733f1c0c3cc17197cfd2f84e78966873f7b89fd35dcd6eb2396e",
+        "size": 6494342
+      }
+    },
+    {
       "name": "ModernFix",
       "slug": "modernfix",
       "side": "both",

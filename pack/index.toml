@@ -14,7 +14,7 @@ hash-format = "sha256"
 
 [[files]]
 	file = "config/ftbquests/quests/chapters/company_town.snbt"
-	hash = "c6e8163e72fcd4e9228db4d12f6cb9f7dc249f557923859f5d2e469daaa880ac"
+	hash = "4426391589db5582b13d502d6e3bb5d19bd7ae80cbea2d4959672a6fd4806e5c"
 
 [[files]]
 	file = "config/ftbquests/quests/chapters/crossing_tier.snbt"

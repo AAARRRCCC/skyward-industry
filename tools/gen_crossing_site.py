@@ -129,7 +129,7 @@ for x, z in cliff_cells[:3]:
 # ------------------------------------------------------------- the wreck (east rim)
 WX, WZ = 98, 60
 wy = (ground(WX, WZ) or 44) + 1
-hull = "createdeco:copper_hull"
+hull = "createdeco:copper_sheet_metal"
 deck = "minecraft:stripped_spruce_log[axis=x]"
 # two broken hull segments, second one listing a block lower and skewed
 for seg, (ox, oz, oy, ln) in enumerate([(0, 0, 0, 9), (11, 2, -1, 6)]):
@@ -299,7 +299,7 @@ COLORS = {
     "minecraft:mossy_stone_bricks": (95, 112, 88), "minecraft:polished_deepslate": (88, 88, 94),
     "minecraft:deepslate_tiles": (60, 60, 66), "minecraft:sea_lantern": (200, 230, 220),
     "minecraft:white_wool": (235, 235, 235), "minecraft:light_gray_wool": (160, 160, 160),
-    "createdeco:copper_hull": (190, 110, 70), "minecraft:lodestone": (255, 255, 0),
+    "createdeco:copper_sheet_metal": (190, 110, 70), "minecraft:lodestone": (255, 255, 0),
     "kubejs:aetherium_block": (60, 240, 220), "minecraft:lantern": (250, 200, 120),
 }
 MARKERS = {"minecraft:chest": (255, 40, 40), "minecraft:barrel": (255, 150, 30)}

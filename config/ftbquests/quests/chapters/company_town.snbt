@@ -103,7 +103,7 @@
 		{
 			dependencies: ["4B00000000000001"]
 			description: [
-				"Thirty-two hull blocks. Riveted plating for ships that look like they're FROM somewhere. Bare wool envelopes are a phase; hulls are a fleet."
+				"Thirty-two panels of riveted sheet metal. Cladding for ships that look like they're FROM somewhere. Bare wool envelopes are a phase; plating is a fleet."
 			]
 			id: "4B00000000000005"
 			rewards: [{
@@ -115,7 +115,7 @@
 			tasks: [{
 				count: 32L
 				id: "6B00000000000005"
-				item: "createdeco:brass_hull"
+				item: "createdeco:iron_sheet_metal"
 				type: "item"
 			}]
 			title: "Hull integrity"

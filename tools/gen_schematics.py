@@ -185,7 +185,8 @@ def industrial_stall(metal, accent_floor):
     g = {}
     W, L = 7, 6
     support = f"createdeco:{metal}_support"
-    hull = f"createdeco:{metal}_hull"
+    # NOT {metal}_hull — Create Deco hulls are train-car hull blocks, wrong fit
+    hull = f"createdeco:{metal}_sheet_metal"
     sheet = f"createdeco:{metal}_sheet_metal"
     catwalk = f"createdeco:{metal}_catwalk"
     # floor: industrial iron border, accent center
@@ -194,7 +195,7 @@ def industrial_stall(metal, accent_floor):
     # corner posts
     for (x, z) in [(0, 0), (W - 1, 0), (0, L - 1), (W - 1, L - 1)]:
         box(g, x, 1, z, x, 4, z, support)
-    # counter across the front: hull blocks with a smooth stone work surface
+    # counter across the front: sheet metal with a smooth stone work surface
     box(g, 1, 1, 1, W - 2, 1, 1, hull)
     for x in range(1, W - 1):
         g[(x, 2, 1)] = "minecraft:smooth_stone_slab[type=bottom]"
@@ -225,7 +226,7 @@ def industrial_kiosk():
     box(g, 0, 0, 0, 2, 0, 2, "create:industrial_iron_block")
     for (x, z) in [(0, 0), (2, 0), (0, 2), (2, 2)]:
         box(g, x, 1, z, x, 2, z, "createdeco:industrial_iron_support")
-    g[(1, 1, 0)] = "createdeco:industrial_iron_hull"
+    g[(1, 1, 0)] = "createdeco:industrial_iron_sheet_metal"
     g[(1, 2, 0)] = "minecraft:gold_block"          # vendor on the counter
     g[(1, 1, 2)] = "minecraft:barrel[facing=up]"
     box(g, 0, 3, 0, 2, 3, 2, "createdeco:industrial_iron_catwalk")
@@ -280,7 +281,7 @@ def mooring_station():
     merge(g, kiosk, 3, 0, 4)
     merge(g, kiosk, 13, 0, 4)
     # sell counter at the mast's front face
-    box(g, 8, 1, 12, 11, 1, 12, "createdeco:industrial_iron_hull")
+    box(g, 8, 1, 12, 11, 1, 12, "createdeco:industrial_iron_sheet_metal")
     for x in range(8, 12):
         g[(x, 2, 12)] = "minecraft:smooth_stone_slab[type=bottom]"
     g[(10, 2, 12)] = "minecraft:gold_block"

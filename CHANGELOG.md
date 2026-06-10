@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+### Fix: first-boot log triage (2026-06-09)
+- KubeJS loaded 0 errors (3/3 startup, 5/5 server) — script-load acceptance met.
+- Removed Sable: Physics Compat (39 → 38 mods): 1.3.0 data format incompatible
+  with Sable 1.2.2, and it only tags blocks from mods we don't ship.
+- compat_cleanup.js: replaced Create Deco's malformed `createdeco:placard`
+  un-dye recipe (upstream typo: ingredient `id` vs `item`).
+- Remaining log noise (mixin probes, libIPN/IPN pack-icon paths, simulated
+  rope_connector model) is third-party and cosmetic; no action.
+
 ### Fix: global assignment in server scripts (2026-06-09, first boot)
 - KubeJS 2101 forbids assigning `global` outside startup scripts. Moved
   balance.js + economy_balance.js to kubejs/startup_scripts/ (contents

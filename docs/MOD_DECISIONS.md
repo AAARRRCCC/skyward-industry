@@ -22,7 +22,7 @@ Audit date: **2026-06-09** (Modrinth API + curse.tools CurseForge proxy; raw cap
 | Create: Aeronautics | 1.2.1+mc1.21.1 | Modrinth | Core thesis: airships |
 | Sable | 1.2.2+mc1.21.1 | Modrinth | Required by Aeronautics (moving-structure engine) |
 | Create: Aeroworks | 1.2.11+mc1.21.1 | Modrinth | Gyroscopes, joysticks — Ch.3 sink components |
-| Sable: Physics Compat | 1.3.0 | Modrinth | Mass/physics tags for modded blocks on ships; tiny, tags-only |
+| ~~Sable: Physics Compat~~ | ~~1.3.0~~ | Modrinth | **Removed at first boot (2026-06-09):** 1.3.0 emits a data format Sable 1.2.2 can't parse (log errors), and every block it tags belongs to mods not in this pack (Aether, Twilight Forest, BoP, Enderite…). Re-add only if those mods join and versions align |
 | KubeJS | 2101.7.2-build.368 | Modrinth | All recipe gating + custom items |
 | Rhino | 2101.2.7-build.85 | Modrinth | Required by KubeJS |
 | Architectury API | 13.0.8+neoforge | Modrinth | Required by FTB Library |

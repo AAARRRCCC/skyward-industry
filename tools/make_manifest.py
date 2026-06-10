@@ -58,6 +58,15 @@ MODRINTH_PINS = [
     ("entityculling",     "client", True,  True, "Client perf: skip hidden entities (disable first if ships flicker)"),
     ("immediatelyfast",   "client", True,  True, "Client perf: batched immediate-mode rendering"),
     ("dynamic-fps",       "client", True,  True, "Client perf: throttle FPS when unfocused"),
+    # --- optional-content tier 2026-06-10: progression-neutral by construction;
+    #     nothing gated or quest-required ever references these ---
+    ("cc-tweaked",        "both",   False, True, None),
+    ("cc-sable",          "both",   False, True, None),
+    ("advancedperipherals", "both", False, True, None),
+    ("farmers-delight",   "both",   False, True, None),
+    ("slice-and-dice",    "both",   False, True, None),
+    ("interiors",         "both",   False, True, None),
+    ("framedblocks",      "both",   False, True, None),
 ]
 # slugs whose pinned version differs from the audit's newest, or weren't audited
 VERSION_OVERRIDES = {

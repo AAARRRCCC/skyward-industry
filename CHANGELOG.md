@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+### Optional-content tier (2026-06-10)
+- +7 mods (38 → 45), progression-neutral by construction: CC: Tweaked + CC: Sable
+  (programmable airships) + Advanced Peripherals, Farmer's Delight + Slice & Dice,
+  Interiors, Framed Blocks (ship-mass caveat documented).
+- Jar-level dependency check clean. "~40 lean" target retired in MOD_DECISIONS;
+  Spark-measured server performance is the constraint now.
+- Excluded with reasons: Create Jetpack, Big Cannons, Sophisticated Backpacks,
+  Garnished, structure mods.
+
 ### Crossing destination package (2026-06-10)
 - tools/gen_crossing_site.py: deterministic 128x72x128 floating-island schematic
   (landfall wreck, breadcrumb path, ruined observatory, buried vault, 8 cache

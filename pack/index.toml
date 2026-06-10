@@ -113,8 +113,23 @@ hash-format = "sha256"
 	hash = "732dc02b0ab9658c94cbd6401a8c77894c8d432bc896e0be924a1785f0bad243"
 
 [[files]]
+	file = "mods/advancedperipherals.pw.toml"
+	hash = "340d72551932d0d8bc90fb44649bf1d06643ab467fe15adcefc6807d83fb0964"
+	metafile = true
+
+[[files]]
 	file = "mods/architectury-api.pw.toml"
 	hash = "b11ad70c92cc3df06a1a2707a3c2f2901ac23f8cfa06b7f90b48a3c6085fca1f"
+	metafile = true
+
+[[files]]
+	file = "mods/cc-sable.pw.toml"
+	hash = "2e7aaadf3e9839d44cf1be49fd1201b4b8f014b60a29a4103d1b4ecc059bceaf"
+	metafile = true
+
+[[files]]
+	file = "mods/cc-tweaked.pw.toml"
+	hash = "14de9e6233bcb2a41d6e7dc27d33619d39ba99d4cb9fbba7f476a2258f9feafb"
 	metafile = true
 
 [[files]]
@@ -173,8 +188,18 @@ hash-format = "sha256"
 	metafile = true
 
 [[files]]
+	file = "mods/farmers-delight.pw.toml"
+	hash = "a1cd0b523fbb0bfee51f2a4e7bf7f89a3d8350bd70bcc522e041428c8bb6475a"
+	metafile = true
+
+[[files]]
 	file = "mods/ferrite-core.pw.toml"
 	hash = "32b3f29b70d40ef835c363d126ba9a5b39eb2d5ff6599aafdacaf717e16e2321"
+	metafile = true
+
+[[files]]
+	file = "mods/framedblocks.pw.toml"
+	hash = "3c18bb184d85e755a30a4be14aa864f6f9c467fc117194825ddf5b839e7e4eae"
 	metafile = true
 
 [[files]]
@@ -210,6 +235,11 @@ hash-format = "sha256"
 [[files]]
 	file = "mods/immediatelyfast.pw.toml"
 	hash = "64503e57e779d10b2e7a498928dbcad1bc628b5854abd57f6e0ddd9cbe16ed4e"
+	metafile = true
+
+[[files]]
+	file = "mods/interiors.pw.toml"
+	hash = "162d65ca4561a20e2db91b6665964a0b353de7e23a001689c3321a7e31943b89"
 	metafile = true
 
 [[files]]
@@ -285,6 +315,11 @@ hash-format = "sha256"
 [[files]]
 	file = "mods/sable.pw.toml"
 	hash = "2374d2275bbfc265d1c11f6b71bfb3248deb01f8d11e180573ec79f004ad8626"
+	metafile = true
+
+[[files]]
+	file = "mods/slice-and-dice.pw.toml"
+	hash = "08d9f90c68fc8a10a95260b546f677506bf91635ad4e1cb5b6bd851ccbdb3d7e"
 	metafile = true
 
 [[files]]

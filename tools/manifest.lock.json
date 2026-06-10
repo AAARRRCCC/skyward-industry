@@ -584,6 +584,132 @@
       }
     },
     {
+      "name": "CC: Tweaked",
+      "slug": "cc-tweaked",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "gu7yAYhd",
+        "version_id": "puxJkazX",
+        "version_number": "1.119.0",
+        "filename": "cc-tweaked-1.21.1-forge-1.119.0.jar",
+        "url": "https://cdn.modrinth.com/data/gu7yAYhd/versions/puxJkazX/cc-tweaked-1.21.1-forge-1.119.0.jar",
+        "sha512": "87c086049ecbb5c1cfbb8e2180abc6902d2c70f2b07d4a37652f931d4c334e7304b1df1206a98b109c40e5dea719a22a335f8c0b09b330646bd05c971a8edb62",
+        "size": 3125991
+      }
+    },
+    {
+      "name": "CC: Sable",
+      "slug": "cc-sable",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "OPNBxiZD",
+        "version_id": "j0UWQoMG",
+        "version_number": "1.3.4",
+        "filename": "cc_sable-neoforge-1.3.4.jar",
+        "url": "https://cdn.modrinth.com/data/OPNBxiZD/versions/j0UWQoMG/cc_sable-neoforge-1.3.4.jar",
+        "sha512": "70e7e09c8a4a566fe8bd67a8d53069083e8285a15cb680412b415f5104b5be3ad3b623c9ccd99f165996933ef5d81aa1966633796d7439f562b6e35ae59af717",
+        "size": 43338
+      }
+    },
+    {
+      "name": "Advanced Peripherals",
+      "slug": "advancedperipherals",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "SOw6jD6x",
+        "version_id": "Q4pvAMQj",
+        "version_number": "1.21.1-0.7.61b",
+        "filename": "AdvancedPeripherals-1.21.1-0.7.61b.jar",
+        "url": "https://cdn.modrinth.com/data/SOw6jD6x/versions/Q4pvAMQj/AdvancedPeripherals-1.21.1-0.7.61b.jar",
+        "sha512": "256eada010294dc64b6a912b7fe0ea02e9fcc5c0aba73eba228953f38031ea4f9e718049c814c0a6dfeb00d46812cfc7123844513cd8ea58cfae1f6499ebd19e",
+        "size": 935498
+      }
+    },
+    {
+      "name": "Farmer's Delight",
+      "slug": "farmers-delight",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "R2OftAxM",
+        "version_id": "GbNuOZ4S",
+        "version_number": "1.21.1-1.3.2",
+        "filename": "FarmersDelight-1.21.1-1.3.2.jar",
+        "url": "https://cdn.modrinth.com/data/R2OftAxM/versions/GbNuOZ4S/FarmersDelight-1.21.1-1.3.2.jar",
+        "sha512": "da5a4236427df8010d75992201c8723ac84a8fa71efa55670551d333cac94a90ae8e8c536da63ae07a67f4d00dc2774ae4151030f41d26886e508f4a037c8694",
+        "size": 3163042
+      }
+    },
+    {
+      "name": "Create Slice & Dice",
+      "slug": "slice-and-dice",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "GmjmRQ0A",
+        "version_id": "tyVnEa75",
+        "version_number": "4.2.4",
+        "filename": "sliceanddice-forge-4.2.4.jar",
+        "url": "https://cdn.modrinth.com/data/GmjmRQ0A/versions/tyVnEa75/sliceanddice-forge-4.2.4.jar",
+        "sha512": "3834893ba6614befba87e6be13481bedfa7bce1ba196e75a6e8335b4718be772481f7ef6bea10b22fbcf154b0147ea97536102ddcf70912e5843f547ee3f711d",
+        "size": 406699
+      }
+    },
+    {
+      "name": "Create: Interiors",
+      "slug": "interiors",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "r4Knci2k",
+        "version_id": "gBrfZy6S",
+        "version_number": "0.6.1",
+        "filename": "interiors-1.21.1-neoforge-0.6.1.jar",
+        "url": "https://cdn.modrinth.com/data/r4Knci2k/versions/gBrfZy6S/interiors-1.21.1-neoforge-0.6.1.jar",
+        "sha512": "68b0d915e41fb0ce9d12a8c580d688a604770ded2b21e963058aa6d80cbc5661c481416d051a541395b5c79f461edcb658046e53cfcfb405179a450662ed01b5",
+        "size": 486912
+      }
+    },
+    {
+      "name": "FramedBlocks",
+      "slug": "framedblocks",
+      "side": "both",
+      "optional": false,
+      "default": true,
+      "note": null,
+      "source": "modrinth",
+      "modrinth": {
+        "project_id": "wbgfS34j",
+        "version_id": "1lKlr9Uf",
+        "version_number": "10.6.0",
+        "filename": "FramedBlocks-10.6.0.jar",
+        "url": "https://cdn.modrinth.com/data/wbgfS34j/versions/1lKlr9Uf/FramedBlocks-10.6.0.jar",
+        "sha512": "57f03ab2df6ec0ed67adc2bc1513f91f7a7fbc6a36f6ebd3eea6f87278756a9ae577619a902f46f09b9efd4f0a7280d1b00e879c48c978dde184ce3c772712d1",
+        "size": 4306442
+      }
+    },
+    {
       "name": "Sodium",
       "slug": "sodium",
       "side": "client",

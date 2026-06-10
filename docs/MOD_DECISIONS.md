@@ -83,6 +83,32 @@ Entity Culling 1.10.2, ImmediatelyFast 1.6.10, Dynamic FPS 3.11.4 (client, optio
 ⚠ Entity Culling is the first thing to disable if Sable ships flicker or vanish at
 angles — culling vs. moving sub-level structures is a known category of weirdness.
 
+## Optional-content tier — 2026-06-10 (Brady's request)
+
+Seven mods for players who want more to do, **progression-neutral by construction**:
+nothing in the gated recipe tree or required quest path references them, ever
+(review-enforced, same as the sell-list rule). "Optional" means optional to engage
+with — content mods must still be installed by server + all clients.
+
+| Mod | Version | For |
+|---|---|---|
+| CC: Tweaked | 1.119.0 (alpha channel = their normal practice for current MC) | Lua computers |
+| **CC: Sable** | 1.3.4 | Computers ↔ Sable ship physics: programmable autopilots, telemetry |
+| Advanced Peripherals | 0.7.61b (beta) | Extra CC sensors/interfaces |
+| Farmer's Delight | 1.3.2 | Cooking depth |
+| Create: Slice & Dice | 4.2.4 | FD cooking as a Create automation problem |
+| Interiors | 0.6.1 | Seats/furniture for ships + trains |
+| Framed Blocks | 10.6.0 | Copycat-style shapes. ⚠ No Sable mass tags: default physics weight on ships — fine on land, use sparingly aloft |
+
+This formally retires the "~40 mods" lean target (now 45); the constraint going
+forward is server performance, measured with Spark, not a count.
+
+**Considered for this tier and excluded:** Create Jetpack (personal flight before
+airships guts the "ships matter" pillar), Create Big Cannons (ship-to-ship combat vs
+Sable physics is untested; PvE pack), Sophisticated Backpacks (pickup/magnet upgrades
+trivialize early logistics), Create Garnished (recipe sprawl), structure/worldgen
+mods (would miss the pregenerated Crossing corridor entirely).
+
 **Considered in the same review and still excluded:**
 - **Create: Steam 'n' Rails** — no 1.21.1 NeoForge build exists (checked Modrinth AND
   CurseForge). Re-audit if/when they port.

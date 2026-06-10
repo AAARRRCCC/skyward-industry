@@ -37,9 +37,19 @@ def known_items():
     return items
 
 
+def known_advancements():
+    advs = set()
+    f = ROOT / "docs/audit/advancements.md"
+    if f.exists():
+        for m in re.finditer(r"^- `([a-z_]+:[a-z0-9_/]+)`", f.read_text(encoding="utf-8"), re.M):
+            advs.add(m.group(1))
+    return advs
+
+
 def main():
     items = known_items()
-    print(f"known item universe: {len(items)} ids")
+    advs = known_advancements()
+    print(f"known item universe: {len(items)} ids; advancements: {len(advs)}")
     errors = []
 
     # --- quest files ---
@@ -60,8 +70,12 @@ def main():
         for m in re.finditer(r'dependencies: \[([^\]]*)\]', text):
             for d in re.findall(r'"([0-9A-F]{16})"', m.group(1)):
                 all_refs.append((ch.name, "dep", d))
-        for m in re.finditer(r'\b(?:item|icon): "([a-z_]+:[a-z0-9_/]+)"', text):
+        for m in re.finditer(r'\b(?:item|icon|to_observe): "([a-z_]+:[a-z0-9_/]+)"', text):
             all_refs.append((ch.name, "item", m.group(1)))
+        for m in re.finditer(r'\badvancement: "([a-z_]+:[a-z0-9_/]+)"', text):
+            val = m.group(1)
+            if not val.startswith("minecraft:") and val not in advs:
+                errors.append(f"{ch.name}: unknown advancement {val}")
 
     for fname, kind, val in all_refs:
         if kind == "dep":

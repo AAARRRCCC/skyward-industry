@@ -38,24 +38,27 @@
 		{
 			dependencies: ["0A00000000000001"]
 			description: [
-				"JEI (recipe viewer) is your contract: if we removed a recipe, the replacement is in there. No dead ends, no wiki required."
+				"JEI (recipe viewer) is your contract: if we removed a recipe, the replacement is in there. No dead ends, no wiki required. Press R on any item for recipes, U for uses."
 				""
-				"Press R on any item for recipes, U for uses."
+				"This ticks the moment Create notices you exist. Pick up anything it makes."
 			]
+			icon: "create:wrench"
 			id: "0A00000000000002"
 			rewards: [{
+				count: 16
 				id: "1A00000000000002"
 				item: "minecraft:torch"
-				count: 16
 				type: "item"
 			}]
 			tasks: [{
+				advancement: "create:root"
+				criterion: ""
 				id: "2A00000000000002"
-				title: "Look up a recipe in JEI"
-				type: "checkmark"
+				title: "Touch something Create-made"
+				type: "advancement"
 			}]
 			title: "The recipe viewer is law"
-			x: -1.5d
+			x: -2.25d
 			y: 1.5d
 		}
 		{
@@ -65,9 +68,9 @@
 			]
 			id: "0A00000000000003"
 			rewards: [{
+				count: 4
 				id: "1A00000000000003"
 				item: "minecraft:oak_sign"
-				count: 4
 				type: "item"
 			}]
 			tasks: [{
@@ -76,7 +79,7 @@
 				type: "checkmark"
 			}]
 			title: "Stake a claim"
-			x: 0.0d
+			x: -0.75d
 			y: 1.5d
 		}
 		{
@@ -84,8 +87,9 @@
 			description: [
 				"Spawn town has vendors. The brass ones BUY your bulk goods. That's your income. The others sell decor, books, and music. Nothing that matters for progression is for sale. Ever."
 				""
-				"Open an account at the blaze banker if you want a card instead of a coin pouch."
+				"Go stand at the market and look at a vendor until this ticks. Window shopping counts."
 			]
+			icon: "numismatics:creative_vendor"
 			id: "0A00000000000004"
 			rewards: [{
 				count: 8
@@ -95,12 +99,60 @@
 			}]
 			tasks: [{
 				id: "2A00000000000004"
+				observe_type: 0
+				timer: 20L
 				title: "Visit the spawn market"
-				type: "checkmark"
+				to_observe: "numismatics:creative_vendor"
+				type: "observation"
 			}]
 			title: "Money exists"
-			x: 1.5d
+			x: 0.75d
 			y: 1.5d
+		}
+		{
+			dependencies: ["0A00000000000001"]
+			description: [
+				"Phantoms are a flight hazard and you are a future pilot. Maintain your sleep records."
+			]
+			id: "0A00000000000005"
+			rewards: [{
+				count: 8
+				id: "1A00000000000005"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "minecraft:adventure/sleep_in_bed"
+				criterion: ""
+				id: "2A00000000000005"
+				title: "Sleep in a bed"
+				type: "advancement"
+			}]
+			title: "Rest protocols"
+			x: 2.25d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0A00000000000002"]
+			description: [
+				"The wrench rotates, disassembles, and politely picks up machines. You will hold it more than any tool you own. Welcome to the union."
+			]
+			id: "0A00000000000006"
+			rewards: [{
+				count: 16
+				id: "1A00000000000006"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			tasks: [{
+				count: 1L
+				id: "2A00000000000006"
+				item: "create:wrench"
+				type: "item"
+			}]
+			title: "Union card"
+			x: -2.25d
+			y: 3.0d
 		}
 	]
 	title: "Chapter 0: Welcome"

@@ -36,7 +36,9 @@
 		{
 			dependencies: ["0B00000000000001"]
 			description: [
-				"Rotation first. A water wheel is honest work."
+				"Rotation first. Place a water wheel, give it flowing water, and take torque off the shaft. Honest work."
+				""
+				"This ticks when the wheel actually turns something. Decoration doesn't count."
 			]
 			id: "0B00000000000002"
 			rewards: [{
@@ -46,19 +48,22 @@
 				type: "item"
 			}]
 			tasks: [{
-				count: 1L
+				advancement: "create:water_wheel"
+				criterion: ""
 				id: "2B00000000000002"
-				item: "create:water_wheel"
-				type: "item"
+				title: "Power something with a water wheel"
+				type: "advancement"
 			}]
 			title: "Something turns"
-			x: -1.5d
+			x: -3.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["0B00000000000001"]
+			dependencies: ["0B00000000000007"]
 			description: [
 				"The mechanical press makes sheets and presses assemblies. Every later line uses one. You will build many."
+				""
+				"Ticks on your first pressed sheet."
 			]
 			id: "0B00000000000003"
 			rewards: [{
@@ -68,21 +73,22 @@
 				type: "item"
 			}]
 			tasks: [{
-				count: 1L
+				advancement: "create:mechanical_press"
+				criterion: ""
 				id: "2B00000000000003"
-				item: "create:mechanical_press"
-				type: "item"
+				title: "Press some sheets"
+				type: "advancement"
 			}]
 			title: "Heavy industry, small"
 			x: 0.0d
-			y: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["0B00000000000003"]
 			description: [
 				"The mixer is the andesite age's gate: basin + mixer turns andesite and nuggets into alloy at four times the hand rate."
 				""
-				"This is the moment the pack starts. Feed it."
+				"This is the moment the pack starts. It ticks on your first real mix. Feed it."
 			]
 			icon: "create:mechanical_mixer"
 			id: "0B00000000000004"
@@ -94,19 +100,20 @@
 			}]
 			shape: "gear"
 			tasks: [{
-				count: 1L
+				advancement: "create:mechanical_mixer"
+				criterion: ""
 				id: "2B00000000000004"
-				item: "create:mechanical_mixer"
-				type: "item"
+				title: "Mix something in a mechanical mixer"
+				type: "advancement"
 			}]
 			title: "The real recipe"
 			x: 1.5d
-			y: 1.5d
+			y: 3.0d
 		}
 		{
-			dependencies: ["0B00000000000004"]
+			dependencies: ["0B00000000000003"]
 			description: [
-				"A mechanical saw for shafts and lumber. With press, mixer, and saw running off one shaft line, you have a factory. A small, ugly factory. It counts."
+				"An upright mechanical saw chews logs into stripped logs and planks while you stand there feeling efficient. With press, mixer, and saw running off one shaft line, you have a factory. A small, ugly factory. It counts."
 			]
 			id: "0B00000000000005"
 			rewards: [{
@@ -116,14 +123,15 @@
 				type: "item"
 			}]
 			tasks: [{
-				count: 1L
+				advancement: "create:saw_processing"
+				criterion: ""
 				id: "2B00000000000005"
-				item: "create:mechanical_saw"
-				type: "item"
+				title: "Process materials with an upright saw"
+				type: "advancement"
 			}]
 			title: "Cutting room"
-			x: 1.5d
-			y: 3.0d
+			x: 0.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["0B00000000000004"]
@@ -149,8 +157,388 @@
 				type: "item"
 			}]
 			title: "Alloy by the barrel"
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B00000000000001"]
+			description: [
+				"Hold andesite alloy and right-click a stripped log. The casing is the chassis of every andesite machine."
+				""
+				"Yes, you just punch the alloy into the wood. Industrial standards are a journey."
+			]
+			id: "0B00000000000007"
+			rewards: [{
+				count: 16
+				id: "1B00000000000007"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:andesite_casing"
+				criterion: ""
+				id: "2B00000000000007"
+				title: "Make an andesite casing"
+				type: "advancement"
+			}]
+			title: "The Andesite Age"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B00000000000003"]
+			description: [
+				"A press over a basin compacts many things into fewer, better things. The mixer's quieter sibling. Several recipes down the line assume you have both."
+			]
+			id: "0B00000000000008"
+			rewards: [{
+				count: 1
+				id: "1B00000000000008"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:compacting"
+				criterion: ""
+				id: "2B00000000000008"
+				title: "Compact something in a basin"
+				type: "advancement"
+			}]
+			title: "Compactification"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B00000000000002"]
+			description: [
+				"Sails on a windmill bearing. Slow, free, and scales with how much wool you're willing to commit to the bit."
+				""
+				"Also quietly teaches you contraption assembly, which the entire back half of this pack is about."
+			]
+			id: "0B00000000000009"
+			optional: true
+			rewards: [{
+				count: 1
+				id: "1B00000000000009"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:windmill"
+				criterion: ""
+				id: "2B00000000000009"
+				title: "Assemble a windmill"
+				type: "advancement"
+			}]
+			title: "A mild breeze (optional)"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B00000000000002"]
+			description: [
+				"Large cog into small cog: speed up. Small into large: torque up. This one sentence is half of Create's engineering exam."
+			]
+			id: "0B0000000000000A"
+			rewards: [{
+				count: 8
+				id: "1B0000000000000A"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:shifting_gears"
+				criterion: ""
+				id: "2B0000000000000A"
+				title: "Connect large and small cogwheels"
+				type: "advancement"
+			}]
+			title: "Gear ratios"
+			x: -4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B00000000000007"]
+			description: [
+				"An encased fan pointed the right way is wind on demand. Pointed the wrong way, it is a lesson."
+			]
+			id: "0B0000000000000B"
+			rewards: [{
+				count: 8
+				id: "1B0000000000000B"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:encased_fan"
+				criterion: ""
+				id: "2B0000000000000B"
+				title: "Place and power an encased fan"
+				type: "advancement"
+			}]
+			title: "Wind maker"
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0B0000000000000B"]
+			description: [
+				"Fan through water washes gravel into nuggets and ore into more. Fan through fire smelts in bulk. This is your iron problem solved, and the alloy line drinks iron."
+				""
+				"Build the washing trench before brass. You will thank exactly one person and it will not be us."
+			]
+			icon: "create:propeller"
+			id: "0B0000000000000C"
+			rewards: [{
+				count: 1
+				id: "1B0000000000000C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				advancement: "create:fan_processing"
+				criterion: ""
+				id: "2B0000000000000C"
+				title: "Process materials with fan air streams"
+				type: "advancement"
+			}]
+			title: "Processing by particle"
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B00000000000002"]
+			description: [
+				"The millstone grinds slowly but asks for almost nothing. Wheat to flour, bones to meal, cobble to gravel. A perfectly respectable first machine."
+			]
+			id: "0B0000000000000D"
+			rewards: [{
+				count: 8
+				id: "1B0000000000000D"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:millstone"
+				criterion: ""
+				id: "2B0000000000000D"
+				title: "Mill something"
+				type: "advancement"
+			}]
+			title: "Embrace the grind"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B00000000000001"]
+			description: [
+				"Mechanical belts: dried kelp's highest calling. Belts carry items, players, and rotation, which is three jobs for one kelp farm."
+			]
+			id: "0B0000000000000E"
+			rewards: [{
+				count: 8
+				id: "1B0000000000000E"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:belt"
+				criterion: ""
+				id: "2B0000000000000E"
+				title: "Connect two shafts with a belt"
+				type: "advancement"
+			}]
+			title: "Kelp drive"
 			x: 3.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["0B0000000000000E"]
+			description: [
+				"Funnels move items between belts and inventories without a hopper's attitude. Your factory's veins."
+			]
+			id: "0B0000000000000F"
+			rewards: [{
+				count: 8
+				id: "1B0000000000000F"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:funnel"
+				criterion: ""
+				id: "2B0000000000000F"
+				title: "Move items with a funnel"
+				type: "advancement"
+			}]
+			title: "Airport aesthetic"
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0B0000000000000F"]
+			description: [
+				"Chutes drop items straight down, or pull them straight up with fan pressure. Gravity is free; use more of it."
+			]
+			id: "0B00000000000010"
+			rewards: [{
+				count: 8
+				id: "1B00000000000010"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:chute"
+				criterion: ""
+				id: "2B00000000000010"
+				title: "Transport items by chute"
+				type: "advancement"
+			}]
+			title: "Vertical logistics"
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B00000000000001"]
+			description: [
+				"Super glue holds block groups together when contraptions move. Slather it generously. There is no glue budget."
+			]
+			id: "0B00000000000011"
+			rewards: [{
+				count: 8
+				id: "1B00000000000011"
+				item: "numismatics:spur"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "create:super_glue"
+				criterion: ""
+				id: "2B00000000000011"
+				title: "Glue some blocks together"
+				type: "advancement"
+			}]
+			title: "Area of connect"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B00000000000011"]
+			description: [
+				"Drills, saws, or harvesters mounted on a moving contraption. A bobbing tree farm or a crawling quarry. The moment machines start doing the WALKING is the moment this stops being a furniture mod."
+			]
+			id: "0B00000000000012"
+			rewards: [{
+				count: 1
+				id: "1B00000000000012"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				advancement: "create:contraption_actors"
+				criterion: ""
+				id: "2B00000000000012"
+				title: "Build a working contraption with tools aboard"
+				type: "advancement"
+			}]
+			title: "Moving with purpose"
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B00000000000003"]
+			description: [
+				"Engineer's goggles on your face, wrench in your hand. Stress units become visible, machines become movable, and you become insufferable at parties."
+			]
+			id: "0B00000000000013"
+			rewards: [{
+				id: "1B00000000000013"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				advancement: "create:wrench_goggles"
+				criterion: ""
+				id: "2B00000000000013"
+				title: "Equip goggles and wrench together"
+				type: "advancement"
+			}]
+			title: "Kitted out"
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B00000000000003"]
+			description: [
+				"An item vault stores a frankly irresponsible amount of stuff and belts plug straight into it. Your alloy needs somewhere to live."
+			]
+			id: "0B00000000000014"
+			rewards: [{
+				count: 1
+				id: "1B00000000000014"
+				item: "numismatics:sprocket"
+				type: "item"
+			}]
+			tasks: [{
+				count: 1L
+				id: "2B00000000000014"
+				item: "create:item_vault"
+				type: "item"
+			}]
+			title: "Warehouse"
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0B00000000000002"]
+			description: [
+				"This shouldn't have worked."
+			]
+			id: "0B00000000000015"
+			invisible: true
+			rewards: [{
+				count: 1
+				id: "1B00000000000015"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				advancement: "create:lava_wheel_00000"
+				criterion: ""
+				id: "2B00000000000015"
+				title: "Magma wheel"
+				type: "advancement"
+			}]
+			title: "Secret: this is fine"
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B00000000000001"]
+			description: [
+				"Crank until your arms give out. Builds character. Builds nothing else."
+			]
+			id: "0B00000000000016"
+			invisible: true
+			rewards: [{
+				count: 1
+				id: "1B00000000000016"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				advancement: "create:hand_crank_000"
+				criterion: ""
+				id: "2B00000000000016"
+				title: "Workout session"
+				type: "advancement"
+			}]
+			title: "Secret: manual labor"
+			x: -4.5d
+			y: 4.5d
 		}
 	]
 	title: "Chapter 1: Andesite Age"

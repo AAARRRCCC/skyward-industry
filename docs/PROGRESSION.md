@@ -46,7 +46,7 @@ the pack — enough to make overbuilding lines feel right, not enough to be a ca
 | `simulated:red_portable_engine` | engine assembly + tempered casing + blast furnace |
 | `aeronautics:*_envelope` | deployer-only (grid recipes removed), 2 per wool+stick |
 | `aeronautics:levitite_blend` | 6 end stone powder + 4 zinc nuggets + 500mb water → 250mb (heated) |
-| `aeronautics:wooden_propeller` | plank + slab + shaft — cheap EARLY thrust, carries an experimental drag penalty (slower ships) |
+| `aeronautics:wooden_propeller` | shaft ringed by 4 slabs — cheap EARLY thrust, carries an experimental drag penalty (slower ships) |
 | `aeronautics:andesite_propeller` | create:propeller + slab + shaft (mod original) — early thrust, no drag penalty. Free 1:1 wooden↔andesite conversions removed |
 | `aeronautics:propeller_bearing` | slab + **calibrated shaft** + brass casing — the large-ship propulsion mount, deliberately later-tier than the propellers |
 | `aeronautics:smart_propeller` | propeller + gyroscopic mechanism + brass casing → **1** (was 2) |

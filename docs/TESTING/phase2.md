@@ -35,15 +35,17 @@ In JEI, look up Andesite Alloy (recipes FOR it):
 - [x] Gyroscopic Mechanism: precision-mechanism core, deploys cogwheel + coil, 4 loops. Old recipe GONE *(verified 2026-06-09)*
 - [ ] Envelopes (spot-check 3 colors): grid recipe GONE, deployer recipe gives 2 (not 3)
 - [ ] Levitite Blend: 6 end stone powder + 4 zinc nuggets + 500mb water → 250mb, heated basin
-- [ ] Wooden Propeller: plank + slab + shaft (new cheap recipe); BOTH 1:1
-      wooden↔andesite conversion recipes are GONE
+- [x] Wooden Propeller recipe exists; BOTH 1:1 wooden↔andesite conversion recipes
+      are GONE *(verified 2026-06-09; recipe since reshaped to shaft + 4 slabs)*
+- [ ] Wooden Propeller: shaft ringed by 4 wooden slabs
 - [ ] Andesite Propeller: create:propeller + slab + shaft (mod-original restored)
 - [ ] Propeller Bearing: slab + calibrated shaft + brass casing (was iron sheet)
-- [ ] EXPERIMENTAL drag penalty: build two identical mini-ships, one with wooden
-      props, one with andesite; wooden should be noticeably slower at top speed.
-      Tune floating_scale in kubejs/data/skyward/physics_block_properties/
-      wooden_propeller_drag.json (2.0 now; envelope drag is 0.33 for reference);
-      delete that file if it feels wrong
+- [ ] EXPERIMENTAL drag penalty, round 2: at scale 2.0 the measured drag was
+      0.25pN vs 249.45pN prop thrust (negligible). Now floating_scale = 300.0,
+      targeting ~37pN ≈ 15% of one prop's thrust IF scaling is linear. Re-measure
+      drag and top speed on the wooden-prop test ship; tune the number in
+      kubejs/data/skyward/physics_block_properties/wooden_propeller_drag.json,
+      or delete that file to drop the whole idea
 - [ ] Smart Propeller crafts 1 (not 2)
 - [ ] Portable Engine (red): tempered casing on top (not iron sheet)
 - [ ] Physics Assembler needs precision mechanism + brass casing

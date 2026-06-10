@@ -45,13 +45,14 @@ global.BAL = {
 		envelopePerDeploy: 2,
 		// Levitite blend mixing (mod default: 4 powder + 2 zinc nuggets -> 500mb).
 		levitite: { endStonePowder: 6, zincNuggets: 4, waterMb: 500, outputMb: 250 },
-		// Propellers re-tiered 2026-06-09: wooden (planks, cheap, drag penalty) and
-		// andesite (create:propeller core, mod-original price) are EARLY game;
-		// the propeller bearing eats a calibrated shaft (pattern-encoded in
-		// ch3_aeronautics.js). Wooden's drag penalty is EXPERIMENTAL, tuned in
-		// kubejs/data/skyward/physics_block_properties/wooden_propeller_drag.json
-		// (floating_scale 2.0; envelopes use 0.33 for reference; delete the file
-		// to remove the penalty).
+		// Propellers re-tiered 2026-06-09: wooden (shaft ringed by 4 slabs, cheap,
+		// drag penalty) and andesite (create:propeller core, mod-original price)
+		// are EARLY game; the propeller bearing eats a calibrated shaft
+		// (pattern-encoded in ch3_aeronautics.js). Wooden's drag penalty is
+		// EXPERIMENTAL, tuned in kubejs/data/skyward/physics_block_properties/
+		// wooden_propeller_drag.json. Measured: scale 2.0 = 0.25pN drag vs
+		// 249.45pN prop thrust (negligible) -> now 300.0, targeting ~15% of one
+		// prop's thrust assuming linear scaling. Delete the file to remove.
 		// Smart propeller output count (mod default 2).
 		smartPropellerCount: 1,
 		// Aeroworks gyroscope: gyroscopic mechanisms per unit.
